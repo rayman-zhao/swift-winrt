@@ -33,7 +33,7 @@ extension __ABI_test_component_Delegates {
         Data1: 0x419EF389, Data2: 0xAF4B, Data3: 0x5676, Data4: ( 0xBC,0xEE,0xE0,0xD7,0x9A,0x5C,0xCA,0xDE ) // 419EF389-AF4B-5676-BCEE-E0D79A5CCADE
     ) 
 
-    public class InDelegate: WindowsFoundation.IUnknown {
+    public class InDelegate: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CDelegates_CIInDelegate }
 
         open func Invoke(_ value: String) throws {
@@ -97,7 +97,7 @@ extension __ABI_test_component_Delegates {
         Data1: 0x68F889F8, Data2: 0x1A16, Data3: 0x5F6D, Data4: ( 0x8A,0x04,0x24,0x58,0x38,0xEA,0xF3,0xD4 ) // 68F889F8-1A16-5F6D-8A04-245838EAF3D4
     ) 
 
-    public class InObjectDelegate: WindowsFoundation.IUnknown {
+    public class InObjectDelegate: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CDelegates_CIInObjectDelegate }
 
         open func Invoke(_ value: Any?) throws {
@@ -162,7 +162,7 @@ extension __ABI_test_component_Delegates {
         Data1: 0x9EA7161A, Data2: 0xFCAB, Data3: 0x5037, Data4: ( 0x87,0xF0,0xB5,0x73,0xA5,0xE9,0x7B,0xE9 ) // 9EA7161A-FCAB-5037-87F0-B573A5E97BE9
     ) 
 
-    public class SignalDelegate: WindowsFoundation.IUnknown {
+    public class SignalDelegate: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CDelegates_CISignalDelegate }
 
         open func Invoke() throws {

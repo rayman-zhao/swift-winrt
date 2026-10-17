@@ -125,7 +125,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x905A0FE0, Data2: 0xBC53, Data3: 0x11DF, Data4: ( 0x8C,0x49,0x00,0x1E,0x4F,0xC6,0x86,0xDA ) // 905A0FE0-BC53-11DF-8C49-001E4FC686DA
     ) 
 
-    public class IBuffer: WindowsFoundation.IInspectable {
+    public class IBuffer: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIBuffer }
 
         open func get_Capacity() throws -> UInt32 {
@@ -274,7 +274,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x97D098A5, Data2: 0x3B99, Data3: 0x4DE9, Data4: ( 0x88,0xA5,0xE1,0x1D,0x2F,0x50,0xC7,0x95 ) // 97D098A5-3B99-4DE9-88A5-E11D2F50C795
     ) 
 
-    public class IContentTypeProvider: WindowsFoundation.IInspectable {
+    public class IContentTypeProvider: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIContentTypeProvider }
 
         open func get_ContentType() throws -> String {
@@ -406,7 +406,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x905A0FE2, Data2: 0xBC53, Data3: 0x11DF, Data4: ( 0x8C,0x49,0x00,0x1E,0x4F,0xC6,0x86,0xDA ) // 905A0FE2-BC53-11DF-8C49-001E4FC686DA
     ) 
 
-    public class IInputStream: WindowsFoundation.IInspectable {
+    public class IInputStream: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIInputStream }
 
         open func ReadAsync(_ buffer: UWP.AnyIBuffer?, _ count: UInt32, _ options: UWP.InputStreamOptions) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.AnyIBuffer?, UInt32>? {
@@ -536,7 +536,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x43929D18, Data2: 0x5EC9, Data3: 0x4B5A, Data4: ( 0x91,0x9C,0x42,0x05,0xB0,0xC8,0x04,0xB6 ) // 43929D18-5EC9-4B5A-919C-4205B0C804B6
     ) 
 
-    public class IInputStreamReference: WindowsFoundation.IInspectable {
+    public class IInputStreamReference: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIInputStreamReference }
 
         open func OpenSequentialReadAsync() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AnyIInputStream?>? {
@@ -676,7 +676,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x905A0FE6, Data2: 0xBC53, Data3: 0x11DF, Data4: ( 0x8C,0x49,0x00,0x1E,0x4F,0xC6,0x86,0xDA ) // 905A0FE6-BC53-11DF-8C49-001E4FC686DA
     ) 
 
-    public class IOutputStream: WindowsFoundation.IInspectable {
+    public class IOutputStream: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIOutputStream }
 
         open func WriteAsync(_ buffer: UWP.AnyIBuffer?) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<UInt32, UInt32>? {
@@ -905,7 +905,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x905A0FE1, Data2: 0xBC53, Data3: 0x11DF, Data4: ( 0x8C,0x49,0x00,0x1E,0x4F,0xC6,0x86,0xDA ) // 905A0FE1-BC53-11DF-8C49-001E4FC686DA
     ) 
 
-    public class IRandomAccessStream: WindowsFoundation.IInspectable {
+    public class IRandomAccessStream: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStream }
 
         open func get_Size() throws -> UInt64 {
@@ -1160,7 +1160,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x33EE3134, Data2: 0x1DD6, Data3: 0x4E3A, Data4: ( 0x80,0x67,0xD1,0xC1,0x62,0xE8,0x64,0x2B ) // 33EE3134-1DD6-4E3A-8067-D1C162E8642B
     ) 
 
-    public class IRandomAccessStreamReference: WindowsFoundation.IInspectable {
+    public class IRandomAccessStreamReference: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamReference }
 
         open func OpenReadAsync() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AnyIRandomAccessStreamWithContentType?>? {
@@ -1363,7 +1363,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0xCC254827, Data2: 0x4B3D, Data3: 0x438F, Data4: ( 0x92,0x32,0x10,0xC7,0x6B,0xC7,0xE0,0x38 ) // CC254827-4B3D-438F-9232-10C76BC7E038
     ) 
 
-    public class IRandomAccessStreamWithContentType: WindowsFoundation.IInspectable {
+    public class IRandomAccessStreamWithContentType: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType }
 
     }
@@ -1415,7 +1415,7 @@ public class IRandomAccessStreamWithContentTypeMaker: MakeFromAbi {
 // MARK: - Buffer
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.storage.streams.buffer)
-public final class Buffer : WinRTClass, IBufferByteAccess, IBuffer {
+public final class Buffer : WinRTClass, @unchecked Sendable, IBufferByteAccess, IBuffer {
     private typealias SwiftABI = __ABI_Windows_Storage_Streams.IBuffer
     private typealias CABI = __x_ABI_CWindows_CStorage_CStreams_CIBuffer
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -1502,7 +1502,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0x71AF914D, Data2: 0xC10F, Data3: 0x484B, Data4: ( 0xBC,0x50,0x14,0xBC,0x62,0x3B,0x3A,0x27 ) // 71AF914D-C10F-484B-BC50-14BC623B3A27
     ) 
 
-    public class IBufferFactory: WindowsFoundation.IInspectable {
+    public class IBufferFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIBufferFactory }
 
         public func Create(_ capacity: UInt32) throws -> IBuffer {
@@ -1520,7 +1520,7 @@ extension __ABI_Windows_Storage_Streams {
         Data1: 0xE901E65B, Data2: 0xD716, Data3: 0x475A, Data4: ( 0xA9,0x0A,0xAF,0x72,0x29,0xB1,0xE7,0x41 ) // E901E65B-D716-475A-A90A-AF7229B1E741
     ) 
 
-    public class IBufferStatics: WindowsFoundation.IInspectable {
+    public class IBufferStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CStreams_CIBufferStatics }
 
         public func CreateCopyFromMemoryBuffer(_ input: WindowsFoundation.AnyIMemoryBuffer?) throws -> UWP.Buffer? {

@@ -6,7 +6,7 @@ import CWinRT
 
 // MARK: - ExternalBase
 
-open class ExternalBase : WinRTClass {
+open class ExternalBase : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_external_base.IExternalBase
     private typealias CABI = __x_ABI_Cexternal__base_CIExternalBase
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -87,7 +87,7 @@ extension __ABI_external_base {
         Data1: 0x02D7F27B, Data2: 0xE7C3, Data3: 0x5557, Data4: ( 0x9E,0x69,0x25,0x09,0x74,0xB2,0x98,0x6D ) // 02D7F27B-E7C3-5557-9E69-250974B2986D
     ) 
 
-    public class IExternalBase: WindowsFoundation.IInspectable {
+    public class IExternalBase: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Cexternal__base_CIExternalBase }
 
     }
@@ -96,7 +96,7 @@ extension __ABI_external_base {
         Data1: 0x7BE52E3A, Data2: 0x9B03, Data3: 0x52E6, Data4: ( 0x87,0xB2,0x2B,0xD6,0xF6,0xDA,0xCF,0xC5 ) // 7BE52E3A-9B03-52E6-87B2-2BD6F6DACFC5
     ) 
 
-    public class IExternalBaseProtectedFactory: WindowsFoundation.IInspectable {
+    public class IExternalBaseProtectedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Cexternal__base_CIExternalBaseProtectedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_external_base.ExternalBaseBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IExternalBase {

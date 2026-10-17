@@ -30,7 +30,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_I
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableBridge>
-public class AsyncOperationCompletedHandlerAny: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerAny: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectable }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<Any?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -83,7 +83,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_b
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanBridge>
-public class AsyncOperationCompletedHandlerBool: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerBool: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1_boolean }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<Bool>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -136,7 +136,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_H
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGBridge>
-public class AsyncOperationCompletedHandlerString: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerString: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRING }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<String>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -189,7 +189,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_U
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Bridge>
-public class AsyncOperationCompletedHandlerUInt32: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerUInt32: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32 }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UInt32>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -242,7 +242,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableBridge>
-public class AsyncOperationCompletedHandlerIMapString_Any: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIMapString_Any: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectable }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIMap<String, Any?>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -295,7 +295,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetBridge>
-public class AsyncOperationCompletedHandlerIPropertySet: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIPropertySet: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySet }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIPropertySet?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -348,7 +348,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class AsyncOperationCompletedHandlerIVectorViewIStorageItem: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIVectorViewIStorageItem: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.AnyIStorageItem?>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -401,7 +401,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class AsyncOperationCompletedHandlerIVectorViewStorageFile: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIVectorViewStorageFile: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.StorageFile?>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -454,7 +454,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class AsyncOperationCompletedHandlerIVectorViewStorageFolder: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIVectorViewStorageFolder: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.StorageFolder?>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -507,7 +507,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge>
-public class AsyncOperationCompletedHandlerIVectorViewStorageLibraryChange: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIVectorViewStorageLibraryChange: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChange }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.StorageLibraryChange?>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -560,7 +560,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserBridge>
-public class AsyncOperationCompletedHandlerIVectorViewUser: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIVectorViewUser: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUser }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.User?>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -613,7 +613,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGBridge>
-public class AsyncOperationCompletedHandlerIVectorString: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIVectorString: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRING }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<String>?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -666,7 +666,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesBridge>
-public class AsyncOperationCompletedHandlerBasicProperties: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerBasicProperties: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicProperties }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.BasicProperties?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -719,7 +719,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesBridge>
-public class AsyncOperationCompletedHandlerDocumentProperties: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerDocumentProperties: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentProperties }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.DocumentProperties?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -772,7 +772,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesBridge>
-public class AsyncOperationCompletedHandlerImageProperties: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerImageProperties: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImageProperties }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.ImageProperties?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -825,7 +825,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesBridge>
-public class AsyncOperationCompletedHandlerMusicProperties: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerMusicProperties: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicProperties }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.MusicProperties?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -878,7 +878,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailBridge>
-public class AsyncOperationCompletedHandlerStorageItemThumbnail: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerStorageItemThumbnail: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnail }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.StorageItemThumbnail?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -931,7 +931,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesBridge>
-public class AsyncOperationCompletedHandlerVideoProperties: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerVideoProperties: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoProperties }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.VideoProperties?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -984,7 +984,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class AsyncOperationCompletedHandlerIStorageItem: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIStorageItem: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.AnyIStorageItem?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1037,7 +1037,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateBridge>
-public class AsyncOperationCompletedHandlerIndexedState: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIndexedState: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedState }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.IndexedState>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1090,7 +1090,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class AsyncOperationCompletedHandlerStorageFile: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerStorageFile: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.StorageFile?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1143,7 +1143,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class AsyncOperationCompletedHandlerStorageFolder: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerStorageFolder: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.StorageFolder?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1196,7 +1196,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionBridge>
-public class AsyncOperationCompletedHandlerStorageStreamTransaction: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerStorageStreamTransaction: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransaction }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.StorageStreamTransaction?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1249,7 +1249,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferBridge>
-public class AsyncOperationCompletedHandlerIBuffer: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIBuffer: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBuffer }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.AnyIBuffer?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1302,7 +1302,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamBridge>
-public class AsyncOperationCompletedHandlerIInputStream: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIInputStream: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStream }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.AnyIInputStream?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1355,7 +1355,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamBridge>
-public class AsyncOperationCompletedHandlerIRandomAccessStream: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIRandomAccessStream: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStream }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.AnyIRandomAccessStream?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1408,7 +1408,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceBridge>
-public class AsyncOperationCompletedHandlerIRandomAccessStreamReference: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIRandomAccessStreamReference: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReference }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.AnyIRandomAccessStreamReference?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1461,7 +1461,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeBridge>
-public class AsyncOperationCompletedHandlerIRandomAccessStreamWithContentType: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerIRandomAccessStreamWithContentType: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentType }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.AnyIRandomAccessStreamWithContentType?>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1514,7 +1514,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1__
     }
 )
 typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultBridge>
-public class AsyncOperationCompletedHandlerUserAgeConsentResult: WindowsFoundation.IUnknown {
+public class AsyncOperationCompletedHandlerUserAgeConsentResult: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResult }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<UWP.UserAgeConsentResult>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1567,7 +1567,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationProgressHandler_2_UI
     }
 )
 typealias __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Bridge>
-public class AsyncOperationProgressHandlerUInt32_UInt32: WindowsFoundation.IUnknown {
+public class AsyncOperationProgressHandlerUInt32_UInt32: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32 }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperationWithProgress<UInt32, UInt32>?, _ progressInfo: UInt32) throws {
@@ -1620,7 +1620,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationProgressHandler_2___
     }
 )
 typealias __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Bridge>
-public class AsyncOperationProgressHandlerIBuffer_UInt32: WindowsFoundation.IUnknown {
+public class AsyncOperationProgressHandlerIBuffer_UInt32: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32 }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.AnyIBuffer?, UInt32>?, _ progressInfo: UInt32) throws {
@@ -1673,7 +1673,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgressComplete
     }
 )
 typealias __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Bridge>
-public class AsyncOperationWithProgressCompletedHandlerUInt32_UInt32: WindowsFoundation.IUnknown {
+public class AsyncOperationWithProgressCompletedHandlerUInt32_UInt32: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32 }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperationWithProgress<UInt32, UInt32>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1726,7 +1726,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgressComplete
     }
 )
 typealias __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Bridge>
-public class AsyncOperationWithProgressCompletedHandlerIBuffer_UInt32: WindowsFoundation.IUnknown {
+public class AsyncOperationWithProgressCompletedHandlerIBuffer_UInt32: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32 }
 
     open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.AnyIBuffer?, UInt32>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -1794,7 +1794,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1_HSTRINGVTable: __x_ABI_
     }
 )
 typealias __x_ABI_C__FIIterable_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1_HSTRINGBridge>
-public class IIterableString: WindowsFoundation.IInspectable {
+public class IIterableString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1_HSTRING }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<String>? {
@@ -1881,7 +1881,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IIterableTextSegment: WindowsFoundation.IInspectable {
+public class IIterableTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.TextSegment>? {
@@ -1968,7 +1968,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge>
-public class IIterableIKeyValuePairString_Any: WindowsFoundation.IInspectable {
+public class IIterableIKeyValuePairString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<WindowsFoundation.AnyIKeyValuePair<String, Any?>?>? {
@@ -2055,7 +2055,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IIterableIKeyValuePairString_IVectorViewTextSegment: WindowsFoundation.IInspectable {
+public class IIterableIKeyValuePairString_IVectorViewTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<WindowsFoundation.AnyIKeyValuePair<String, WindowsFoundation.AnyIVectorView<UWP.TextSegment>?>?>? {
@@ -2142,7 +2142,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class IIterableIStorageItem: WindowsFoundation.IInspectable {
+public class IIterableIStorageItem: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.AnyIStorageItem?>? {
@@ -2229,7 +2229,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge>
-public class IIterableSortEntry: WindowsFoundation.IInspectable {
+public class IIterableSortEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntry }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.SortEntry>? {
@@ -2316,7 +2316,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class IIterableStorageFile: WindowsFoundation.IInspectable {
+public class IIterableStorageFile: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.StorageFile?>? {
@@ -2403,7 +2403,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class IIterableStorageFolder: WindowsFoundation.IInspectable {
+public class IIterableStorageFolder: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.StorageFolder?>? {
@@ -2490,7 +2490,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge>
-public class IIterableStorageLibraryChange: WindowsFoundation.IInspectable {
+public class IIterableStorageLibraryChange: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChange }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.StorageLibraryChange?>? {
@@ -2577,7 +2577,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSyst
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserBridge>
-public class IIterableUser: WindowsFoundation.IInspectable {
+public class IIterableUser: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUser }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.User?>? {
@@ -2664,7 +2664,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSyst
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindBridge>
-public class IIterableUserWatcherUpdateKind: WindowsFoundation.IInspectable {
+public class IIterableUserWatcherUpdateKind: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKind }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<UWP.UserWatcherUpdateKind>? {
@@ -2775,7 +2775,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1_HSTRINGVTable: __x_ABI_
     }
 )
 typealias __x_ABI_C__FIIterator_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1_HSTRINGBridge>
-public class IIteratorString: WindowsFoundation.IInspectable {
+public class IIteratorString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1_HSTRING }
 
     open func get_Current() throws -> String {
@@ -2939,7 +2939,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IIteratorTextSegment: WindowsFoundation.IInspectable {
+public class IIteratorTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func get_Current() throws -> UWP.TextSegment {
@@ -3092,7 +3092,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge>
-public class IIteratorIKeyValuePairString_Any: WindowsFoundation.IInspectable {
+public class IIteratorIKeyValuePairString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable }
 
     open func get_Current() throws -> WindowsFoundation.AnyIKeyValuePair<String, Any?>? {
@@ -3253,7 +3253,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IIteratorIKeyValuePairString_IVectorViewTextSegment: WindowsFoundation.IInspectable {
+public class IIteratorIKeyValuePairString_IVectorViewTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func get_Current() throws -> WindowsFoundation.AnyIKeyValuePair<String, WindowsFoundation.AnyIVectorView<UWP.TextSegment>?>? {
@@ -3414,7 +3414,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class IIteratorIStorageItem: WindowsFoundation.IInspectable {
+public class IIteratorIStorageItem: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func get_Current() throws -> UWP.AnyIStorageItem? {
@@ -3577,7 +3577,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge>
-public class IIteratorSortEntry: WindowsFoundation.IInspectable {
+public class IIteratorSortEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntry }
 
     open func get_Current() throws -> UWP.SortEntry {
@@ -3739,7 +3739,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class IIteratorStorageFile: WindowsFoundation.IInspectable {
+public class IIteratorStorageFile: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func get_Current() throws -> UWP.StorageFile? {
@@ -3899,7 +3899,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class IIteratorStorageFolder: WindowsFoundation.IInspectable {
+public class IIteratorStorageFolder: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func get_Current() throws -> UWP.StorageFolder? {
@@ -4059,7 +4059,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStor
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge>
-public class IIteratorStorageLibraryChange: WindowsFoundation.IInspectable {
+public class IIteratorStorageLibraryChange: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChange }
 
     open func get_Current() throws -> UWP.StorageLibraryChange? {
@@ -4219,7 +4219,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSyst
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserBridge>
-public class IIteratorUser: WindowsFoundation.IInspectable {
+public class IIteratorUser: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUser }
 
     open func get_Current() throws -> UWP.User? {
@@ -4379,7 +4379,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSyst
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindBridge>
-public class IIteratorUserWatcherUpdateKind: WindowsFoundation.IInspectable {
+public class IIteratorUserWatcherUpdateKind: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKind }
 
     open func get_Current() throws -> UWP.UserWatcherUpdateKind {
@@ -4513,7 +4513,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectabl
     }
 )
 typealias __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge>
-public class IKeyValuePairString_Any: WindowsFoundation.IInspectable {
+public class IKeyValuePairString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable }
 
     open func get_Key() throws -> String {
@@ -4624,7 +4624,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__
     }
 )
 typealias __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IKeyValuePairString_IVectorViewTextSegment: WindowsFoundation.IInspectable {
+public class IKeyValuePairString_IVectorViewTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func get_Key() throws -> String {
@@ -4734,7 +4734,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGVTabl
     }
 )
 typealias __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIMapChangedEventArgs_1_HSTRINGBridge>
-public class IMapChangedEventArgsString: WindowsFoundation.IInspectable {
+public class IMapChangedEventArgsString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMapChangedEventArgs_1_HSTRING }
 
     open func get_CollectionChange() throws -> WindowsFoundation.CollectionChange {
@@ -4865,7 +4865,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING_IInspectableVTab
     }
 )
 typealias __x_ABI_C__FIMapView_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIMapView_2_HSTRING_IInspectableBridge>
-public class IMapViewString_Any: WindowsFoundation.IInspectable {
+public class IMapViewString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMapView_2_HSTRING_IInspectable }
 
     open func Lookup(_ key: String) throws -> Any? {
@@ -5038,7 +5038,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVec
     }
 )
 typealias __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IMapViewString_IVectorViewTextSegment: WindowsFoundation.IInspectable {
+public class IMapViewString_IVectorViewTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func Lookup(_ key: String) throws -> WindowsFoundation.AnyIVectorView<UWP.TextSegment>? {
@@ -5229,7 +5229,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: 
     }
 )
 typealias __x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIMap_2_HSTRING_IInspectableBridge>
-public class IMapString_Any: WindowsFoundation.IInspectable {
+public class IMapString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMap_2_HSTRING_IInspectable }
 
     open func Lookup(_ key: String) throws -> Any? {
@@ -5452,7 +5452,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorV
     }
 )
 typealias __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IMapString_IVectorViewTextSegment: WindowsFoundation.IInspectable {
+public class IMapString_IVectorViewTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func Lookup(_ key: String) throws -> WindowsFoundation.AnyIVectorView<UWP.TextSegment>? {
@@ -5637,7 +5637,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIObservableMap_2_HSTRING_IInspectab
     }
 )
 typealias __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIObservableMap_2_HSTRING_IInspectableBridge>
-public class IObservableMapString_Any: WindowsFoundation.IInspectable {
+public class IObservableMapString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIObservableMap_2_HSTRING_IInspectable }
 
     open func add_MapChanged(_ vhnd: MapChangedEventHandler<String, Any?>?) throws -> EventRegistrationToken {
@@ -5813,7 +5813,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1_HSTRINGVTable: __x_AB
     }
 )
 typealias __x_ABI_C__FIVectorView_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1_HSTRINGBridge>
-public class IVectorViewString: WindowsFoundation.IInspectable {
+public class IVectorViewString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1_HSTRING }
 
     open func GetAt(_ index: UInt32) throws -> String {
@@ -6011,7 +6011,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CDa
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge>
-public class IVectorViewTextSegment: WindowsFoundation.IInspectable {
+public class IVectorViewTextSegment: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegment }
 
     open func GetAt(_ index: UInt32) throws -> UWP.TextSegment {
@@ -6197,7 +6197,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSt
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class IVectorViewIStorageItem: WindowsFoundation.IInspectable {
+public class IVectorViewIStorageItem: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func GetAt(_ index: UInt32) throws -> UWP.AnyIStorageItem? {
@@ -6395,7 +6395,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSt
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge>
-public class IVectorViewSortEntry: WindowsFoundation.IInspectable {
+public class IVectorViewSortEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntry }
 
     open func GetAt(_ index: UInt32) throws -> UWP.SortEntry {
@@ -6591,7 +6591,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSt
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class IVectorViewStorageFile: WindowsFoundation.IInspectable {
+public class IVectorViewStorageFile: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func GetAt(_ index: UInt32) throws -> UWP.StorageFile? {
@@ -6784,7 +6784,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSt
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class IVectorViewStorageFolder: WindowsFoundation.IInspectable {
+public class IVectorViewStorageFolder: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func GetAt(_ index: UInt32) throws -> UWP.StorageFolder? {
@@ -6977,7 +6977,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSt
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge>
-public class IVectorViewStorageLibraryChange: WindowsFoundation.IInspectable {
+public class IVectorViewStorageLibraryChange: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChange }
 
     open func GetAt(_ index: UInt32) throws -> UWP.StorageLibraryChange? {
@@ -7170,7 +7170,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSy
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserBridge>
-public class IVectorViewUser: WindowsFoundation.IInspectable {
+public class IVectorViewUser: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUser }
 
     open func GetAt(_ index: UInt32) throws -> UWP.User? {
@@ -7363,7 +7363,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSy
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindBridge>
-public class IVectorViewUserWatcherUpdateKind: WindowsFoundation.IInspectable {
+public class IVectorViewUserWatcherUpdateKind: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKind }
 
     open func GetAt(_ index: UInt32) throws -> UWP.UserWatcherUpdateKind {
@@ -7604,7 +7604,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C_
     }
 )
 typealias __x_ABI_C__FIVector_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVector_1_HSTRINGBridge>
-public class IVectorString: WindowsFoundation.IInspectable {
+public class IVectorString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVector_1_HSTRING }
 
     open func GetAt(_ index: UInt32) throws -> String {
@@ -7965,7 +7965,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorag
     }
 )
 typealias __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge>
-public class IVectorSortEntry: WindowsFoundation.IInspectable {
+public class IVectorSortEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntry }
 
     open func GetAt(_ index: UInt32) throws -> UWP.SortEntry {
@@ -8223,7 +8223,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FMapChangedEventHandler_2_HSTRING_II
     }
 )
 typealias __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableBridge>
-public class MapChangedEventHandlerString_Any: WindowsFoundation.IUnknown {
+public class MapChangedEventHandlerString_Any: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectable }
 
     open func Invoke(_ sender: WindowsFoundation.AnyIObservableMap<String, Any?>?, _ event: WindowsFoundation.AnyIMapChangedEventArgs<String>?) throws {
@@ -8278,7 +8278,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIEventHandler_1_IInspectableVTable:
     }
 )
 typealias __x_ABI_C__FIEventHandler_1_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIEventHandler_1_IInspectableBridge>
-public class EventHandlerAny: WindowsFoundation.IUnknown {
+public class EventHandlerAny: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIEventHandler_1_IInspectable }
 
     open func Invoke(_ sender: Any?, _ args: Any?) throws {
@@ -8380,7 +8380,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgress_2_UINT3
     }
 )
 typealias __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Bridge>
-public class IAsyncOperationWithProgressUInt32_UInt32: WindowsFoundation.IInspectable {
+public class IAsyncOperationWithProgressUInt32_UInt32: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32 }
 
     open func put_Progress(_ handler: AsyncOperationProgressHandler<UInt32, UInt32>?) throws {
@@ -8572,7 +8572,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgress_2___x_A
     }
 )
 typealias __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Bridge>
-public class IAsyncOperationWithProgressIBuffer_UInt32: WindowsFoundation.IInspectable {
+public class IAsyncOperationWithProgressIBuffer_UInt32: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32 }
 
     open func put_Progress(_ handler: AsyncOperationProgressHandler<UWP.AnyIBuffer?, UInt32>?) throws {
@@ -8750,7 +8750,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_IInspectableVTabl
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1_IInspectableBridge>
-public class IAsyncOperationAny: WindowsFoundation.IInspectable {
+public class IAsyncOperationAny: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1_IInspectable }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<Any?>?) throws {
@@ -8903,7 +8903,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_booleanVTable: __
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1_booleanWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1_booleanBridge>
-public class IAsyncOperationBool: WindowsFoundation.IInspectable {
+public class IAsyncOperationBool: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1_boolean }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<Bool>?) throws {
@@ -9055,7 +9055,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_HSTRINGVTable: __
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1_HSTRINGBridge>
-public class IAsyncOperationString: WindowsFoundation.IInspectable {
+public class IAsyncOperationString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1_HSTRING }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<String>?) throws {
@@ -9210,7 +9210,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_UINT32VTable: __x
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1_UINT32Wrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1_UINT32Bridge>
-public class IAsyncOperationUInt32: WindowsFoundation.IInspectable {
+public class IAsyncOperationUInt32: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1_UINT32 }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UInt32>?) throws {
@@ -9363,7 +9363,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableBridge>
-public class IAsyncOperationIMapString_Any: WindowsFoundation.IInspectable {
+public class IAsyncOperationIMapString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectable }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIMap<String, Any?>?>?) throws {
@@ -9517,7 +9517,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIP
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetBridge>
-public class IAsyncOperationIPropertySet: WindowsFoundation.IInspectable {
+public class IAsyncOperationIPropertySet: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySet }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIPropertySet?>?) throws {
@@ -9671,7 +9671,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVect
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class IAsyncOperationIVectorViewIStorageItem: WindowsFoundation.IInspectable {
+public class IAsyncOperationIVectorViewIStorageItem: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIVectorView<UWP.AnyIStorageItem?>?>?) throws {
@@ -9825,7 +9825,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVect
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class IAsyncOperationIVectorViewStorageFile: WindowsFoundation.IInspectable {
+public class IAsyncOperationIVectorViewStorageFile: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIVectorView<UWP.StorageFile?>?>?) throws {
@@ -9979,7 +9979,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVect
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class IAsyncOperationIVectorViewStorageFolder: WindowsFoundation.IInspectable {
+public class IAsyncOperationIVectorViewStorageFolder: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIVectorView<UWP.StorageFolder?>?>?) throws {
@@ -10133,7 +10133,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVect
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge>
-public class IAsyncOperationIVectorViewStorageLibraryChange: WindowsFoundation.IInspectable {
+public class IAsyncOperationIVectorViewStorageLibraryChange: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChange }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIVectorView<UWP.StorageLibraryChange?>?>?) throws {
@@ -10287,7 +10287,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVect
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserBridge>
-public class IAsyncOperationIVectorViewUser: WindowsFoundation.IInspectable {
+public class IAsyncOperationIVectorViewUser: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUser }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIVectorView<UWP.User?>?>?) throws {
@@ -10441,7 +10441,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVect
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGBridge>
-public class IAsyncOperationIVectorString: WindowsFoundation.IInspectable {
+public class IAsyncOperationIVectorString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRING }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<WindowsFoundation.AnyIVector<String>?>?) throws {
@@ -10594,7 +10594,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesBridge>
-public class IAsyncOperationBasicProperties: WindowsFoundation.IInspectable {
+public class IAsyncOperationBasicProperties: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicProperties }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.BasicProperties?>?) throws {
@@ -10747,7 +10747,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesBridge>
-public class IAsyncOperationDocumentProperties: WindowsFoundation.IInspectable {
+public class IAsyncOperationDocumentProperties: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentProperties }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.DocumentProperties?>?) throws {
@@ -10900,7 +10900,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesBridge>
-public class IAsyncOperationImageProperties: WindowsFoundation.IInspectable {
+public class IAsyncOperationImageProperties: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImageProperties }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.ImageProperties?>?) throws {
@@ -11053,7 +11053,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesBridge>
-public class IAsyncOperationMusicProperties: WindowsFoundation.IInspectable {
+public class IAsyncOperationMusicProperties: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicProperties }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.MusicProperties?>?) throws {
@@ -11206,7 +11206,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailBridge>
-public class IAsyncOperationStorageItemThumbnail: WindowsFoundation.IInspectable {
+public class IAsyncOperationStorageItemThumbnail: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnail }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.StorageItemThumbnail?>?) throws {
@@ -11359,7 +11359,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesBridge>
-public class IAsyncOperationVideoProperties: WindowsFoundation.IInspectable {
+public class IAsyncOperationVideoProperties: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoProperties }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.VideoProperties?>?) throws {
@@ -11513,7 +11513,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemBridge>
-public class IAsyncOperationIStorageItem: WindowsFoundation.IInspectable {
+public class IAsyncOperationIStorageItem: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItem }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.AnyIStorageItem?>?) throws {
@@ -11666,7 +11666,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateBridge>
-public class IAsyncOperationIndexedState: WindowsFoundation.IInspectable {
+public class IAsyncOperationIndexedState: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedState }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.IndexedState>?) throws {
@@ -11818,7 +11818,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileBridge>
-public class IAsyncOperationStorageFile: WindowsFoundation.IInspectable {
+public class IAsyncOperationStorageFile: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFile }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.StorageFile?>?) throws {
@@ -11971,7 +11971,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderBridge>
-public class IAsyncOperationStorageFolder: WindowsFoundation.IInspectable {
+public class IAsyncOperationStorageFolder: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolder }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.StorageFolder?>?) throws {
@@ -12124,7 +12124,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionBridge>
-public class IAsyncOperationStorageStreamTransaction: WindowsFoundation.IInspectable {
+public class IAsyncOperationStorageStreamTransaction: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransaction }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.StorageStreamTransaction?>?) throws {
@@ -12278,7 +12278,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferBridge>
-public class IAsyncOperationIBuffer: WindowsFoundation.IInspectable {
+public class IAsyncOperationIBuffer: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBuffer }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.AnyIBuffer?>?) throws {
@@ -12432,7 +12432,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamBridge>
-public class IAsyncOperationIInputStream: WindowsFoundation.IInspectable {
+public class IAsyncOperationIInputStream: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStream }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.AnyIInputStream?>?) throws {
@@ -12586,7 +12586,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamBridge>
-public class IAsyncOperationIRandomAccessStream: WindowsFoundation.IInspectable {
+public class IAsyncOperationIRandomAccessStream: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStream }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.AnyIRandomAccessStream?>?) throws {
@@ -12740,7 +12740,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceBridge>
-public class IAsyncOperationIRandomAccessStreamReference: WindowsFoundation.IInspectable {
+public class IAsyncOperationIRandomAccessStreamReference: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReference }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.AnyIRandomAccessStreamReference?>?) throws {
@@ -12894,7 +12894,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeBridge>
-public class IAsyncOperationIRandomAccessStreamWithContentType: WindowsFoundation.IInspectable {
+public class IAsyncOperationIRandomAccessStreamWithContentType: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentType }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.AnyIRandomAccessStreamWithContentType?>?) throws {
@@ -13047,7 +13047,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows_
     }
 )
 typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultBridge>
-public class IAsyncOperationUserAgeConsentResult: WindowsFoundation.IInspectable {
+public class IAsyncOperationUserAgeConsentResult: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResult }
 
     open func put_Completed(_ handler: AsyncOperationCompletedHandler<UWP.UserAgeConsentResult>?) throws {
@@ -13225,7 +13225,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindo
     }
 )
 typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableBridge>
-public class TypedEventHandlerIStorageQueryResultBase_Any: WindowsFoundation.IUnknown {
+public class TypedEventHandlerIStorageQueryResultBase_Any: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectable }
 
     open func Invoke(_ sender: UWP.AnyIStorageQueryResultBase?, _ args: Any?) throws {
@@ -13280,7 +13280,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindo
     }
 )
 typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableBridge>
-public class TypedEventHandlerUserWatcher_Any: WindowsFoundation.IUnknown {
+public class TypedEventHandlerUserWatcher_Any: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectable }
 
     open func Invoke(_ sender: UWP.UserWatcher?, _ args: Any?) throws {
@@ -13333,7 +13333,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindo
     }
 )
 typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsBridge>
-public class TypedEventHandlerUserWatcher_UserAuthenticationStatusChangingEventArgs: WindowsFoundation.IUnknown {
+public class TypedEventHandlerUserWatcher_UserAuthenticationStatusChangingEventArgs: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgs }
 
     open func Invoke(_ sender: UWP.UserWatcher?, _ args: UWP.UserAuthenticationStatusChangingEventArgs?) throws {
@@ -13384,7 +13384,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindo
     }
 )
 typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsWrapper = InterfaceWrapperBase<UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsBridge>
-public class TypedEventHandlerUserWatcher_UserChangedEventArgs: WindowsFoundation.IUnknown {
+public class TypedEventHandlerUserWatcher_UserChangedEventArgs: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgs }
 
     open func Invoke(_ sender: UWP.UserWatcher?, _ args: UWP.UserChangedEventArgs?) throws {

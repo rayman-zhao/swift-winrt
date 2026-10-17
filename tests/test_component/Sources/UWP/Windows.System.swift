@@ -154,7 +154,7 @@ extension UWP.UserWatcherUpdateKind: @retroactive Hashable, @retroactive Codable
 // MARK: - User
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.user)
-public final class User : WinRTClass {
+public final class User : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_Windows_System.IUser
     private typealias CABI = __x_ABI_CWindows_CSystem_CIUser
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -272,7 +272,7 @@ extension __ABI_Windows_System {
         Data1: 0xDF9A26C6, Data2: 0xE746, Data3: 0x4BCD, Data4: ( 0xB5,0xD4,0x12,0x01,0x03,0xC4,0x20,0x9B ) // DF9A26C6-E746-4BCD-B5D4-120103C4209B
     ) 
 
-    public class IUser: WindowsFoundation.IInspectable {
+    public class IUser: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUser }
 
         public func get_NonRoamableId() throws -> String {
@@ -338,7 +338,7 @@ extension __ABI_Windows_System {
         Data1: 0x98BA5628, Data2: 0xA6E3, Data3: 0x518E, Data4: ( 0x89,0xD9,0xD3,0xB2,0xB1,0x99,0x1A,0x10 ) // 98BA5628-A6E3-518E-89D9-D3B2B1991A10
     ) 
 
-    public class IUser2: WindowsFoundation.IInspectable {
+    public class IUser2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUser2 }
 
         public func CheckUserAgeConsentGroupAsync(_ consentGroup: UWP.UserAgeConsentGroup) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.UserAgeConsentResult>? {
@@ -356,7 +356,7 @@ extension __ABI_Windows_System {
         Data1: 0x155EB23B, Data2: 0x242A, Data3: 0x45E0, Data4: ( 0xA2,0xE9,0x31,0x71,0xFC,0x6A,0x7F,0xDD ) // 155EB23B-242A-45E0-A2E9-3171FC6A7FDD
     ) 
 
-    public class IUserStatics: WindowsFoundation.IInspectable {
+    public class IUserStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserStatics }
 
         public func CreateWatcher() throws -> UWP.UserWatcher? {
@@ -411,7 +411,7 @@ extension __ABI_Windows_System {
         Data1: 0x74A37E11, Data2: 0x2EB5, Data3: 0x4487, Data4: ( 0xB0,0xD5,0x2C,0x67,0x90,0xE0,0x13,0xE9 ) // 74A37E11-2EB5-4487-B0D5-2C6790E013E9
     ) 
 
-    public class IUserStatics2: WindowsFoundation.IInspectable {
+    public class IUserStatics2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserStatics2 }
 
         public func GetDefault() throws -> UWP.User? {
@@ -429,7 +429,7 @@ extension __ABI_Windows_System {
 // MARK: - UserAuthenticationStatusChangeDeferral
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userauthenticationstatuschangedeferral)
-public final class UserAuthenticationStatusChangeDeferral : WinRTClass {
+public final class UserAuthenticationStatusChangeDeferral : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_Windows_System.IUserAuthenticationStatusChangeDeferral
     private typealias CABI = __x_ABI_CWindows_CSystem_CIUserAuthenticationStatusChangeDeferral
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -483,7 +483,7 @@ extension __ABI_Windows_System {
         Data1: 0x88B59568, Data2: 0xBB30, Data3: 0x42FB, Data4: ( 0xA2,0x70,0xE9,0x90,0x2E,0x40,0xEF,0xA7 ) // 88B59568-BB30-42FB-A270-E9902E40EFA7
     ) 
 
-    public class IUserAuthenticationStatusChangeDeferral: WindowsFoundation.IInspectable {
+    public class IUserAuthenticationStatusChangeDeferral: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserAuthenticationStatusChangeDeferral }
 
         public func Complete() throws {
@@ -498,7 +498,7 @@ extension __ABI_Windows_System {
 // MARK: - UserAuthenticationStatusChangingEventArgs
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userauthenticationstatuschangingeventargs)
-public final class UserAuthenticationStatusChangingEventArgs : WinRTClass {
+public final class UserAuthenticationStatusChangingEventArgs : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_Windows_System.IUserAuthenticationStatusChangingEventArgs
     private typealias CABI = __x_ABI_CWindows_CSystem_CIUserAuthenticationStatusChangingEventArgs
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -567,7 +567,7 @@ extension __ABI_Windows_System {
         Data1: 0x8C030F28, Data2: 0xA711, Data3: 0x4C1E, Data4: ( 0xAB,0x48,0x04,0x17,0x9C,0x15,0x93,0x8F ) // 8C030F28-A711-4C1E-AB48-04179C15938F
     ) 
 
-    public class IUserAuthenticationStatusChangingEventArgs: WindowsFoundation.IInspectable {
+    public class IUserAuthenticationStatusChangingEventArgs: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserAuthenticationStatusChangingEventArgs }
 
         public func GetDeferral() throws -> UWP.UserAuthenticationStatusChangeDeferral? {
@@ -610,7 +610,7 @@ extension __ABI_Windows_System {
 // MARK: - UserChangedEventArgs
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userchangedeventargs)
-public final class UserChangedEventArgs : WinRTClass {
+public final class UserChangedEventArgs : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_Windows_System.IUserChangedEventArgs
     private typealias CABI = __x_ABI_CWindows_CSystem_CIUserChangedEventArgs
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -671,7 +671,7 @@ extension __ABI_Windows_System {
         Data1: 0x086459DC, Data2: 0x18C6, Data3: 0x48DB, Data4: ( 0xBC,0x99,0x72,0x4F,0xB9,0x20,0x3C,0xCC ) // 086459DC-18C6-48DB-BC99-724FB9203CCC
     ) 
 
-    public class IUserChangedEventArgs: WindowsFoundation.IInspectable {
+    public class IUserChangedEventArgs: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserChangedEventArgs }
 
         public func get_User() throws -> UWP.User? {
@@ -689,7 +689,7 @@ extension __ABI_Windows_System {
         Data1: 0x6B2CCB44, Data2: 0x6F01, Data3: 0x560C, Data4: ( 0x97,0xAD,0xFC,0x7F,0x32,0xEC,0x58,0x1F ) // 6B2CCB44-6F01-560C-97AD-FC7F32EC581F
     ) 
 
-    public class IUserChangedEventArgs2: WindowsFoundation.IInspectable {
+    public class IUserChangedEventArgs2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserChangedEventArgs2 }
 
         public func get_ChangedPropertyKinds() throws -> WindowsFoundation.AnyIVectorView<UWP.UserWatcherUpdateKind>? {
@@ -707,7 +707,7 @@ extension __ABI_Windows_System {
 // MARK: - UserWatcher
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userwatcher)
-public final class UserWatcher : WinRTClass {
+public final class UserWatcher : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_Windows_System.IUserWatcher
     private typealias CABI = __x_ABI_CWindows_CSystem_CIUserWatcher
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -862,7 +862,7 @@ extension __ABI_Windows_System {
         Data1: 0x155EB23B, Data2: 0x242A, Data3: 0x45E0, Data4: ( 0xA2,0xE9,0x31,0x71,0xFC,0x6A,0x7F,0xBB ) // 155EB23B-242A-45E0-A2E9-3171FC6A7FBB
     ) 
 
-    public class IUserWatcher: WindowsFoundation.IInspectable {
+    public class IUserWatcher: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserWatcher }
 
         public func get_Status() throws -> UWP.UserWatcherStatus {

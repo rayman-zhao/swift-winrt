@@ -228,7 +228,7 @@ open class InterfaceWrapperBase<I: AbiInterfaceBridge> : WinRTAbiBridgeWrapper<I
     }
 }
 
-public class ReferenceWrapperBase<I: ReferenceBridge>: WinRTAbiBridgeWrapper<I> {
+public class ReferenceWrapperBase<I: ReferenceBridge>: WinRTAbiBridgeWrapper<I>, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { I.IID }
 
     public init?(_ value: I.SwiftProjection?) {

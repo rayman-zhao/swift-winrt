@@ -44,7 +44,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge>
-public class IIterableIKeyValuePairString_Any: WindowsFoundation.IInspectable {
+public class IIterableIKeyValuePairString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<WindowsFoundation.AnyIKeyValuePair<String, Any?>?>? {
@@ -131,7 +131,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge>
-public class IIterableIKeyValuePairString_String: WindowsFoundation.IInspectable {
+public class IIterableIKeyValuePairString_String: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRING }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<WindowsFoundation.AnyIKeyValuePair<String, String>?>? {
@@ -218,7 +218,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CFoun
     }
 )
 typealias __x_ABI_C__FIIterable_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntryWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntryBridge>
-public class IIterableIWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable {
+public class IIterableIWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntry }
 
     open func First() throws -> WindowsFoundation.AnyIIterator<WindowsFoundation.AnyIWwwFormUrlDecoderEntry?>? {
@@ -328,7 +328,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge>
-public class IIteratorIKeyValuePairString_Any: WindowsFoundation.IInspectable {
+public class IIteratorIKeyValuePairString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable }
 
     open func get_Current() throws -> WindowsFoundation.AnyIKeyValuePair<String, Any?>? {
@@ -489,7 +489,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePa
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge>
-public class IIteratorIKeyValuePairString_String: WindowsFoundation.IInspectable {
+public class IIteratorIKeyValuePairString_String: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRING }
 
     open func get_Current() throws -> WindowsFoundation.AnyIKeyValuePair<String, String>? {
@@ -650,7 +650,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CFoun
     }
 )
 typealias __x_ABI_C__FIIterator_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntryWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIIterator_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntryBridge>
-public class IIteratorIWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable {
+public class IIteratorIWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntry }
 
     open func get_Current() throws -> WindowsFoundation.AnyIWwwFormUrlDecoderEntry? {
@@ -795,7 +795,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectabl
     }
 )
 typealias __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge>
-public class IKeyValuePairString_Any: WindowsFoundation.IInspectable {
+public class IKeyValuePairString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable }
 
     open func get_Key() throws -> String {
@@ -905,7 +905,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTab
     }
 )
 typealias __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge>
-public class IKeyValuePairString_String: WindowsFoundation.IInspectable {
+public class IKeyValuePairString_String: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRING }
 
     open func get_Key() throws -> String {
@@ -1017,7 +1017,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGVTabl
     }
 )
 typealias __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIMapChangedEventArgs_1_HSTRINGBridge>
-public class IMapChangedEventArgsString: WindowsFoundation.IInspectable {
+public class IMapChangedEventArgsString: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMapChangedEventArgs_1_HSTRING }
 
     open func get_CollectionChange() throws -> WindowsFoundation.CollectionChange {
@@ -1148,7 +1148,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING_IInspectableVTab
     }
 )
 typealias __x_ABI_C__FIMapView_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIMapView_2_HSTRING_IInspectableBridge>
-public class IMapViewString_Any: WindowsFoundation.IInspectable {
+public class IMapViewString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMapView_2_HSTRING_IInspectable }
 
     open func Lookup(_ key: String) throws -> Any? {
@@ -1320,7 +1320,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING_HSTRINGVTable: _
     }
 )
 typealias __x_ABI_C__FIMapView_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIMapView_2_HSTRING_HSTRINGBridge>
-public class IMapViewString_String: WindowsFoundation.IInspectable {
+public class IMapViewString_String: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMapView_2_HSTRING_HSTRING }
 
     open func Lookup(_ key: String) throws -> String {
@@ -1513,7 +1513,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: 
     }
 )
 typealias __x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIMap_2_HSTRING_IInspectableBridge>
-public class IMapString_Any: WindowsFoundation.IInspectable {
+public class IMapString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMap_2_HSTRING_IInspectable }
 
     open func Lookup(_ key: String) throws -> Any? {
@@ -1735,7 +1735,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING_HSTRINGVTable: __x_A
     }
 )
 typealias __x_ABI_C__FIMap_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIMap_2_HSTRING_HSTRINGBridge>
-public class IMapString_String: WindowsFoundation.IInspectable {
+public class IMapString_String: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIMap_2_HSTRING_HSTRING }
 
     open func Lookup(_ key: String) throws -> String {
@@ -1921,7 +1921,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIObservableMap_2_HSTRING_IInspectab
     }
 )
 typealias __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIObservableMap_2_HSTRING_IInspectableBridge>
-public class IObservableMapString_Any: WindowsFoundation.IInspectable {
+public class IObservableMapString_Any: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIObservableMap_2_HSTRING_IInspectable }
 
     open func add_MapChanged(_ vhnd: MapChangedEventHandler<String, Any?>?) throws -> EventRegistrationToken {
@@ -2076,7 +2076,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIObservableMap_2_HSTRING_HSTRINGVTa
     }
 )
 typealias __x_ABI_C__FIObservableMap_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIObservableMap_2_HSTRING_HSTRINGBridge>
-public class IObservableMapString_String: WindowsFoundation.IInspectable {
+public class IObservableMapString_String: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIObservableMap_2_HSTRING_HSTRING }
 
     open func add_MapChanged(_ vhnd: MapChangedEventHandler<String, String>?) throws -> EventRegistrationToken {
@@ -2251,7 +2251,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CFo
     }
 )
 typealias __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntryWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntryBridge>
-public class IVectorViewIWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable {
+public class IVectorViewIWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CFoundation__CIWwwFormUrlDecoderEntry }
 
     open func GetAt(_ index: UInt32) throws -> WindowsFoundation.AnyIWwwFormUrlDecoderEntry? {
@@ -2403,7 +2403,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FMapChangedEventHandler_2_HSTRING_II
     }
 )
 typealias __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableBridge>
-public class MapChangedEventHandlerString_Any: WindowsFoundation.IUnknown {
+public class MapChangedEventHandlerString_Any: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectable }
 
     open func Invoke(_ sender: WindowsFoundation.AnyIObservableMap<String, Any?>?, _ event: WindowsFoundation.AnyIMapChangedEventArgs<String>?) throws {
@@ -2458,7 +2458,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FMapChangedEventHandler_2_HSTRING_HS
     }
 )
 typealias __x_ABI_C__FMapChangedEventHandler_2_HSTRING_HSTRINGWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FMapChangedEventHandler_2_HSTRING_HSTRINGBridge>
-public class MapChangedEventHandlerString_String: WindowsFoundation.IUnknown {
+public class MapChangedEventHandlerString_String: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FMapChangedEventHandler_2_HSTRING_HSTRING }
 
     open func Invoke(_ sender: WindowsFoundation.AnyIObservableMap<String, String>?, _ event: WindowsFoundation.AnyIMapChangedEventArgs<String>?) throws {
@@ -2513,7 +2513,7 @@ internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindo
     }
 )
 typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CFoundation__CIMemoryBufferReference_IInspectableWrapper = InterfaceWrapperBase<WindowsFoundation.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CFoundation__CIMemoryBufferReference_IInspectableBridge>
-public class TypedEventHandlerIMemoryBufferReference_Any: WindowsFoundation.IUnknown {
+public class TypedEventHandlerIMemoryBufferReference_Any: WindowsFoundation.IUnknown, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CFoundation__CIMemoryBufferReference_IInspectable }
 
     open func Invoke(_ sender: WindowsFoundation.AnyIMemoryBufferReference?, _ args: Any?) throws {

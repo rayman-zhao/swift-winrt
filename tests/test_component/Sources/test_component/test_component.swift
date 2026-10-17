@@ -544,7 +544,7 @@ extension __ABI_test_component {
         Data1: 0x224AFD3B, Data2: 0x6459, Data3: 0x5621, Data4: ( 0xBF,0x69,0xF5,0x02,0x8C,0xF2,0xB3,0x17 ) // 224AFD3B-6459-5621-BF69-F5028CF2B317
     ) 
 
-    public class ArrayMethodCallback: WindowsFoundation.IUnknown {
+    public class ArrayMethodCallback: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIArrayMethodCallback }
 
         open func Invoke(_ value: [Int32]) throws {
@@ -609,7 +609,7 @@ extension __ABI_test_component {
         Data1: 0x5DD35752, Data2: 0x9800, Data3: 0x5961, Data4: ( 0x80,0xDE,0xFC,0x5E,0x20,0x9E,0x6E,0x2D ) // 5DD35752-9800-5961-80DE-FC5E209E6E2D
     ) 
 
-    public class ObjectHandler: WindowsFoundation.IUnknown {
+    public class ObjectHandler: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIObjectHandler }
 
         open func Invoke(_ item: Any?) throws {
@@ -674,7 +674,7 @@ extension __ABI_test_component {
         Data1: 0x5ED7E415, Data2: 0x84E7, Data3: 0x5E4C, Data4: ( 0x8F,0x68,0xD4,0x65,0x3C,0x39,0xEE,0x46 ) // 5ED7E415-84E7-5E4C-8F68-D4653C39EE46
     ) 
 
-    public class VoidToVoidDelegate: WindowsFoundation.IUnknown {
+    public class VoidToVoidDelegate: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIVoidToVoidDelegate }
 
         open func Invoke() throws {
@@ -811,7 +811,7 @@ extension __ABI_test_component {
         Data1: 0x56558D36, Data2: 0xC35F, Data3: 0x5624, Data4: ( 0xB3,0xB1,0xF3,0xF3,0x65,0x26,0x57,0xA3 ) // 56558D36-C35F-5624-B3B1-F3F3652657A3
     ) 
 
-    public class IArrayScenarios: WindowsFoundation.IInspectable {
+    public class IArrayScenarios: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIArrayScenarios }
 
         open func InArray(_ value: [Int32]) throws {
@@ -1144,7 +1144,7 @@ extension __ABI_test_component {
         Data1: 0xA0DB5CFD, Data2: 0xD277, Data3: 0x585A, Data4: ( 0xA0,0xAC,0xC2,0x18,0x5C,0x18,0xE9,0x72 ) // A0DB5CFD-D277-585A-A0AC-C2185C18E972
     ) 
 
-    public class IArrayShouldBuild: WindowsFoundation.IInspectable {
+    public class IArrayShouldBuild: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIArrayShouldBuild }
 
         open func get_Scenarios() throws -> [test_component.AnyIArrayScenarios?] {
@@ -1271,7 +1271,7 @@ extension __ABI_test_component {
         Data1: 0xD782777A, Data2: 0xBE43, Data3: 0x55FA, Data4: ( 0x92,0x6E,0x51,0xE6,0x40,0x23,0xD5,0xEC ) // D782777A-BE43-55FA-926E-51E64023D5EC
     ) 
 
-    public class IAsyncMethodsWithProgress: WindowsFoundation.IInspectable {
+    public class IAsyncMethodsWithProgress: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIAsyncMethodsWithProgress }
 
         open func OperationWithProgress(_ value: WindowsFoundation.DateTime) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<Int32, Double>? {
@@ -1398,7 +1398,7 @@ extension __ABI_test_component {
         Data1: 0x1D730A19, Data2: 0xCD91, Data3: 0x5A59, Data4: ( 0x96,0x83,0x51,0xA6,0x11,0xFA,0x48,0x08 ) // 1D730A19-CD91-5A59-9683-51A611FA4808
     ) 
 
-    public class IAsyncOperationInt: WindowsFoundation.IInspectable {
+    public class IAsyncOperationInt: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIAsyncOperationInt }
 
         open func Complete(_ result: Int32) throws {
@@ -1530,7 +1530,7 @@ extension __ABI_test_component {
         Data1: 0x636060A1, Data2: 0xE41D, Data3: 0x59DF, Data4: ( 0xA5,0xD3,0xFB,0x7C,0xE7,0xE1,0x79,0x2F ) // 636060A1-E41D-59DF-A5D3-FB7CE7E1792F
     ) 
 
-    public class IBasic: WindowsFoundation.IInspectable {
+    public class IBasic: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBasic }
 
         open func Method() throws {
@@ -1747,7 +1747,7 @@ extension __ABI_test_component {
         Data1: 0x8FC8D4FE, Data2: 0x967E, Data3: 0x5135, Data4: ( 0x9B,0xD2,0x31,0x50,0x3A,0xB9,0xD1,0x45 ) // 8FC8D4FE-967E-5135-9BD2-31503AB9D145
     ) 
 
-    public class IIAmImplementable: WindowsFoundation.IInspectable {
+    public class IIAmImplementable: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIIAmImplementable }
 
         open func InInt32(_ value: Int32) throws -> String {
@@ -2235,7 +2235,7 @@ extension __ABI_test_component {
         Data1: 0x364C232A, Data2: 0xB3A9, Data3: 0x5FD7, Data4: ( 0x91,0x3E,0x53,0x82,0xF7,0x2B,0x64,0xD7 ) // 364C232A-B3A9-5FD7-913E-5382F72B64D7
     ) 
 
-    public class IInterfaceWithObservableVector: WindowsFoundation.IInspectable {
+    public class IInterfaceWithObservableVector: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIInterfaceWithObservableVector }
 
         open func TakeObservable(_ basics: WindowsFoundation.AnyIObservableVector<test_component.AnyIBasic?>?) throws {
@@ -2354,7 +2354,7 @@ extension __ABI_test_component {
         Data1: 0x128E6AAA, Data2: 0xF772, Data3: 0x5A6F, Data4: ( 0x85,0x8B,0x3B,0x69,0x04,0x18,0xC8,0x73 ) // 128E6AAA-F772-5A6F-858B-3B690418C873
     ) 
 
-    public class IReferenceTarget: WindowsFoundation.IInspectable {
+    public class IReferenceTarget: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIReferenceTarget }
 
         open func Method() throws {
@@ -2475,7 +2475,7 @@ extension __ABI_test_component {
         Data1: 0xB73AD784, Data2: 0xEADD, Data3: 0x54B7, Data4: ( 0xA6,0x8E,0x8A,0xC5,0x6E,0xAB,0x73,0x87 ) // B73AD784-EADD-54B7-A68E-8AC56EAB7387
     ) 
 
-    public class ISimpleDelegate: WindowsFoundation.IInspectable {
+    public class ISimpleDelegate: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CISimpleDelegate }
 
         open func DoThis() throws {
@@ -2606,7 +2606,7 @@ extension __ABI_test_component {
         Data1: 0xF8BD03F6, Data2: 0xBD7E, Data3: 0x586D, Data4: ( 0x96,0xB8,0x63,0xB6,0x39,0xA8,0xD0,0x42 ) // F8BD03F6-BD7E-586D-96B8-63B639A8D042
     ) 
 
-    public class WithIterableGuids: WindowsFoundation.IInspectable {
+    public class WithIterableGuids: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CWithIterableGuids }
 
         open func IDs() throws -> WindowsFoundation.AnyIVector<Foundation.UUID>? {
@@ -2751,7 +2751,7 @@ extension __ABI_test_component {
         Data1: 0x18D4C535, Data2: 0x1785, Data3: 0x52CA, Data4: ( 0x88,0x51,0x8C,0xF3,0xD5,0x15,0x70,0x8A ) // 18D4C535-1785-52CA-8851-8CF3D515708A
     ) 
 
-    public class WithKeyword: WindowsFoundation.IInspectable {
+    public class WithKeyword: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CWithKeyword }
 
         open func Enum(_ `extension`: String) throws {
@@ -3030,7 +3030,7 @@ extension __ABI_test_component {
         Data1: 0x8999FD6A, Data2: 0xD1C5, Data3: 0x53CE, Data4: ( 0xB8,0x0F,0x7C,0x45,0x85,0xD0,0x75,0x6C ) // 8999FD6A-D1C5-53CE-B80F-7C4585D0756C
     ) 
 
-    public class IArrayMethodsStatics: WindowsFoundation.IInspectable {
+    public class IArrayMethodsStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIArrayMethodsStatics }
 
         public func InInt32Array(_ value: [Int32]) throws -> String {
@@ -3495,7 +3495,7 @@ extension __ABI_test_component {
         Data1: 0x5FAAD8F4, Data2: 0x29D7, Data3: 0x5C26, Data4: ( 0xA8,0x72,0x35,0x42,0xE3,0xE1,0x86,0x7A ) // 5FAAD8F4-29D7-5C26-A872-3542E3E1867A
     ) 
 
-    public class IAsyncMethodsStatics: WindowsFoundation.IInspectable {
+    public class IAsyncMethodsStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIAsyncMethodsStatics }
 
         public func GetCompletedAsync(_ result: Int32) throws -> WindowsFoundation.AnyIAsyncOperation<Int32>? {
@@ -3530,7 +3530,7 @@ extension __ABI_test_component {
 }
 // MARK: - AsyncOperationInt
 
-public final class AsyncOperationInt : WinRTClass, IAsyncOperationInt, IAsyncOperation, WindowsFoundation.IAsyncInfo {
+public final class AsyncOperationInt : WinRTClass, @unchecked Sendable, IAsyncOperationInt, IAsyncOperation, WindowsFoundation.IAsyncInfo {
     public typealias TResult = Int32
     private typealias SwiftABI = __ABI_test_component.IAsyncOperationInt
     private typealias CABI = __x_ABI_Ctest__component_CIAsyncOperationInt
@@ -3623,7 +3623,7 @@ extension __ABI_test_component {
 }
 // MARK: - Base
 
-open class Base : WinRTClass {
+open class Base : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IBase
     private typealias CABI = __x_ABI_Ctest__component_CIBase
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -3761,7 +3761,7 @@ extension __ABI_test_component {
         Data1: 0xE9FE0BB2, Data2: 0xE1F6, Data3: 0x5E39, Data4: ( 0x92,0xBB,0x2F,0x19,0xFF,0xDE,0x3F,0xDC ) // E9FE0BB2-E1F6-5E39-92BB-2F19FFDE3FDC
     ) 
 
-    public class IBase: WindowsFoundation.IInspectable {
+    public class IBase: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBase }
 
         public func DoTheThing() throws {
@@ -3776,7 +3776,7 @@ extension __ABI_test_component {
         Data1: 0xEE3CBD78, Data2: 0x04B7, Data3: 0x534F, Data4: ( 0xA7,0x15,0x53,0xDA,0xF5,0x35,0x01,0x3C ) // EE3CBD78-04B7-534F-A715-53DAF535013C
     ) 
 
-    public class IBaseOverrides: WindowsFoundation.IInspectable {
+    public class IBaseOverrides: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseOverrides }
 
         public func OnDoTheThing() throws {
@@ -3791,7 +3791,7 @@ extension __ABI_test_component {
         Data1: 0x05CAD233, Data2: 0x20A7, Data3: 0x581F, Data4: ( 0xBD,0x44,0x0D,0x13,0x6C,0x31,0x0E,0x0F ) // 05CAD233-20A7-581F-BD44-0D136C310E0F
     ) 
 
-    public class IBaseProtectedFactory: WindowsFoundation.IInspectable {
+    public class IBaseProtectedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseProtectedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.BaseBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IBase {
@@ -3813,7 +3813,7 @@ extension __ABI_test_component {
         Data1: 0x9E36C560, Data2: 0xE3AE, Data3: 0x55DF, Data4: ( 0xBA,0x41,0x6B,0xB5,0x47,0xA2,0x81,0x65 ) // 9E36C560-E3AE-55DF-BA41-6BB547A28165
     ) 
 
-    public class IBaseStatics: WindowsFoundation.IInspectable {
+    public class IBaseStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseStatics }
 
         public func CreateFromString(_ value: String) throws -> test_component.Base? {
@@ -3837,7 +3837,7 @@ extension ComposableImpl where CABI == __x_ABI_Ctest__component_CIBaseOverrides 
 }
 // MARK: - BaseCollection
 
-open class BaseCollection : WinRTClass, IVector, IIterable {
+open class BaseCollection : WinRTClass, @unchecked Sendable, IVector, IIterable {
     public typealias T = Base?
     private typealias SwiftABI = test_component.IVectorBase
     private typealias CABI = __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBase
@@ -4004,7 +4004,7 @@ extension __ABI_test_component {
         Data1: 0xB5581456, Data2: 0xA980, Data3: 0x5851, Data4: ( 0xAD,0xA4,0x0A,0x7B,0x27,0x0F,0x6C,0xD9 ) // B5581456-A980-5851-ADA4-0A7B270F6CD9
     ) 
 
-    public class IBaseCollectionProtectedFactory: WindowsFoundation.IInspectable {
+    public class IBaseCollectionProtectedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseCollectionProtectedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.BaseCollectionBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IVectorBase {
@@ -4025,7 +4025,7 @@ extension __ABI_test_component {
 }
 // MARK: - BaseMapCollection
 
-public final class BaseMapCollection : WinRTClass, IMap, IIterable {
+public final class BaseMapCollection : WinRTClass, @unchecked Sendable, IMap, IIterable {
     public typealias K = String
     public typealias V = Base?
     public typealias T = WindowsFoundation.AnyIKeyValuePair<String, Base?>?
@@ -4113,7 +4113,7 @@ extension __ABI_test_component {
 }
 // MARK: - BaseNoOverrides
 
-open class BaseNoOverrides : WinRTClass {
+open class BaseNoOverrides : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IBaseNoOverrides
     private typealias CABI = __x_ABI_Ctest__component_CIBaseNoOverrides
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -4199,7 +4199,7 @@ extension __ABI_test_component {
         Data1: 0xCAC21C05, Data2: 0xB599, Data3: 0x5D37, Data4: ( 0xA9,0x3A,0xD6,0x0C,0xBD,0xD1,0xD0,0xE8 ) // CAC21C05-B599-5D37-A93A-D60CBDD1D0E8
     ) 
 
-    public class IBaseNoOverrides: WindowsFoundation.IInspectable {
+    public class IBaseNoOverrides: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseNoOverrides }
 
     }
@@ -4208,7 +4208,7 @@ extension __ABI_test_component {
         Data1: 0x92FC0572, Data2: 0x825F, Data3: 0x5B3F, Data4: ( 0x9B,0x0B,0xF0,0x80,0xA1,0x66,0xEF,0x06 ) // 92FC0572-825F-5B3F-9B0B-F080A166EF06
     ) 
 
-    public class IBaseNoOverridesProtectedFactory: WindowsFoundation.IInspectable {
+    public class IBaseNoOverridesProtectedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseNoOverridesProtectedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.BaseNoOverridesBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IBaseNoOverrides {
@@ -4230,7 +4230,7 @@ extension __ABI_test_component {
         Data1: 0xCC810B5D, Data2: 0x97FC, Data3: 0x5B35, Data4: ( 0xAE,0xEA,0xA4,0x7F,0x5F,0x58,0x06,0xF7 ) // CC810B5D-97FC-5B35-AEEA-A47F5F5806F7
     ) 
 
-    public class IBaseNoOverridesStatics: WindowsFoundation.IInspectable {
+    public class IBaseNoOverridesStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBaseNoOverridesStatics }
 
         public func CreateFromString(_ value: String) throws -> test_component.BaseNoOverrides? {
@@ -4248,7 +4248,7 @@ extension __ABI_test_component {
 }
 // MARK: - BaseObservableCollection
 
-public final class BaseObservableCollection : WinRTClass, IObservableVector, IVector, IIterable {
+public final class BaseObservableCollection : WinRTClass, @unchecked Sendable, IObservableVector, IVector, IIterable {
     public typealias T = Base?
     private typealias SwiftABI = test_component.IObservableVectorBase
     private typealias CABI = __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBase
@@ -4415,7 +4415,7 @@ extension __ABI_test_component {
         Data1: 0x82190F30, Data2: 0x48DC, Data3: 0x5350, Data4: ( 0xAD,0x5B,0x00,0x36,0x63,0x5C,0xF5,0xB4 ) // 82190F30-48DC-5350-AD5B-0036635CF5B4
     ) 
 
-    public class IBufferTesterStatics: WindowsFoundation.IInspectable {
+    public class IBufferTesterStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIBufferTesterStatics }
 
         public func GetDataFrom(_ buffer: UWP.AnyIBuffer?, _ index: UInt32) throws -> UInt8 {
@@ -4433,7 +4433,7 @@ extension __ABI_test_component {
 }
 // MARK: - Class
 
-public final class Class : WinRTClass, IBasic {
+public final class Class : WinRTClass, @unchecked Sendable, IBasic {
     private typealias SwiftABI = __ABI_test_component.IClass
     private typealias CABI = __x_ABI_Ctest__component_CIClass
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -4699,7 +4699,7 @@ extension __ABI_test_component {
         Data1: 0x586690C4, Data2: 0x6AE2, Data3: 0x5C62, Data4: ( 0xB5,0x25,0x44,0x4D,0xCC,0x2D,0xEE,0x39 ) // 586690C4-6AE2-5C62-B525-444DCC2DEE39
     ) 
 
-    public class IClass: WindowsFoundation.IInspectable {
+    public class IClass: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIClass }
 
         public func get_Implementation() throws -> test_component.AnyIBasic? {
@@ -5062,7 +5062,7 @@ extension __ABI_test_component {
         Data1: 0x78914881, Data2: 0xB900, Data3: 0x582A, Data4: ( 0x94,0xB8,0x58,0x19,0x84,0xC0,0xF7,0x8A ) // 78914881-B900-582A-94B8-581984C0F78A
     ) 
 
-    public class IClassFactory: WindowsFoundation.IInspectable {
+    public class IClassFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIClassFactory }
 
         public func CreateInstance(_ name: String) throws -> IClass {
@@ -5135,7 +5135,7 @@ extension __ABI_test_component {
         Data1: 0xF5F62EBE, Data2: 0x931B, Data3: 0x519B, Data4: ( 0x95,0x1A,0xF1,0x4A,0x4B,0xC7,0x83,0xB1 ) // F5F62EBE-931B-519B-951A-F14A4BC783B1
     ) 
 
-    public class IClassFactory2: WindowsFoundation.IInspectable {
+    public class IClassFactory2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIClassFactory2 }
 
         public func CreateInstance(_ name: String, _ fruit: test_component.Fruit, _ implementation: test_component.AnyIIAmImplementable?) throws -> IClass {
@@ -5156,7 +5156,7 @@ extension __ABI_test_component {
         Data1: 0x3E30803C, Data2: 0x35D4, Data3: 0x52A7, Data4: ( 0xB2,0x11,0xFD,0xC5,0xD6,0xAC,0x48,0x7B ) // 3E30803C-35D4-52A7-B211-FDC5D6AC487B
     ) 
 
-    public class IClassStatics: WindowsFoundation.IInspectable {
+    public class IClassStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIClassStatics }
 
         public func StaticTest() throws {
@@ -5195,7 +5195,7 @@ extension __ABI_test_component {
         Data1: 0xB341C098, Data2: 0x033D, Data3: 0x5445, Data4: ( 0x86,0x80,0x70,0x3A,0x93,0xBC,0xDF,0x81 ) // B341C098-033D-5445-8680-703A93BCDF81
     ) 
 
-    public class IClassStatics2: WindowsFoundation.IInspectable {
+    public class IClassStatics2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIClassStatics2 }
 
         public func StaticTestReturnFloat() throws -> Float {
@@ -5225,7 +5225,7 @@ extension __ABI_test_component {
 }
 // MARK: - CollectionTester
 
-public final class CollectionTester : WinRTClass {
+public final class CollectionTester : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.ICollectionTester
     private typealias CABI = __x_ABI_Ctest__component_CICollectionTester
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5312,7 +5312,7 @@ extension __ABI_test_component {
         Data1: 0xF8B13FDD, Data2: 0xB785, Data3: 0x53D4, Data4: ( 0xBC,0x69,0xFA,0x7D,0x02,0xBD,0x88,0xE6 ) // F8B13FDD-B785-53D4-BC69-FA7D02BD88E6
     ) 
 
-    public class ICollectionTester: WindowsFoundation.IInspectable {
+    public class ICollectionTester: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CICollectionTester }
 
         public func ReturnStoredStringVector() throws -> WindowsFoundation.AnyIVector<String>? {
@@ -5339,7 +5339,7 @@ extension __ABI_test_component {
         Data1: 0xA4C0D4B5, Data2: 0xEDA2, Data3: 0x55E5, Data4: ( 0xAD,0x0F,0xCE,0x1F,0x13,0xA9,0x81,0xCC ) // A4C0D4B5-EDA2-55E5-AD0F-CE1F13A981CC
     ) 
 
-    public class ICollectionTesterStatics: WindowsFoundation.IInspectable {
+    public class ICollectionTesterStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CICollectionTesterStatics }
 
         public func InMap(_ value: WindowsFoundation.AnyIMap<String, String>?) throws -> String {
@@ -5420,7 +5420,7 @@ extension __ABI_test_component {
 }
 // MARK: - DeferrableEventArgs
 
-public final class DeferrableEventArgs : WinRTClass {
+public final class DeferrableEventArgs : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IDeferrableEventArgs
     private typealias CABI = __x_ABI_Ctest__component_CIDeferrableEventArgs
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5477,7 +5477,7 @@ extension __ABI_test_component {
         Data1: 0xDA7B0340, Data2: 0x93E0, Data3: 0x5D49, Data4: ( 0xA7,0xF3,0x0F,0xCA,0x6E,0x90,0x02,0x3C ) // DA7B0340-93E0-5D49-A7F3-0FCA6E90023C
     ) 
 
-    public class IDeferrableEventArgs: WindowsFoundation.IInspectable {
+    public class IDeferrableEventArgs: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIDeferrableEventArgs }
 
         public func GetDeferral() throws -> WindowsFoundation.Deferral? {
@@ -5500,7 +5500,7 @@ extension __ABI_test_component {
 }
 // MARK: - Derived
 
-public final class Derived : test_component.Base {
+public final class Derived : test_component.Base, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IDerived
     private typealias CABI = __x_ABI_Ctest__component_CIDerived
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5564,7 +5564,7 @@ extension __ABI_test_component {
         Data1: 0x864F4DCB, Data2: 0xC4FF, Data3: 0x5FBB, Data4: ( 0xB4,0x5D,0xA7,0x3E,0x25,0x7B,0x48,0xA2 ) // 864F4DCB-C4FF-5FBB-B45D-A73E257B48A2
     ) 
 
-    public class IDerived: WindowsFoundation.IInspectable {
+    public class IDerived: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIDerived }
 
         public func get_Prop() throws -> Int32 {
@@ -5587,7 +5587,7 @@ extension __ABI_test_component {
         Data1: 0x5DE6D589, Data2: 0x61EC, Data3: 0x5020, Data4: ( 0x80,0x3A,0x3E,0x62,0x6C,0x8B,0xBC,0x8E ) // 5DE6D589-61EC-5020-803A-3E626C8BBC8E
     ) 
 
-    public class IDerivedStatics: WindowsFoundation.IInspectable {
+    public class IDerivedStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIDerivedStatics }
 
         public func CreateFromString(_ value: String) throws -> test_component.Derived? {
@@ -5605,7 +5605,7 @@ extension __ABI_test_component {
 }
 // MARK: - DerivedFromExternalBase
 
-public final class DerivedFromExternalBase : external_base.ExternalBase {
+public final class DerivedFromExternalBase : external_base.ExternalBase, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IDerivedFromExternalBase
     private typealias CABI = __x_ABI_Ctest__component_CIDerivedFromExternalBase
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5664,7 +5664,7 @@ extension __ABI_test_component {
         Data1: 0x9D8181EC, Data2: 0x7195, Data3: 0x59AC, Data4: ( 0xA6,0x7F,0xD1,0xA3,0xFC,0x4F,0x08,0x01 ) // 9D8181EC-7195-59AC-A67F-D1A3FC4F0801
     ) 
 
-    public class IDerivedFromExternalBase: WindowsFoundation.IInspectable {
+    public class IDerivedFromExternalBase: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIDerivedFromExternalBase }
 
         public func get_Prop() throws -> Int32 {
@@ -5686,7 +5686,7 @@ extension __ABI_test_component {
 }
 // MARK: - DerivedFromNoConstructor
 
-public final class DerivedFromNoConstructor : test_component.UnsealedDerivedNoConstructor {
+public final class DerivedFromNoConstructor : test_component.UnsealedDerivedNoConstructor, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IDerivedFromNoConstructor
     private typealias CABI = __x_ABI_Ctest__component_CIDerivedFromNoConstructor
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5739,7 +5739,7 @@ extension __ABI_test_component {
         Data1: 0x2A9D928D, Data2: 0xAD55, Data3: 0x59EC, Data4: ( 0x9B,0x73,0xE2,0xED,0x06,0x57,0xE6,0xC4 ) // 2A9D928D-AD55-59EC-9B73-E2ED0657E6C4
     ) 
 
-    public class IDerivedFromNoConstructor: WindowsFoundation.IInspectable {
+    public class IDerivedFromNoConstructor: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIDerivedFromNoConstructor }
 
         public func Method() throws {
@@ -5753,7 +5753,7 @@ extension __ABI_test_component {
 }
 // MARK: - EventTester
 
-public final class EventTester : WinRTClass {
+public final class EventTester : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IEventTester
     private typealias CABI = __x_ABI_Ctest__component_CIEventTester
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5823,7 +5823,7 @@ extension __ABI_test_component {
         Data1: 0xDD19BE65, Data2: 0x638D, Data3: 0x519A, Data4: ( 0x81,0xA9,0x73,0x3F,0xDB,0xD8,0x7A,0x17 ) // DD19BE65-638D-519A-81A9-733FDBD87A17
     ) 
 
-    public class IEventTester: WindowsFoundation.IInspectable {
+    public class IEventTester: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIEventTester }
 
         public func Subscribe() throws {
@@ -5863,7 +5863,7 @@ extension __ABI_test_component {
         Data1: 0x9E6F50EC, Data2: 0x0F53, Data3: 0x5507, Data4: ( 0xB7,0x37,0x14,0x3B,0x1B,0xB3,0x53,0x65 ) // 9E6F50EC-0F53-5507-B737-143B1BB35365
     ) 
 
-    public class IEventTesterFactory: WindowsFoundation.IInspectable {
+    public class IEventTesterFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIEventTesterFactory }
 
         public func CreateInstance(_ impl: test_component.AnyIIAmImplementable?) throws -> IEventTester {
@@ -5882,7 +5882,7 @@ extension __ABI_test_component {
 }
 // MARK: - NoopClosable
 
-public final class NoopClosable : WinRTClass, WindowsFoundation.IClosable {
+public final class NoopClosable : WinRTClass, @unchecked Sendable, WindowsFoundation.IClosable {
     private typealias SwiftABI = __ABI_Windows_Foundation.IClosable
     private typealias CABI = __x_ABI_CWindows_CFoundation_CIClosable
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -5994,7 +5994,7 @@ extension __ABI_test_component {
         Data1: 0x4F2BB96B, Data2: 0xB91D, Data3: 0x51E5, Data4: ( 0xA5,0x89,0x26,0x52,0xC1,0x65,0xA8,0xB5 ) // 4F2BB96B-B91D-51E5-A589-2652C165A8B5
     ) 
 
-    public class INullValuesStatics: WindowsFoundation.IInspectable {
+    public class INullValuesStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CINullValuesStatics }
 
         public func IsObjectNull(_ value: Any?) throws -> Bool {
@@ -6095,7 +6095,7 @@ extension __ABI_test_component {
 }
 // MARK: - Simple
 
-public final class Simple : WinRTClass {
+public final class Simple : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.ISimple
     private typealias CABI = __x_ABI_Ctest__component_CISimple
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -6313,7 +6313,7 @@ extension __ABI_test_component {
         Data1: 0x0AA1C540, Data2: 0x4B94, Data3: 0x5B2F, Data4: ( 0xB9,0x71,0xDC,0x00,0x72,0x1F,0x44,0x3C ) // 0AA1C540-4B94-5B2F-B971-DC00721F443C
     ) 
 
-    public class ISimple: WindowsFoundation.IInspectable {
+    public class ISimple: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CISimple }
 
         public func Method() throws {
@@ -6675,7 +6675,7 @@ extension __ABI_test_component {
         Data1: 0x2F772B66, Data2: 0xE6BE, Data3: 0x51E4, Data4: ( 0xB9,0x22,0x01,0x9D,0x56,0xF7,0xEF,0xD1 ) // 2F772B66-E6BE-51E4-B922-019D56F7EFD1
     ) 
 
-    public class ISimpleOverrides: WindowsFoundation.IInspectable {
+    public class ISimpleOverrides: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CISimpleOverrides }
 
         public func CantActuallyOverrideBecauseNotComposable() throws {
@@ -6690,7 +6690,7 @@ extension __ABI_test_component {
         Data1: 0xC8DCADA0, Data2: 0xFD8E, Data3: 0x5E27, Data4: ( 0x95,0x51,0xA3,0x68,0xFE,0x1D,0x11,0xB2 ) // C8DCADA0-FD8E-5E27-9551-A368FE1D11B2
     ) 
 
-    public class ISimpleStatics: WindowsFoundation.IInspectable {
+    public class ISimpleStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CISimpleStatics }
 
         public func add_StaticEvent(_ handler: EventHandler<Any?>?) throws -> EventRegistrationToken {
@@ -6749,7 +6749,7 @@ extension __ABI_test_component {
         Data1: 0x92E618EF, Data2: 0xFF6E, Data3: 0x5975, Data4: ( 0x86,0x8C,0x99,0xAD,0xC1,0x1D,0x36,0xDE ) // 92E618EF-FF6E-5975-868C-99ADC11D36DE
     ) 
 
-    public class IStaticClassStatics: WindowsFoundation.IInspectable {
+    public class IStaticClassStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIStaticClassStatics }
 
         public func get_EnumProperty() throws -> test_component.Fruit {
@@ -6800,7 +6800,7 @@ extension __ABI_test_component {
 }
 // MARK: - UnsealedDerived
 
-open class UnsealedDerived : test_component.Base {
+open class UnsealedDerived : test_component.Base, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IUnsealedDerived
     private typealias CABI = __x_ABI_Ctest__component_CIUnsealedDerived
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -7003,7 +7003,7 @@ extension __ABI_test_component {
         Data1: 0xB4FA333D, Data2: 0x9BCA, Data3: 0x592D, Data4: ( 0x9D,0xCB,0x18,0xAF,0x96,0xD7,0x6A,0x03 ) // B4FA333D-9BCA-592D-9DCB-18AF96D76A03
     ) 
 
-    public class IUnsealedDerived: WindowsFoundation.IInspectable {
+    public class IUnsealedDerived: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerived }
 
         public func get_Prop() throws -> Int32 {
@@ -7026,7 +7026,7 @@ extension __ABI_test_component {
         Data1: 0xF4CE1AD9, Data2: 0x36B9, Data3: 0x5DC7, Data4: ( 0xA0,0x07,0x3A,0xCD,0xF4,0x22,0xE7,0x05 ) // F4CE1AD9-36B9-5DC7-A007-3ACDF422E705
     ) 
 
-    public class IUnsealedDerivedOverloads2: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedOverloads2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedOverloads2 }
 
         public func OnAfterDoTheThing() throws {
@@ -7041,7 +7041,7 @@ extension __ABI_test_component {
         Data1: 0x828DCEE6, Data2: 0xF93A, Data3: 0x5A4D, Data4: ( 0xBC,0xEE,0xF7,0xC1,0xDE,0xE4,0xEB,0x4E ) // 828DCEE6-F93A-5A4D-BCEE-F7C1DEE4EB4E
     ) 
 
-    public class IUnsealedDerivedOverrides: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedOverrides: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedOverrides }
 
         public func OnBeforeDoTheThing() throws {
@@ -7056,7 +7056,7 @@ extension __ABI_test_component {
         Data1: 0xDAF846D2, Data2: 0x8988, Data3: 0x5EE1, Data4: ( 0xA8,0xAA,0x7E,0x81,0xC0,0xF8,0xA9,0xE9 ) // DAF846D2-8988-5EE1-A8AA-7E81C0F8A9E9
     ) 
 
-    public class IUnsealedDerivedFactory: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerivedBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IUnsealedDerived {
@@ -7116,7 +7116,7 @@ extension ComposableImpl where CABI == __x_ABI_Ctest__component_CIUnsealedDerive
 }
 // MARK: - UnsealedDerived2
 
-open class UnsealedDerived2 : test_component.UnsealedDerived {
+open class UnsealedDerived2 : test_component.UnsealedDerived, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IUnsealedDerived2
     private typealias CABI = __x_ABI_Ctest__component_CIUnsealedDerived2
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -7207,7 +7207,7 @@ extension __ABI_test_component {
         Data1: 0xA58C23CF, Data2: 0x4DC4, Data3: 0x59C5, Data4: ( 0x8D,0xE3,0x9F,0x06,0x3B,0x21,0x8D,0xDE ) // A58C23CF-4DC4-59C5-8DE3-9F063B218DDE
     ) 
 
-    public class IUnsealedDerived2: WindowsFoundation.IInspectable {
+    public class IUnsealedDerived2: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerived2 }
 
         public func Method() throws {
@@ -7222,7 +7222,7 @@ extension __ABI_test_component {
         Data1: 0x136F2143, Data2: 0x1044, Data3: 0x5A97, Data4: ( 0x8C,0x91,0x1E,0xF2,0x81,0x67,0xD9,0xFC ) // 136F2143-1044-5A97-8C91-1EF28167D9FC
     ) 
 
-    public class IUnsealedDerived2Factory: WindowsFoundation.IInspectable {
+    public class IUnsealedDerived2Factory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerived2Factory }
 
         public func CreateInstance(_ prop: Int32, _ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerived2Bridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IUnsealedDerived2 {
@@ -7244,7 +7244,7 @@ extension __ABI_test_component {
         Data1: 0x0978D147, Data2: 0x77BF, Data3: 0x5E0A, Data4: ( 0xA1,0x64,0xCA,0x95,0x1B,0xCA,0xB8,0xB4 ) // 0978D147-77BF-5E0A-A164-CA951BCAB8B4
     ) 
 
-    public class IUnsealedDerived2ProtectedFactory: WindowsFoundation.IInspectable {
+    public class IUnsealedDerived2ProtectedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerived2ProtectedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerived2Bridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IUnsealedDerived2 {
@@ -7265,7 +7265,7 @@ extension __ABI_test_component {
 }
 // MARK: - UnsealedDerivedFromNoConstructor
 
-open class UnsealedDerivedFromNoConstructor : test_component.UnsealedDerivedNoConstructor {
+open class UnsealedDerivedFromNoConstructor : test_component.UnsealedDerivedNoConstructor, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IUnsealedDerivedFromNoConstructor
     private typealias CABI = __x_ABI_Ctest__component_CIUnsealedDerivedFromNoConstructor
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -7344,7 +7344,7 @@ extension __ABI_test_component {
         Data1: 0xD0FB287A, Data2: 0xCBA2, Data3: 0x5756, Data4: ( 0xB7,0xA5,0x5F,0x3B,0x04,0x03,0x9F,0x67 ) // D0FB287A-CBA2-5756-B7A5-5F3B04039F67
     ) 
 
-    public class IUnsealedDerivedFromNoConstructor: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedFromNoConstructor: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedFromNoConstructor }
 
     }
@@ -7353,7 +7353,7 @@ extension __ABI_test_component {
         Data1: 0x51E65EEC, Data2: 0x650B, Data3: 0x549E, Data4: ( 0x94,0x0C,0x61,0xB6,0xA1,0x4E,0xEA,0x4B ) // 51E65EEC-650B-549E-940C-61B6A14EEA4B
     ) 
 
-    public class IUnsealedDerivedFromNoConstructorFactory: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedFromNoConstructorFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedFromNoConstructorFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerivedFromNoConstructorBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IUnsealedDerivedFromNoConstructor {
@@ -7374,7 +7374,7 @@ extension __ABI_test_component {
 }
 // MARK: - UnsealedDerivedNoConstructor
 
-open class UnsealedDerivedNoConstructor : test_component.Base {
+open class UnsealedDerivedNoConstructor : test_component.Base, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IUnsealedDerivedNoConstructor
     private typealias CABI = __x_ABI_Ctest__component_CIUnsealedDerivedNoConstructor
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -7447,7 +7447,7 @@ extension __ABI_test_component {
         Data1: 0x78393D7D, Data2: 0x930B, Data3: 0x57F9, Data4: ( 0x9B,0x04,0x2D,0xCC,0x34,0x80,0xD7,0x46 ) // 78393D7D-930B-57F9-9B04-2DCC3480D746
     ) 
 
-    public class IUnsealedDerivedNoConstructor: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedNoConstructor: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedNoConstructor }
 
     }
@@ -7456,7 +7456,7 @@ extension __ABI_test_component {
         Data1: 0xD8B1C0D1, Data2: 0xB48A, Data3: 0x5AA3, Data4: ( 0x98,0xF1,0xFF,0x86,0x8C,0xC4,0xD5,0x71 ) // D8B1C0D1-B48A-5AA3-98F1-FF868CC4D571
     ) 
 
-    public class IUnsealedDerivedNoConstructorFactory: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedNoConstructorFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedNoConstructorFactory }
 
     }
@@ -7464,7 +7464,7 @@ extension __ABI_test_component {
 }
 // MARK: - UnsealedDerivedNoOverrides
 
-open class UnsealedDerivedNoOverrides : test_component.BaseNoOverrides {
+open class UnsealedDerivedNoOverrides : test_component.BaseNoOverrides, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IUnsealedDerivedNoOverrides
     private typealias CABI = __x_ABI_Ctest__component_CIUnsealedDerivedNoOverrides
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -7543,7 +7543,7 @@ extension __ABI_test_component {
         Data1: 0x3CD27E28, Data2: 0x2DFF, Data3: 0x5A17, Data4: ( 0x82,0x63,0x1B,0xFA,0x75,0x04,0x34,0xAA ) // 3CD27E28-2DFF-5A17-8263-1BFA750434AA
     ) 
 
-    public class IUnsealedDerivedNoOverrides: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedNoOverrides: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedNoOverrides }
 
     }
@@ -7552,7 +7552,7 @@ extension __ABI_test_component {
         Data1: 0x8D27A3F3, Data2: 0xD785, Data3: 0x53E3, Data4: ( 0x83,0x19,0x6A,0x50,0x97,0xB1,0x04,0xAB ) // 8D27A3F3-D785-53E3-8319-6A5097B104AB
     ) 
 
-    public class IUnsealedDerivedNoOverridesProtectedFactory: WindowsFoundation.IInspectable {
+    public class IUnsealedDerivedNoOverridesProtectedFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIUnsealedDerivedNoOverridesProtectedFactory }
 
         public func CreateInstance(_ baseInterface: UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerivedNoOverridesBridge.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IUnsealedDerivedNoOverrides {
@@ -7573,7 +7573,7 @@ extension __ABI_test_component {
 }
 // MARK: - WeakReferencer
 
-public final class WeakReferencer : WinRTClass {
+public final class WeakReferencer : WinRTClass, @unchecked Sendable {
     private typealias SwiftABI = __ABI_test_component.IWeakReferencer
     private typealias CABI = __x_ABI_Ctest__component_CIWeakReferencer
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -7631,7 +7631,7 @@ extension __ABI_test_component {
         Data1: 0xF3CE877F, Data2: 0x5BD2, Data3: 0x53C7, Data4: ( 0xAA,0x6A,0x39,0xF0,0x64,0x78,0x1C,0x21 ) // F3CE877F-5BD2-53C7-AA6A-39F064781C21
     ) 
 
-    public class IWeakReferencer: WindowsFoundation.IInspectable {
+    public class IWeakReferencer: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIWeakReferencer }
 
         public func Resolve() throws -> test_component.AnyIReferenceTarget? {
@@ -7649,7 +7649,7 @@ extension __ABI_test_component {
         Data1: 0x34CE8191, Data2: 0x4DC4, Data3: 0x50EF, Data4: ( 0xB6,0x9E,0x19,0x8F,0x3C,0x9F,0x65,0x52 ) // 34CE8191-4DC4-50EF-B69E-198F3C9F6552
     ) 
 
-    public class IWeakReferencerFactory: WindowsFoundation.IInspectable {
+    public class IWeakReferencerFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_Ctest__component_CIWeakReferencerFactory }
 
         public func CreateInstance(_ object: test_component.AnyIReferenceTarget?) throws -> IWeakReferencer {

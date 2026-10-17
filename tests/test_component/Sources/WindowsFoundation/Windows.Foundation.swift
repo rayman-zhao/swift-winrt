@@ -350,7 +350,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xA4ED5C81, Data2: 0x76C9, Data3: 0x40BD, Data4: ( 0x8B,0xE6,0xB1,0xD9,0x0F,0xB2,0x0A,0xE7 ) // A4ED5C81-76C9-40BD-8BE6-B1D90FB20AE7
     ) 
 
-    public class AsyncActionCompletedHandler: WindowsFoundation.IUnknown {
+    public class AsyncActionCompletedHandler: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIAsyncActionCompletedHandler }
 
         open func Invoke(_ asyncInfo: WindowsFoundation.AnyIAsyncAction?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
@@ -434,7 +434,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xED32A372, Data2: 0xF3C8, Data3: 0x4FAA, Data4: ( 0x9C,0xFB,0x47,0x01,0x48,0xDA,0x38,0x88 ) // ED32A372-F3C8-4FAA-9CFB-470148DA3888
     ) 
 
-    public class DeferralCompletedHandler: WindowsFoundation.IUnknown {
+    public class DeferralCompletedHandler: WindowsFoundation.IUnknown, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIDeferralCompletedHandler }
 
         open func Invoke() throws {
@@ -590,7 +590,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x5A648006, Data2: 0x843A, Data3: 0x4DA9, Data4: ( 0x86,0x5B,0x9D,0x26,0xE5,0xDF,0xAD,0x7B ) // 5A648006-843A-4DA9-865B-9D26E5DFAD7B
     ) 
 
-    public class IAsyncAction: WindowsFoundation.IInspectable {
+    public class IAsyncAction: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIAsyncAction }
 
         open func put_Completed(_ handler: WindowsFoundation.AsyncActionCompletedHandler?) throws {
@@ -770,7 +770,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x00000036, Data2: 0x0000, Data3: 0x0000, Data4: ( 0xC0,0x00,0x00,0x00,0x00,0x00,0x00,0x46 ) // 00000036-0000-0000-C000-000000000046
     ) 
 
-    public class IAsyncInfo: WindowsFoundation.IInspectable {
+    public class IAsyncInfo: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIAsyncInfo }
 
         open func get_Id() throws -> UInt32 {
@@ -1027,7 +1027,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x30D5A829, Data2: 0x7FA4, Data3: 0x4026, Data4: ( 0x83,0xBB,0xD7,0x5B,0xAE,0x4E,0xA9,0x9E ) // 30D5A829-7FA4-4026-83BB-D75BAE4EA99E
     ) 
 
-    public class IClosable: WindowsFoundation.IInspectable {
+    public class IClosable: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIClosable }
 
         open func Close() throws {
@@ -1155,7 +1155,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xFBC4DD2A, Data2: 0x245B, Data3: 0x11E4, Data4: ( 0xAF,0x98,0x68,0x94,0x23,0x26,0x0C,0xF8 ) // FBC4DD2A-245B-11E4-AF98-689423260CF8
     ) 
 
-    public class IMemoryBuffer: WindowsFoundation.IInspectable {
+    public class IMemoryBuffer: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIMemoryBuffer }
 
         open func CreateReference() throws -> WindowsFoundation.AnyIMemoryBufferReference? {
@@ -1320,7 +1320,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xFBC4DD29, Data2: 0x245B, Data3: 0x11E4, Data4: ( 0xAF,0x98,0x68,0x94,0x23,0x26,0x0C,0xF8 ) // FBC4DD29-245B-11E4-AF98-689423260CF8
     ) 
 
-    public class IMemoryBufferReference: WindowsFoundation.IInspectable {
+    public class IMemoryBufferReference: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIMemoryBufferReference }
 
         open func get_Capacity() throws -> UInt32 {
@@ -1632,7 +1632,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x4BD682DD, Data2: 0x7554, Data3: 0x40E9, Data4: ( 0x9A,0x9B,0x82,0x65,0x4E,0xDE,0x7E,0x62 ) // 4BD682DD-7554-40E9-9A9B-82654EDE7E62
     ) 
 
-    public class IPropertyValue: WindowsFoundation.IInspectable {
+    public class IPropertyValue: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIPropertyValue }
 
         open func get_Type() throws -> WindowsFoundation.PropertyType {
@@ -2537,7 +2537,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x96369F54, Data2: 0x8EB6, Data3: 0x48F0, Data4: ( 0xAB,0xCE,0xC1,0xB2,0x11,0xE6,0x27,0xC3 ) // 96369F54-8EB6-48F0-ABCE-C1B211E627C3
     ) 
 
-    public class IStringable: WindowsFoundation.IInspectable {
+    public class IStringable: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIStringable }
 
         open func ToString() throws -> String {
@@ -2669,7 +2669,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x125E7431, Data2: 0xF678, Data3: 0x4E8E, Data4: ( 0xB6,0x70,0x20,0xA9,0xB0,0x6C,0x51,0x2D ) // 125E7431-F678-4E8E-B670-20A9B06C512D
     ) 
 
-    public class IWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable {
+    public class IWwwFormUrlDecoderEntry: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIWwwFormUrlDecoderEntry }
 
         open func get_Name() throws -> String {
@@ -2752,7 +2752,7 @@ public class IWwwFormUrlDecoderEntryMaker: MakeFromAbi {
 // MARK: - Deferral
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.deferral)
-public final class Deferral : WinRTClass, IClosable {
+public final class Deferral : WinRTClass, @unchecked Sendable, IClosable {
     private typealias SwiftABI = __ABI_Windows_Foundation.IDeferral
     private typealias CABI = __x_ABI_CWindows_CFoundation_CIDeferral
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -2821,7 +2821,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xD6269732, Data2: 0x3B7F, Data3: 0x46A7, Data4: ( 0xB4,0x0B,0x4F,0xDC,0xA2,0xA2,0xC6,0x93 ) // D6269732-3B7F-46A7-B40B-4FDCA2A2C693
     ) 
 
-    public class IDeferral: WindowsFoundation.IInspectable {
+    public class IDeferral: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIDeferral }
 
         public func Complete() throws {
@@ -2836,7 +2836,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x65A1ECC5, Data2: 0x3FB5, Data3: 0x4832, Data4: ( 0x8C,0xA9,0xF0,0x61,0xB2,0x81,0xD1,0x3A ) // 65A1ECC5-3FB5-4832-8CA9-F061B281D13A
     ) 
 
-    public class IDeferralFactory: WindowsFoundation.IInspectable {
+    public class IDeferralFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIDeferralFactory }
 
         public func Create(_ handler: WindowsFoundation.DeferralCompletedHandler?) throws -> IDeferral {
@@ -2883,7 +2883,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x59C7966B, Data2: 0xAE52, Data3: 0x5283, Data4: ( 0xAD,0x7F,0xA1,0xB9,0xE9,0x67,0x8A,0xDD ) // 59C7966B-AE52-5283-AD7F-A1B9E9678ADD
     ) 
 
-    public class IGuidHelperStatics: WindowsFoundation.IInspectable {
+    public class IGuidHelperStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIGuidHelperStatics }
 
         public func CreateNewGuid() throws -> Foundation.UUID {
@@ -2918,7 +2918,7 @@ extension __ABI_Windows_Foundation {
 // MARK: - MemoryBuffer
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.memorybuffer)
-public final class MemoryBuffer : WinRTClass, IClosable, IMemoryBuffer {
+public final class MemoryBuffer : WinRTClass, @unchecked Sendable, IClosable, IMemoryBuffer {
     private typealias SwiftABI = __ABI_Windows_Foundation.IMemoryBuffer
     private typealias CABI = __x_ABI_CWindows_CFoundation_CIMemoryBuffer
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -2987,7 +2987,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xFBC4DD2B, Data2: 0x245B, Data3: 0x11E4, Data4: ( 0xAF,0x98,0x68,0x94,0x23,0x26,0x0C,0xF8 ) // FBC4DD2B-245B-11E4-AF98-689423260CF8
     ) 
 
-    public class IMemoryBufferFactory: WindowsFoundation.IInspectable {
+    public class IMemoryBufferFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIMemoryBufferFactory }
 
         public func Create(_ capacity: UInt32) throws -> IMemoryBuffer {
@@ -3005,7 +3005,7 @@ extension __ABI_Windows_Foundation {
 // MARK: - Uri
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.uri)
-public final class Uri : WinRTClass, IStringable {
+public final class Uri : WinRTClass, @unchecked Sendable, IStringable {
     private typealias SwiftABI = __ABI_Windows_Foundation.IUriRuntimeClass
     private typealias CABI = __x_ABI_CWindows_CFoundation_CIUriRuntimeClass
     private lazy var _default: SwiftABI! = getInterfaceForCaching()
@@ -3181,7 +3181,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x9E365E57, Data2: 0x48B2, Data3: 0x4160, Data4: ( 0x95,0x6F,0xC7,0x38,0x51,0x20,0xBB,0xFC ) // 9E365E57-48B2-4160-956F-C7385120BBFC
     ) 
 
-    public class IUriRuntimeClass: WindowsFoundation.IInspectable {
+    public class IUriRuntimeClass: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIUriRuntimeClass }
 
         public func get_AbsoluteUri() throws -> String {
@@ -3365,7 +3365,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x758D9661, Data2: 0x221C, Data3: 0x480F, Data4: ( 0xA3,0x39,0x50,0x65,0x66,0x73,0xF4,0x6F ) // 758D9661-221C-480F-A339-50656673F46F
     ) 
 
-    public class IUriRuntimeClassWithAbsoluteCanonicalUri: WindowsFoundation.IInspectable {
+    public class IUriRuntimeClassWithAbsoluteCanonicalUri: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIUriRuntimeClassWithAbsoluteCanonicalUri }
 
         public func get_AbsoluteCanonicalUri() throws -> String {
@@ -3396,7 +3396,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xC1D432BA, Data2: 0xC824, Data3: 0x4452, Data4: ( 0xA7,0xFD,0x51,0x2B,0xC3,0xBB,0xE9,0xA1 ) // C1D432BA-C824-4452-A7FD-512BC3BBE9A1
     ) 
 
-    public class IUriEscapeStatics: WindowsFoundation.IInspectable {
+    public class IUriEscapeStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIUriEscapeStatics }
 
         public func UnescapeComponent(_ toUnescape: String) throws -> String {
@@ -3429,7 +3429,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x44A9796F, Data2: 0x723E, Data3: 0x4FDF, Data4: ( 0xA2,0x18,0x03,0x3E,0x75,0xB0,0xC0,0x84 ) // 44A9796F-723E-4FDF-A218-033E75B0C084
     ) 
 
-    public class IUriRuntimeClassFactory: WindowsFoundation.IInspectable {
+    public class IUriRuntimeClassFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIUriRuntimeClassFactory }
 
         public func CreateUri(_ uri: String) throws -> IUriRuntimeClass {
@@ -3459,7 +3459,7 @@ extension __ABI_Windows_Foundation {
 // MARK: - WwwFormUrlDecoder
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.wwwformurldecoder)
-public final class WwwFormUrlDecoder : WinRTClass, IIterable, IVectorView {
+public final class WwwFormUrlDecoder : WinRTClass, @unchecked Sendable, IIterable, IVectorView {
     public typealias T = AnyIWwwFormUrlDecoderEntry?
     private typealias SwiftABI = __ABI_Windows_Foundation.IWwwFormUrlDecoderRuntimeClass
     private typealias CABI = __x_ABI_CWindows_CFoundation_CIWwwFormUrlDecoderRuntimeClass
@@ -3573,7 +3573,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0xD45A0451, Data2: 0xF225, Data3: 0x4542, Data4: ( 0x92,0x96,0x0E,0x1D,0xF5,0xD2,0x54,0xDF ) // D45A0451-F225-4542-9296-0E1DF5D254DF
     ) 
 
-    public class IWwwFormUrlDecoderRuntimeClass: WindowsFoundation.IInspectable {
+    public class IWwwFormUrlDecoderRuntimeClass: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIWwwFormUrlDecoderRuntimeClass }
 
         public func GetFirstValueByName(_ name: String) throws -> String {
@@ -3594,7 +3594,7 @@ extension __ABI_Windows_Foundation {
         Data1: 0x5B8C6B3D, Data2: 0x24AE, Data3: 0x41B5, Data4: ( 0xA1,0xBF,0xF0,0xC3,0xD5,0x44,0x84,0x5B ) // 5B8C6B3D-24AE-41B5-A1BF-F0C3D544845B
     ) 
 
-    public class IWwwFormUrlDecoderRuntimeClassFactory: WindowsFoundation.IInspectable {
+    public class IWwwFormUrlDecoderRuntimeClassFactory: WindowsFoundation.IInspectable, @unchecked Sendable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIWwwFormUrlDecoderRuntimeClassFactory }
 
         public func CreateWwwFormUrlDecoder(_ query: String) throws -> IWwwFormUrlDecoderRuntimeClass {

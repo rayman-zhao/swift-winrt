@@ -143,7 +143,7 @@ public struct Error : Swift.Error, CustomStringConvertible {
     self.info = Info(errorInfo)
   }
 
-  fileprivate final class Info {
+  fileprivate final class Info: @unchecked Sendable {
     private let ptr: UnsafeMutablePointer<IRestrictedErrorInfo>
 
     init(_ ptr: UnsafeMutablePointer<IRestrictedErrorInfo>) {
