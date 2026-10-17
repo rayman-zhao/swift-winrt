@@ -402,7 +402,7 @@ public class %Maker: MakeFromAbi {
 
         auto name = w.write_temp("%", type);
         auto baseClass = (is_delegate(type) || !type.type().Flags().WindowsRuntime()) ? "IUnknown" : "IInspectable";
-        w.write("public class %: %.% {\n",
+        w.write("public class %: %.%, ^@unchecked Sendable {\n",
             bind_type_abi(type),
             w.support,
             baseClass);

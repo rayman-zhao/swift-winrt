@@ -41,6 +41,14 @@ namespace swiftwinrt
         separator s{ w };
         s();
 
+        // classes deriving from WinRTClass (directly or via a composable base) inherit its
+        // @unchecked Sendable conformance and must restate it
+        if (base_class || default_interface)
+        {
+            s();
+            w.write("@unchecked Sendable");
+        }
+
         bool needsCustomQueryInterfaceConformance = composable;
         bool baseHasCustomQueryInterfaceConformance = base_class && base_class->is_composable();
         // list of overridable interfaces which are needed for the implementation of CustomQueryInterface.
