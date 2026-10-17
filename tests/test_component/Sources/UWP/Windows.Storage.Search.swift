@@ -1175,9 +1175,23 @@ public final class QueryOptions : WinRTClass {
         get { try! _IQueryOptionsWithProviderFilter.get_StorageProviderIdFilter() }
     }
 
+    private lazy var _IQueryOptionsAdditionalSearchSources: __ABI_Windows_Storage_Search.IQueryOptionsAdditionalSearchSources! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.storage.search.queryoptions.includecloudproviders)
+    public var includeCloudProviders : Bool {
+        get { try! _IQueryOptionsAdditionalSearchSources.get_IncludeCloudProviders() }
+        set { try! _IQueryOptionsAdditionalSearchSources.put_IncludeCloudProviders(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.storage.search.queryoptions.includelocalsemanticindex)
+    public var includeLocalSemanticIndex : Bool {
+        get { try! _IQueryOptionsAdditionalSearchSources.get_IncludeLocalSemanticIndex() }
+        set { try! _IQueryOptionsAdditionalSearchSources.put_IncludeLocalSemanticIndex(newValue) }
+    }
+
     deinit {
         _default = nil
         _IQueryOptionsWithProviderFilter = nil
+        _IQueryOptionsAdditionalSearchSources = nil
     }
 }
 
@@ -1378,6 +1392,43 @@ extension __ABI_Windows_Storage_Search {
                 }
             }
             return UWP.__x_ABI_C__FIVector_1_HSTRINGWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    private static let IID___x_ABI_CWindows_CStorage_CSearch_CIQueryOptionsAdditionalSearchSources: WindowsFoundation.IID = .init(
+        Data1: 0x8D342D6B, Data2: 0x8800, Data3: 0x426E, Data4: ( 0xB5,0xCF,0x4B,0x32,0x8F,0x82,0x4E,0x7E ) // 8D342D6B-8800-426E-B5CF-4B328F824E7E
+    ) 
+
+    public class IQueryOptionsAdditionalSearchSources: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CStorage_CSearch_CIQueryOptionsAdditionalSearchSources }
+
+        public func get_IncludeLocalSemanticIndex() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CStorage_CSearch_CIQueryOptionsAdditionalSearchSources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IncludeLocalSemanticIndex(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        public func put_IncludeLocalSemanticIndex(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CStorage_CSearch_CIQueryOptionsAdditionalSearchSources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IncludeLocalSemanticIndex(pThis, .init(from: value)))
+            }
+        }
+
+        public func get_IncludeCloudProviders() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CStorage_CSearch_CIQueryOptionsAdditionalSearchSources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IncludeCloudProviders(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        public func put_IncludeCloudProviders(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CStorage_CSearch_CIQueryOptionsAdditionalSearchSources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IncludeCloudProviders(pThis, .init(from: value)))
+            }
         }
 
     }
