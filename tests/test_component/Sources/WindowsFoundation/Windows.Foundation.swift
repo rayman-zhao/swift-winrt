@@ -505,7 +505,7 @@ extension IAsyncAction {
 public typealias AnyIAsyncAction = any IAsyncAction
 
 public extension IAsyncAction {
-    func get() async throws {
+    nonisolated(nonsending) func get() async throws {
         if status == .started {
             let event = WaitableEvent()
             completed = { _, _ in
@@ -904,7 +904,7 @@ public protocol IAsyncOperationWithProgress<TResult,TProgress> : IAsyncInfo {
 public typealias AnyIAsyncOperationWithProgress<TResult,TProgress> = any IAsyncOperationWithProgress<TResult,TProgress>
 
 public extension IAsyncOperationWithProgress {
-    func get() async throws -> TResult {
+    nonisolated(nonsending) func get() async throws -> TResult {
         if status == .started {
             let event = WaitableEvent()
             completed = { _, _ in
@@ -942,7 +942,7 @@ public protocol IAsyncOperation<TResult> : IAsyncInfo {
 public typealias AnyIAsyncOperation<TResult> = any IAsyncOperation<TResult>
 
 public extension IAsyncOperation {
-    func get() async throws -> TResult {
+    nonisolated(nonsending) func get() async throws -> TResult {
         if status == .started {
             let event = WaitableEvent()
             completed = { _, _ in

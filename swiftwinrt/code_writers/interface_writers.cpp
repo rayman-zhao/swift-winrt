@@ -371,7 +371,7 @@ public class %Maker: MakeFromAbi {
                 return_clause = w.write_temp(" -> %", type.generic_params[0]);
             }
             w.write(R"(public extension % {
-    func get() async throws% {
+    nonisolated(nonsending) func get() async throws% {
         if status == .started {
             let event = WaitableEvent()
             completed = { _, _ in
