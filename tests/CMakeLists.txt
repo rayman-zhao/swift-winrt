@@ -13,7 +13,8 @@ else()
 endif()
 
 # SPM requires build config to be in lower case
-set(SWIFT_BUILD_ARGS ${SWIFT_BUILD_ARGS} -c $<LOWER_CASE:${CMAKE_BUILD_TYPE}>)
+string(TOLOWER ${CMAKE_BUILD_TYPE} SPM_BUILD_CONFIG)
+set(SWIFT_BUILD_ARGS ${SWIFT_BUILD_ARGS} -c ${SPM_BUILD_CONFIG})
 
 # Output to the cmake binary dir so build outputs are consolidated
 set(SWIFT_BUILD_ARGS ${SWIFT_BUILD_ARGS} --scratch-path ${CMAKE_CURRENT_BINARY_DIR})
@@ -30,11 +31,27 @@ else()
   set(SWIFT_COMMAND swift build ${SWIFT_BUILD_ARGS})
 endif()
 
-if(CMAKE_HOST_SYSTEM_PROCESSOR STREQUAL "ARM64")
-  set(SPM_BIN_DIR ${CMAKE_CURRENT_BINARY_DIR}/aarch64-unknown-windows-msvc/${CMAKE_BUILD_TYPE})
+# The layout SwiftPM uses inside the scratch path changed across toolchain versions
+# (6.3 moved products to out/Products/<config>-windows-<arch> from <triple>/<config>),
+# so ask SwiftPM where it puts products instead of hardcoding the layout.
+if (DEFINED SWIFT_EXE)
+  set(SWIFT_SHOW_BIN_COMMAND ${SWIFT_EXE} build --show-bin-path ${SWIFT_BUILD_ARGS})
 else()
-  set(SPM_BIN_DIR ${CMAKE_CURRENT_BINARY_DIR}/x86_64-unknown-windows-msvc/${CMAKE_BUILD_TYPE})
+  set(SWIFT_SHOW_BIN_COMMAND swift build --show-bin-path ${SWIFT_BUILD_ARGS})
 endif()
+execute_process(
+  COMMAND ${SWIFT_SHOW_BIN_COMMAND}
+  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+  RESULT_VARIABLE SPM_SHOW_BIN_RESULT
+  OUTPUT_VARIABLE SPM_BIN_DIR
+  OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+if(NOT SPM_SHOW_BIN_RESULT EQUAL 0)
+  message(FATAL_ERROR "Failed to query the SwiftPM build output directory (${SWIFT_SHOW_BIN_COMMAND})")
+endif()
+# swift prints a native path (backslashes); normalize so it round-trips through
+# generated install scripts, which reject invalid character escapes like '\s'
+string(REPLACE "\\" "/" SPM_BIN_DIR "${SPM_BIN_DIR}")
 
 add_custom_target(test_app ALL
   COMMAND ${SWIFT_COMMAND}

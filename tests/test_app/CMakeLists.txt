@@ -12,6 +12,21 @@ endif()
 # where they can be run from and isn't used for distribution
 install(FILES ${XCTest_BinaryDir}/XCTest.dll DESTINATION bin)
 
+# XCTest.dll from newer toolchains (6.3+) depends on the Swift Testing interop
+# library, which lives in a sibling Library directory that isn't on PATH by default
+set(Testing_RootDir "$ENV{SDKROOT}/../../Library/Testing-${SWIFT_VERSION}/usr")
+string(REPLACE "\\" "/" Testing_RootDir "${Testing_RootDir}")
+
+if(CMAKE_HOST_SYSTEM_PROCESSOR STREQUAL "ARM64")
+    set(Testing_BinaryDir "${Testing_RootDir}/bin64a")
+else()
+    set(Testing_BinaryDir "${Testing_RootDir}/bin64")
+endif()
+
+if(EXISTS ${Testing_BinaryDir}/_TestingInterop.dll)
+    install(FILES ${Testing_BinaryDir}/_TestingInterop.dll DESTINATION bin)
+endif()
+
 # LLDB  crashes on startup with an embedded manifest, so we're using a side-by-side
 # manifest for now.
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/test_app.exe.manifest DESTINATION bin)
