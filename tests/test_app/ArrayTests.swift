@@ -4,7 +4,7 @@ import test_component
 import Foundation
 import WindowsFoundation
 
-class StringableInt: IStringable {
+class StringableInt: IStringable, @unchecked Sendable {
     let value: Int32
     init(value: Int32) {
         self.value = value
@@ -14,7 +14,7 @@ class StringableInt: IStringable {
     }
 }
 
-class ArrayScenarios: IArrayScenarios {
+class ArrayScenarios: IArrayScenarios, @unchecked Sendable {
     var array: [Int32] = []
     func inArray(_ value: [Int32]) throws {
         array = value
@@ -265,7 +265,7 @@ public class ReturnArrayInputTests: XCTestCase {
     }
 }
 
-private let inputArrayTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) private let inputArrayTests: [XCTestCaseEntry] = [
   testCase([
     ("testInputIntArray", ArrayInputTests.testInputIntArray),
     ("testInStringArray", ArrayInputTests.testInStringArray),
@@ -277,7 +277,7 @@ private let inputArrayTests: [XCTestCaseEntry] = [
     ("testThroughSwiftImplementation", ArrayInputTests.testThroughSwiftImplementation)
     ])
 ]
-private let outputArrayTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) private let outputArrayTests: [XCTestCaseEntry] = [
   testCase([
     ("testOutIntArray", ArrayOutputTests.testOutIntArray),
     ("testOutStringArray", ArrayOutputTests.testOutStringArray),
@@ -290,7 +290,7 @@ private let outputArrayTests: [XCTestCaseEntry] = [
   ])
 ]
 
-private let referenceArrayTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) private let referenceArrayTests: [XCTestCaseEntry] = [
   testCase([
     ("testInIntArrayByReference", ArrayByReferenceTests.testInIntArrayByReference),
     ("testInStringArrayByReference", ArrayByReferenceTests.testInStringArrayByReference),
@@ -303,7 +303,7 @@ private let referenceArrayTests: [XCTestCaseEntry] = [
   ])
 ]
 
-private let returnArrayTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) private let returnArrayTests: [XCTestCaseEntry] = [
   testCase([
     ("testReturnIntArray", ReturnArrayInputTests.testReturnIntArray),
     ("testReturnStringArray", ReturnArrayInputTests.testReturnStringArray),
@@ -316,4 +316,4 @@ private let returnArrayTests: [XCTestCaseEntry] = [
   ])
 ]
 
-let arrayTests = inputArrayTests + outputArrayTests + referenceArrayTests + returnArrayTests
+nonisolated(unsafe) let arrayTests = inputArrayTests + outputArrayTests + referenceArrayTests + returnArrayTests

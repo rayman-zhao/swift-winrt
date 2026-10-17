@@ -4,7 +4,7 @@ import XCTest
 import Foundation
 
 class WeakReferenceTests : XCTestCase {
-  class Target: IReferenceTarget {
+  class Target: IReferenceTarget, @unchecked Sendable {
     func method() {}
   }
 
@@ -24,7 +24,7 @@ class WeakReferenceTests : XCTestCase {
   }
 }
 
-var weakReferenceTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var weakReferenceTests: [XCTestCaseEntry] = [
   testCase([
     ("testCreateAndResolve", WeakReferenceTests.testCreateAndResolve),
     ("testNotStrong", WeakReferenceTests.testNotStrong)

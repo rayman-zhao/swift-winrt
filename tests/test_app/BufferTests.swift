@@ -12,7 +12,7 @@ extension URL {
     }
 }
 
-class CustomBuffer: IBuffer {
+class CustomBuffer: IBuffer, @unchecked Sendable {
     public var length: UInt32 = 0 {
         willSet {
             if newValue > capacity {
@@ -74,7 +74,7 @@ class BufferTests : XCTestCase {
     }
 }
 
-var bufferTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var bufferTests: [XCTestCaseEntry] = [
   testCase([
     ("testWinRTBuffer", BufferTests.testWinRTBuffer),
     ("testSwiftBuffer", asyncTest(BufferTests.testSwiftBuffer)),

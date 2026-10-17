@@ -43,19 +43,24 @@ class AsyncTests : XCTestCase {
   }
 
   /// Runs a block asynchronously after a delay has elapsed
-  private func runAfter(delay: TimeInterval, body: @escaping () -> Void) {
+  private func runAfter(delay: TimeInterval, body: @escaping @Sendable () -> Void) {
     Task {
       try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
       body()
     }
   }
 
-  private class BoxedResult<T> {
+  // written by the async task and read after WaitForSingleObject succeeds, so the
+  // Win32 event provides the necessary ordering
+  private final class BoxedResult<T>: @unchecked Sendable {
     var result: Result<T, any Swift.Error>? = nil
-  } 
+  }
 
   /// Synchronously runs an async block with a timeout
-  private func asyncBlock<Result>(timeout: TimeInterval, body: @escaping () async throws -> Result) throws -> Result {
+    // HANDLE is a raw pointer, which isn't Sendable; box it so the task can signal it
+    private struct EventHandleBox: @unchecked Sendable { let handle: WinSDK.HANDLE? }
+
+    private func asyncBlock<Result>(timeout: TimeInterval, body: @escaping @Sendable () async throws -> Result) throws -> Result {
     guard let event = WinSDK.CreateEventA(nil, false, false, nil) else {
       XCTFail("Failed to create event")
       throw WindowsFoundation.Error(hr: E_FAIL)
@@ -63,13 +68,14 @@ class AsyncTests : XCTestCase {
     defer { WinSDK.CloseHandle(event) }
 
     let asyncResult = BoxedResult<Result>()
-    Task {
+    let eventBox = EventHandleBox(handle: event)
+    Task { @Sendable in
       do {
         asyncResult.result = .success(try await body())
       } catch {
         asyncResult.result = .failure(error)
       }
-      WinSDK.SetEvent(event)
+      WinSDK.SetEvent(eventBox.handle)
     }
 
     switch WinSDK.WaitForSingleObject(event, /* dwMilliseconds: */ DWORD(timeout * 1000)) {
@@ -86,7 +92,7 @@ class AsyncTests : XCTestCase {
   }
 }
 
-var asyncTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var asyncTests: [XCTestCaseEntry] = [
   testCase([
     ("testAwaitAlreadyCompleted", AsyncTests.testAwaitAlreadyCompleted),
     ("testAwaitAlreadyFailed", AsyncTests.testAwaitAlreadyFailed),

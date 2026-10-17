@@ -13,66 +13,77 @@ extension Array where Element == Disposable {
   }
 }
 
+// Event handlers are @Sendable (they fire on arbitrary threads), so tests use these
+// boxes to keep mutable expectations readable from the handlers.
+private final class MutableCounter: @unchecked Sendable {
+  var value = 0
+}
+
+private final class MutableBox<T>: @unchecked Sendable {
+  var value: T
+  init(_ value: T) { self.value = value }
+}
+
 class EventTests : XCTestCase {
   public func testEventsOnInstance() throws {
     let simple = Simple()
-    var count = 0
+    let count = MutableCounter()
 
     var disposable = [Disposable]()
 
     disposable.append(simple.signalEvent.addHandler {
-      count+=1
+      count.value += 1
     })
 
     try simple.fireEvent()
-    XCTAssertEqual(count, 1)
+    XCTAssertEqual(count.value, 1)
 
     try simple.fireEvent()
-    XCTAssertEqual(count, 2)
+    XCTAssertEqual(count.value, 2)
 
     // dispose of the handlers and make sure we
     // aren't getting more events
     disposable.dispose()
 
     try simple.fireEvent()
-    XCTAssertEqual(count, 2)
+    XCTAssertEqual(count.value, 2)
 
     // hookup the handlers again and make sure it works, just to be safe
     simple.signalEvent.addHandler {
-      count+=1
+      count.value += 1
     }
 
     try simple.fireEvent()
-    XCTAssertEqual(count, 3)
+    XCTAssertEqual(count.value, 3)
   }
 
   public func testStaticEvent() throws {
-    var static_count = 0
+    let static_count = MutableCounter()
 
     var disposable = [Disposable]()
 
     disposable.append(Simple.staticEvent.addHandler { (_,_) in
-      static_count+=1
+      static_count.value += 1
     })
 
     try Simple.fireStaticEvent()
-    XCTAssertEqual(static_count, 1)
+    XCTAssertEqual(static_count.value, 1)
     try Simple.fireStaticEvent()
-    XCTAssertEqual(static_count, 2)
+    XCTAssertEqual(static_count.value, 2)
 
     // dispose of the handlers and make sure we
     // aren't getting more events
     disposable.dispose()
 
     try Simple.fireStaticEvent()
-    XCTAssertEqual(static_count, 2)
+    XCTAssertEqual(static_count.value, 2)
 
     disposable.append(Simple.staticEvent.addHandler { (_,_) in
-      static_count+=1
+      static_count.value += 1
     })
 
     try Simple.fireStaticEvent()
-    XCTAssertEqual(static_count, 3)
+    XCTAssertEqual(static_count.value, 3)
   }
 
   public func testSwiftImplementedEventWithWinRTListener() throws {
@@ -103,34 +114,34 @@ class EventTests : XCTestCase {
 
 public func testSwiftImplementedEventWithSwiftListener() throws {
     let delegate = MyImplementableDelegate()
-    var count = 0
-    var expectedResult = "fired once"
+    let count = MutableCounter()
+    let expectedResult = MutableBox("fired once")
     let disposer = delegate.implementableEvent.addHandler{
-      count+=1
-      XCTAssertEqual($0, expectedResult)
+      count.value += 1
+      XCTAssertEqual($0, expectedResult.value)
     }
 
-    delegate.fireEvent(expectedResult)
-    XCTAssertEqual(count, 1)
-    expectedResult = "fired twice"
-    delegate.fireEvent(expectedResult)
-    XCTAssertEqual(count, 2)
+    delegate.fireEvent(expectedResult.value)
+    XCTAssertEqual(count.value, 1)
+    expectedResult.value = "fired twice"
+    delegate.fireEvent(expectedResult.value)
+    XCTAssertEqual(count.value, 2)
 
     disposer.dispose()
     delegate.fireEvent("unexpected shouldn't get this")
-    XCTAssertEqual(count, 2)
+    XCTAssertEqual(count.value, 2)
 
     delegate.implementableEvent.addHandler{
-      count+=1
-      XCTAssertEqual($0, expectedResult)
+      count.value += 1
+      XCTAssertEqual($0, expectedResult.value)
     }
-    expectedResult = "fired trice"
-    delegate.fireEvent(expectedResult)
-    XCTAssertEqual(count, 3)
+    expectedResult.value = "fired trice"
+    delegate.fireEvent(expectedResult.value)
+    XCTAssertEqual(count.value, 3)
   }
 }
 
-var eventTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var eventTests: [XCTestCaseEntry] = [
   testCase([
     ("EventsOnInstance", EventTests.testEventsOnInstance),
     ("StaticEvent", EventTests.testStaticEvent),

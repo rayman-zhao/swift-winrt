@@ -85,7 +85,7 @@ class CollectionTests : XCTestCase {
   }
 }
 
-var collectionTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var collectionTests: [XCTestCaseEntry] = [
   testCase([
     ("testMap_asInput", CollectionTests.testMap_asInput),
     ("testMap_asReturn", CollectionTests.testMap_asReturn),

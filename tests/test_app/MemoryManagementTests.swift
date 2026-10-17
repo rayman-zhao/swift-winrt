@@ -53,7 +53,7 @@ class MemoryManagementTests : XCTestCase {
     }
 }
 
-var memoryManagementTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var memoryManagementTests: [XCTestCaseEntry] = [
   testCase([
     ("testAggregatedObject", MemoryManagementTests.testAggregatedObject),
     ("testNonAggregatedObject", MemoryManagementTests.testNonAggregatedObject),

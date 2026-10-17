@@ -124,7 +124,7 @@ class StringTests : XCTestCase {
     }
 }
 
-var stringTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var stringTests: [XCTestCaseEntry] = [
     testCase([
         ("testStringFromNilHString", StringTests.testStringFromNilHString),
         ("testWithHStringRefAscii", StringTests.testWithHStringRefAscii),

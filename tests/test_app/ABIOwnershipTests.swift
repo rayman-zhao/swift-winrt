@@ -116,7 +116,7 @@ final class ABIOwnershipTests: XCTestCase {
     }
 }
 
-let abiOwnershipTests = [testCase([
+nonisolated(unsafe) let abiOwnershipTests = [testCase([
     ("testNativeBoxedValuesReleaseStrings", ABIOwnershipTests.testNativeBoxedValuesReleaseStrings),
     ("testNativeStructReturnsReleaseStrings", ABIOwnershipTests.testNativeStructReturnsReleaseStrings),
     ("testInputArraysReleaseStrings", ABIOwnershipTests.testInputArraysReleaseStrings),

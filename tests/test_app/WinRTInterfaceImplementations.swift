@@ -3,7 +3,7 @@ import test_component
 import WindowsFoundation
 import WinSDK
 
-class DoubleDelegate : IBasic, ISimpleDelegate {
+class DoubleDelegate : IBasic, ISimpleDelegate, @unchecked Sendable {
   func method() {
     print("method doubled up")
   }
@@ -18,7 +18,7 @@ class DoubleDelegate : IBasic, ISimpleDelegate {
 
 }
 
-class MySimpleDelegate : ISimpleDelegate {
+class MySimpleDelegate : ISimpleDelegate, @unchecked Sendable {
     private var thisCount: Int32 = 0
     private var that: Int32 = 0
     func doThis()
@@ -38,7 +38,7 @@ class MySimpleDelegate : ISimpleDelegate {
  }
 
 
-class MyImplementableDelegate: IIAmImplementable {
+class MyImplementableDelegate: IIAmImplementable, @unchecked Sendable {
     private var thisCount = 9
     func inInt32(_ value: Int32) -> String {
       return .init(repeating: "abc", count: Int(value))

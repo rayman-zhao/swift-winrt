@@ -96,7 +96,7 @@ class ValueBoxingTests : XCTestCase {
 }
 
 
-var valueBoxingTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var valueBoxingTests: [XCTestCaseEntry] = [
   testCase([
     ("InInt", ValueBoxingTests.testInInt),
     ("InString", ValueBoxingTests.testInString),

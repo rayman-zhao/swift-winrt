@@ -336,7 +336,7 @@ class SwiftWinRTTests : XCTestCase {
     XCTAssertEqual(out, "z")
   }
 
-  class DoTheNewBase : IBasic {
+  class DoTheNewBase : IBasic, @unchecked Sendable {
     func method() {
       print("it's done")
     }
@@ -457,7 +457,7 @@ class SwiftWinRTTests : XCTestCase {
   }
 }
 
-var tests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var tests: [XCTestCaseEntry] = [
   testCase([
     ("testBlittableStruct", SwiftWinRTTests.testBlittableStruct),
     ("testChar", SwiftWinRTTests.testChar),

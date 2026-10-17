@@ -143,7 +143,7 @@ class AggregationTests : XCTestCase {
   }
 }
 
-var aggregationTests: [XCTestCaseEntry] = [
+nonisolated(unsafe) var aggregationTests: [XCTestCaseEntry] = [
   testCase([
     ("testAppOverridesFromBase", AggregationTests.testAppOverridesFromBase),
     ("testAppOverridesFromDerived", AggregationTests.testAppOverridesFromDerived),
