@@ -6,7 +6,7 @@ import Foundation
 //
 // debugPrint("Useful stuff: \(var)", to: &debugOut)
 // dump(self, to: &debugOut, name: "myObjectName", indent: 2, maxDepth: 4)
-public var debugOut = DebugOutputStream()
+public nonisolated(unsafe) var debugOut = DebugOutputStream()
 
 public class DebugOutputStream : TextOutputStream {
   public func write(_ text: String) {
@@ -36,7 +36,7 @@ open class TrackableObject {
 internal class TrackedObject {
   private var object: TrackableObject
   internal var uniqueId: UInt
-  private static var idGenerator: UInt = 6000
+  private static nonisolated(unsafe) var idGenerator: UInt = 6000
 
   public init(_ object: TrackableObject) {
     self.object = object
@@ -47,7 +47,7 @@ internal class TrackedObject {
 }
 
 public class TrackedObjects {
-  private static var objects: Array<TrackedObject> = Array()
+  private static nonisolated(unsafe) var objects: Array<TrackedObject> = Array()
 
   public static func add(_ object: TrackableObject) {
     objects.append(TrackedObject(object))

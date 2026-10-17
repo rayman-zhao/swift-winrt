@@ -6,7 +6,7 @@ import Foundation
 import ucrt
 
 @_fixed_layout
-final public class HString {
+final public class HString: @unchecked Sendable {
   internal private(set) var hString: HSTRING?
   
   public init(_ string: String) throws {

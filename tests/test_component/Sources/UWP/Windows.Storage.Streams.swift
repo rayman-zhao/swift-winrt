@@ -90,7 +90,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IBufferImpl: IBuffer, WinRTAbiImpl {
+    fileprivate class IBufferImpl: IBuffer, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IBufferBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -152,7 +152,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IBufferVTable: __x_ABI_CWindows_CStorage_CStreams_CIBufferVtbl = .init(
+    internal static nonisolated(unsafe) var IBufferVTable: __x_ABI_CWindows_CStorage_CStreams_CIBufferVtbl = .init(
         QueryInterface: { IBufferWrapper.queryInterface($0, $1, $2) },
         AddRef: { IBufferWrapper.addRef($0) },
         Release: { IBufferWrapper.release($0) },
@@ -252,7 +252,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IContentTypeProviderImpl: IContentTypeProvider, WinRTAbiImpl {
+    fileprivate class IContentTypeProviderImpl: IContentTypeProvider, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IContentTypeProviderBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -290,7 +290,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IContentTypeProviderVTable: __x_ABI_CWindows_CStorage_CStreams_CIContentTypeProviderVtbl = .init(
+    internal static nonisolated(unsafe) var IContentTypeProviderVTable: __x_ABI_CWindows_CStorage_CStreams_CIContentTypeProviderVtbl = .init(
         QueryInterface: { IContentTypeProviderWrapper.queryInterface($0, $1, $2) },
         AddRef: { IContentTypeProviderWrapper.addRef($0) },
         Release: { IContentTypeProviderWrapper.release($0) },
@@ -378,7 +378,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IInputStreamImpl: IInputStream, WinRTAbiImpl {
+    fileprivate class IInputStreamImpl: IInputStream, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IInputStreamBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -422,7 +422,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IInputStreamVTable: __x_ABI_CWindows_CStorage_CStreams_CIInputStreamVtbl = .init(
+    internal static nonisolated(unsafe) var IInputStreamVTable: __x_ABI_CWindows_CStorage_CStreams_CIInputStreamVtbl = .init(
         QueryInterface: { IInputStreamWrapper.queryInterface($0, $1, $2) },
         AddRef: { IInputStreamWrapper.addRef($0) },
         Release: { IInputStreamWrapper.release($0) },
@@ -514,7 +514,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IInputStreamReferenceImpl: IInputStreamReference, WinRTAbiImpl {
+    fileprivate class IInputStreamReferenceImpl: IInputStreamReference, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IInputStreamReferenceBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -550,7 +550,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IInputStreamReferenceVTable: __x_ABI_CWindows_CStorage_CStreams_CIInputStreamReferenceVtbl = .init(
+    internal static nonisolated(unsafe) var IInputStreamReferenceVTable: __x_ABI_CWindows_CStorage_CStreams_CIInputStreamReferenceVtbl = .init(
         QueryInterface: { IInputStreamReferenceWrapper.queryInterface($0, $1, $2) },
         AddRef: { IInputStreamReferenceWrapper.addRef($0) },
         Release: { IInputStreamReferenceWrapper.release($0) },
@@ -643,7 +643,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IOutputStreamImpl: IOutputStream, WinRTAbiImpl {
+    fileprivate class IOutputStreamImpl: IOutputStream, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IOutputStreamBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -701,7 +701,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IOutputStreamVTable: __x_ABI_CWindows_CStorage_CStreams_CIOutputStreamVtbl = .init(
+    internal static nonisolated(unsafe) var IOutputStreamVTable: __x_ABI_CWindows_CStorage_CStreams_CIOutputStreamVtbl = .init(
         QueryInterface: { IOutputStreamWrapper.queryInterface($0, $1, $2) },
         AddRef: { IOutputStreamWrapper.addRef($0) },
         Release: { IOutputStreamWrapper.release($0) },
@@ -824,7 +824,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IRandomAccessStreamImpl: IRandomAccessStream, WinRTAbiImpl {
+    fileprivate class IRandomAccessStreamImpl: IRandomAccessStream, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IRandomAccessStreamBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -981,7 +981,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IRandomAccessStreamVTable: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamVtbl = .init(
+    internal static nonisolated(unsafe) var IRandomAccessStreamVTable: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamVtbl = .init(
         QueryInterface: { IRandomAccessStreamWrapper.queryInterface($0, $1, $2) },
         AddRef: { IRandomAccessStreamWrapper.addRef($0) },
         Release: { IRandomAccessStreamWrapper.release($0) },
@@ -1138,7 +1138,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IRandomAccessStreamReferenceImpl: IRandomAccessStreamReference, WinRTAbiImpl {
+    fileprivate class IRandomAccessStreamReferenceImpl: IRandomAccessStreamReference, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IRandomAccessStreamReferenceBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1174,7 +1174,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IRandomAccessStreamReferenceVTable: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamReferenceVtbl = .init(
+    internal static nonisolated(unsafe) var IRandomAccessStreamReferenceVTable: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamReferenceVtbl = .init(
         QueryInterface: { IRandomAccessStreamReferenceWrapper.queryInterface($0, $1, $2) },
         AddRef: { IRandomAccessStreamReferenceWrapper.addRef($0) },
         Release: { IRandomAccessStreamReferenceWrapper.release($0) },
@@ -1275,7 +1275,7 @@ extension __IMPL_Windows_Storage_Streams {
         }
     }
 
-    fileprivate class IRandomAccessStreamWithContentTypeImpl: IRandomAccessStreamWithContentType, WinRTAbiImpl {
+    fileprivate class IRandomAccessStreamWithContentTypeImpl: IRandomAccessStreamWithContentType, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IRandomAccessStreamWithContentTypeBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1368,7 +1368,7 @@ extension __ABI_Windows_Storage_Streams {
 
     }
 
-    internal static var IRandomAccessStreamWithContentTypeVTable: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentTypeVtbl = .init(
+    internal static nonisolated(unsafe) var IRandomAccessStreamWithContentTypeVTable: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentTypeVtbl = .init(
         QueryInterface: { IRandomAccessStreamWithContentTypeWrapper.queryInterface($0, $1, $2) },
         AddRef: { IRandomAccessStreamWithContentTypeWrapper.addRef($0) },
         Release: { IRandomAccessStreamWithContentTypeWrapper.release($0) },

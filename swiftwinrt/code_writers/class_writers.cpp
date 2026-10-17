@@ -326,7 +326,7 @@ override % func _getABI<T>() -> UnsafeMutablePointer<T>? {
             bind_bridge_fullname(type),
             overrides.type
         );
-        w.write("internal static var %VTable: %Vtbl = .init(\n",
+        w.write("internal static nonisolated(unsafe) var %VTable: %Vtbl = .init(\n",
             overrides.type,
             bind_type_mangled(overrides.type));
 
@@ -437,7 +437,7 @@ public init<Composable: ComposableImpl>(
     {
         if (auto factoryIface = dynamic_cast<const interface_type*>(factory.type))
         {
-            w.write("private static var _% : %.% =  try! RoGetActivationFactory(\"%\")\n\n",
+            w.write("private static nonisolated(unsafe) var _% : %.% =  try! RoGetActivationFactory(\"%\")\n\n",
                     factory.type,
                     abi_namespace(factoryIface),
                     factory.type,

@@ -128,7 +128,7 @@ public class %Maker: MakeFromAbi {
             return;
         }
 
-        w.write(R"(fileprivate class %: %, WinRTAbiImpl {
+        w.write(R"(fileprivate class %: %, WinRTAbiImpl, ^@unchecked Sendable {
     fileprivate typealias Bridge = %
     fileprivate let _default: Bridge.SwiftABI
     fileprivate var thisPtr: %.IInspectable { _default }
@@ -673,6 +673,11 @@ bind_bridge_fullname(type));
         if (!iface.attributed)
         {
             modifier.append("lazy ");
+        }
+        else
+        {
+            // static events are nonisolated global shared state in the Swift 6 concurrency model
+            modifier.append("nonisolated(unsafe) ");
         }
         assert(delegate_method.def);
         w.write(iface.attributed ? static_format : format,

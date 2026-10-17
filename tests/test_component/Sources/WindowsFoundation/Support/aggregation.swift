@@ -11,7 +11,7 @@ import Foundation
 // to the swift object, to ensure it doesn't get cleaned up. The Swift object in turn holds a strong
 // reference to this object so that it stays alive.
 @_spi(WinRTInternal)
-public final class WinRTClassWeakReference<Class: WinRTClass> {
+public final class WinRTClassWeakReference<Class: WinRTClass>: @unchecked Sendable {
     fileprivate weak var instance: Class?
     public init(_ instance: Class){
         self.instance = instance
@@ -97,7 +97,7 @@ public func MakeComposed<Composable: ComposableImpl>(
 }
 
 @_spi(WinRTInternal)
-public class UnsealedWinRTClassWrapper<Composable: ComposableImpl> : WinRTAbiBridgeWrapper<Composable> {
+public class UnsealedWinRTClassWrapper<Composable: ComposableImpl> : WinRTAbiBridgeWrapper<Composable>, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { Composable.SwiftABI.IID }
     public init?(_ impl: Composable.Class?) {
         guard let impl = impl else { return nil }

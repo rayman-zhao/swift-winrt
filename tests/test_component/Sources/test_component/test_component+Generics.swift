@@ -16,7 +16,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1_intVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_intVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_intVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_intVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_intWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_intWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_intWrapper.release($0) },
@@ -69,7 +69,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleVTable: __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleVTable: __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationProgressHandler_2_int_doubleWrapper.release($0) },
@@ -122,7 +122,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleVTable: __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleVTable: __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_int_doubleWrapper.release($0) },
@@ -168,7 +168,7 @@ private var IID___x_ABI_C__FIIterable_1_IInspectable: WindowsFoundation.IID {
     .init(Data1: 0x092b849b, Data2: 0x60b1, Data3: 0x52be, Data4: ( 0xa4,0x4a,0x6f,0xe8,0xe9,0x33,0xcb,0xe4 ))// 092b849b-60b1-52be-a44a-6fe8e933cbe4
 }
 
-internal var __x_ABI_C__FIIterable_1_IInspectableVTable: __x_ABI_C__FIIterable_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1_IInspectableVTable: __x_ABI_C__FIIterable_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1_IInspectableWrapper.release($0) },
@@ -234,7 +234,7 @@ internal enum __x_ABI_C__FIIterable_1_IInspectableBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1_IInspectableImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1_IInspectableImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Any?
     typealias Bridge = __x_ABI_C__FIIterable_1_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -255,7 +255,7 @@ private var IID___x_ABI_C__FIIterable_1_GUID: WindowsFoundation.IID {
     .init(Data1: 0xf4ca3045, Data2: 0x5dd7, Data3: 0x54be, Data4: ( 0x98,0x2e,0xd8,0x8d,0x8c,0xa0,0x87,0x6e ))// f4ca3045-5dd7-54be-982e-d88d8ca0876e
 }
 
-internal var __x_ABI_C__FIIterable_1_GUIDVTable: __x_ABI_C__FIIterable_1_GUIDVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1_GUIDVTable: __x_ABI_C__FIIterable_1_GUIDVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1_GUIDWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1_GUIDWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1_GUIDWrapper.release($0) },
@@ -321,7 +321,7 @@ internal enum __x_ABI_C__FIIterable_1_GUIDBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1_GUIDImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1_GUIDImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Foundation.UUID
     typealias Bridge = __x_ABI_C__FIIterable_1_GUIDBridge
     let _default: Bridge.SwiftABI
@@ -342,7 +342,7 @@ private var IID___x_ABI_C__FIIterable_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0xe2fcc7c1, Data2: 0x3bfc, Data3: 0x5a0b, Data4: ( 0xb2,0xb0,0x72,0xe7,0x69,0xd1,0xcb,0x7e ))// e2fcc7c1-3bfc-5a0b-b2b0-72e769d1cb7e
 }
 
-internal var __x_ABI_C__FIIterable_1_HSTRINGVTable: __x_ABI_C__FIIterable_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1_HSTRINGVTable: __x_ABI_C__FIIterable_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1_HSTRINGWrapper.release($0) },
@@ -408,7 +408,7 @@ internal enum __x_ABI_C__FIIterable_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1_HSTRINGImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1_HSTRINGImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIIterable_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -429,7 +429,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTR
     .init(Data1: 0xe9bdaaf0, Data2: 0xcbf6, Data3: 0x5c72, Data4: ( 0xbe,0x90,0x29,0xcb,0xf3,0xa1,0x31,0x9b ))// e9bdaaf0-cbf6-5c72-be90-29cbf3a1319b
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.release($0) },
@@ -495,7 +495,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRIN
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, String>?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -516,7 +516,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_
     .init(Data1: 0x9ee59ac2, Data2: 0xef36, Data3: 0x560b, Data4: ( 0x8a,0xdc,0xd3,0xea,0x78,0xbd,0x58,0x2b ))// 9ee59ac2-ef36-560b-8adc-d3ea78bd582b
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -582,7 +582,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_AB
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Base?>?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -603,7 +603,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBase: Window
     .init(Data1: 0xb826dcab, Data2: 0xca2a, Data3: 0x5fbc, Data4: ( 0x8c,0xbd,0xed,0x75,0x9a,0x9a,0x1c,0x00 ))// b826dcab-ca2a-5fbc-8cbd-ed759a9a1c00
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -669,7 +669,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseBridge : A
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Base?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -690,7 +690,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasic: Wind
     .init(Data1: 0x2ec46808, Data2: 0xad2e, Data3: 0x5438, Data4: ( 0xa5,0x84,0xfa,0xb6,0x0a,0x1b,0x07,0xe3 ))// 2ec46808-ad2e-5438-a584-fab60a1b07e3
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.release($0) },
@@ -756,7 +756,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicBridge :
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = AnyIBasic?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_Ctest__zcomponent__CIBasicBridge
     let _default: Bridge.SwiftABI
@@ -777,7 +777,7 @@ private var IID___x_ABI_C__FIIterator_1_IInspectable: WindowsFoundation.IID {
     .init(Data1: 0x44a94f2d, Data2: 0x04f8, Data3: 0x5091, Data4: ( 0xb3,0x36,0xbe,0x78,0x92,0xdd,0x10,0xbe ))// 44a94f2d-04f8-5091-b336-be7892dd10be
 }
 
-internal var __x_ABI_C__FIIterator_1_IInspectableVTable: __x_ABI_C__FIIterator_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1_IInspectableVTable: __x_ABI_C__FIIterator_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1_IInspectableWrapper.release($0) },
@@ -902,7 +902,7 @@ internal enum __x_ABI_C__FIIterator_1_IInspectableBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1_IInspectableImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1_IInspectableImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Any?
     typealias Bridge = __x_ABI_C__FIIterator_1_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -938,7 +938,7 @@ private var IID___x_ABI_C__FIIterator_1_GUID: WindowsFoundation.IID {
     .init(Data1: 0xd3d64048, Data2: 0x82b3, Data3: 0x53c7, Data4: ( 0x92,0x85,0xb0,0xbe,0x18,0x36,0x84,0x82 ))// d3d64048-82b3-53c7-9285-b0be18368482
 }
 
-internal var __x_ABI_C__FIIterator_1_GUIDVTable: __x_ABI_C__FIIterator_1_GUIDVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1_GUIDVTable: __x_ABI_C__FIIterator_1_GUIDVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1_GUIDWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1_GUIDWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1_GUIDWrapper.release($0) },
@@ -1056,7 +1056,7 @@ internal enum __x_ABI_C__FIIterator_1_GUIDBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1_GUIDImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1_GUIDImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Foundation.UUID
     typealias Bridge = __x_ABI_C__FIIterator_1_GUIDBridge
     let _default: Bridge.SwiftABI
@@ -1092,7 +1092,7 @@ private var IID___x_ABI_C__FIIterator_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x8c304ebb, Data2: 0x6615, Data3: 0x50a4, Data4: ( 0x88,0x29,0x87,0x9e,0xcd,0x44,0x32,0x36 ))// 8c304ebb-6615-50a4-8829-879ecd443236
 }
 
-internal var __x_ABI_C__FIIterator_1_HSTRINGVTable: __x_ABI_C__FIIterator_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1_HSTRINGVTable: __x_ABI_C__FIIterator_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1_HSTRINGWrapper.release($0) },
@@ -1220,7 +1220,7 @@ internal enum __x_ABI_C__FIIterator_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1_HSTRINGImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1_HSTRINGImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIIterator_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -1256,7 +1256,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTR
     .init(Data1: 0x05eb86f1, Data2: 0x7140, Data3: 0x5517, Data4: ( 0xb8,0x8d,0xcb,0xae,0xbe,0x57,0xe6,0xb1 ))// 05eb86f1-7140-5517-b88d-cbaebe57e6b1
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.release($0) },
@@ -1381,7 +1381,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRIN
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, String>?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -1417,7 +1417,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_
     .init(Data1: 0xbe30f8a4, Data2: 0x7d2e, Data3: 0x55fa, Data4: ( 0x91,0xd0,0xf0,0x21,0xdf,0xe4,0x6d,0x06 ))// be30f8a4-7d2e-55fa-91d0-f021dfe46d06
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -1542,7 +1542,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_AB
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Base?>?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -1578,7 +1578,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBase: Window
     .init(Data1: 0xa8f692bf, Data2: 0xebba, Data3: 0x5b53, Data4: ( 0x90,0xd3,0x89,0x00,0x9b,0xcc,0x98,0x14 ))// a8f692bf-ebba-5b53-90d3-89009bcc9814
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -1702,7 +1702,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseBridge : A
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Base?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -1738,7 +1738,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasic: Wind
     .init(Data1: 0xfc247a63, Data2: 0xc092, Data3: 0x5c5c, Data4: ( 0x8b,0x94,0x66,0xfb,0xfa,0x60,0xf9,0x5f ))// fc247a63-c092-5c5c-8b94-66fbfa60f95f
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.release($0) },
@@ -1863,7 +1863,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicBridge :
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = AnyIBasic?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_Ctest__zcomponent__CIBasicBridge
     let _default: Bridge.SwiftABI
@@ -1899,7 +1899,7 @@ private var IID___x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRING: WindowsFoundation.I
     .init(Data1: 0x60310303, Data2: 0x49c5, Data3: 0x52e6, Data4: ( 0xab,0xc6,0xa9,0xb3,0x6e,0xcc,0xc7,0x16 ))// 60310303-49c5-52e6-abc6-a9b36eccc716
 }
 
-internal var __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGWrapper.release($0) },
@@ -1984,7 +1984,7 @@ internal enum __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge : AbiInterfaceBr
     }
 }
 
-fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGImpl : IKeyValuePair, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGImpl : IKeyValuePair, AbiInterfaceImpl, @unchecked Sendable {
     typealias K = String
     typealias V = String
     typealias Bridge = __x_ABI_C__FIKeyValuePair_2_HSTRING_HSTRINGBridge
@@ -2011,7 +2011,7 @@ private var IID___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__C
     .init(Data1: 0xc6bff2b3, Data2: 0x09a5, Data3: 0x5fcf, Data4: ( 0xb0,0x78,0x69,0x43,0xdd,0x21,0x5d,0xe7 ))// c6bff2b3-09a5-5fcf-b078-6943dd215de7
 }
 
-internal var __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -2094,7 +2094,7 @@ internal enum __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBa
     }
 }
 
-fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IKeyValuePair, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IKeyValuePair, AbiInterfaceImpl, @unchecked Sendable {
     typealias K = String
     typealias V = Base?
     typealias Bridge = __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseBridge
@@ -2121,7 +2121,7 @@ private var IID___x_ABI_C__FIMapView_2_HSTRING_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0xac7f26f2, Data2: 0xfeb7, Data3: 0x5b2a, Data4: ( 0x8a,0xc4,0x34,0x5b,0xc6,0x2c,0xae,0xde ))// ac7f26f2-feb7-5b2a-8ac4-345bc62caede
 }
 
-internal var __x_ABI_C__FIMapView_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIMapView_2_HSTRING_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIMapView_2_HSTRING_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMapView_2_HSTRING_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMapView_2_HSTRING_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMapView_2_HSTRING_HSTRINGWrapper.release($0) },
@@ -2251,7 +2251,7 @@ internal enum __x_ABI_C__FIMapView_2_HSTRING_HSTRINGBridge : AbiInterfaceBridge 
     }
 }
 
-fileprivate class __x_ABI_C__FIMapView_2_HSTRING_HSTRINGImpl : IMapView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMapView_2_HSTRING_HSTRINGImpl : IMapView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, String>?
     typealias K = String
     typealias V = String
@@ -2295,7 +2295,7 @@ private var IID___x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBase:
     .init(Data1: 0x8c4e7f37, Data2: 0x8bf0, Data3: 0x515a, Data4: ( 0x82,0xc1,0x06,0x45,0x55,0x0b,0xf6,0x0b ))// 8c4e7f37-8bf0-515a-82c1-0645550bf60b
 }
 
-internal var __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -2423,7 +2423,7 @@ internal enum __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseBri
     }
 }
 
-fileprivate class __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IMapView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMapView_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IMapView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Base?>?
     typealias K = String
     typealias V = Base?
@@ -2467,7 +2467,7 @@ private var IID___x_ABI_C__FIMap_2_HSTRING_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0xf6d1f700, Data2: 0x49c2, Data3: 0x52ae, Data4: ( 0x81,0x54,0x82,0x6f,0x99,0x08,0x77,0x3c ))// f6d1f700-49c2-52ae-8154-826f9908773c
 }
 
-internal var __x_ABI_C__FIMap_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIMap_2_HSTRING_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING_HSTRINGVTable: __x_ABI_C__FIMap_2_HSTRING_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMap_2_HSTRING_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMap_2_HSTRING_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMap_2_HSTRING_HSTRINGWrapper.release($0) },
@@ -2631,7 +2631,7 @@ internal enum __x_ABI_C__FIMap_2_HSTRING_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIMap_2_HSTRING_HSTRINGImpl : IMap, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMap_2_HSTRING_HSTRINGImpl : IMap, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, String>?
     typealias K = String
     typealias V = String
@@ -2690,7 +2690,7 @@ private var IID___x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBase: Win
     .init(Data1: 0x73430fe6, Data2: 0xa622, Data3: 0x5945, Data4: ( 0xa5,0x86,0x6f,0x3a,0x84,0xef,0x15,0xe3 ))// 73430fe6-a622-5945-a586-6f3a84ef15e3
 }
 
-internal var __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -2851,7 +2851,7 @@ internal enum __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseBridge 
     }
 }
 
-fileprivate class __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IMap, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMap_2_HSTRING___x_ABI_Ctest__zcomponent__CBaseImpl : IMap, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Base?>?
     typealias K = String
     typealias V = Base?
@@ -2910,7 +2910,7 @@ private var IID___x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBase
     .init(Data1: 0x04ca85dc, Data2: 0x5d3e, Data3: 0x573d, Data4: ( 0xb4,0xe3,0x46,0xde,0x30,0x3f,0x6c,0x35 ))// 04ca85dc-5d3e-573d-b4e3-46de303f6c35
 }
 
-internal var __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -2992,7 +2992,7 @@ internal enum __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseBr
     }
 }
 
-fileprivate class __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseImpl : IObservableVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseImpl : IObservableVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Base?
     typealias Bridge = __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -3118,7 +3118,7 @@ private var IID___x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBas
     .init(Data1: 0xd0fc0651, Data2: 0x9791, Data3: 0x5130, Data4: ( 0xa7,0x41,0xb0,0xef,0xea,0xfa,0xbc,0xa9 ))// d0fc0651-9791-5130-a741-b0efeafabca9
 }
 
-internal var __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
     QueryInterface: { __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.addRef($0) },
     Release: { __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.release($0) },
@@ -3200,7 +3200,7 @@ internal enum __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasic
     }
 }
 
-fileprivate class __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IObservableVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IObservableVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = AnyIBasic?
     typealias Bridge = __x_ABI_C__FIObservableVector_1___x_ABI_Ctest__zcomponent__CIBasicBridge
     let _default: Bridge.SwiftABI
@@ -3326,7 +3326,7 @@ private var IID___x_ABI_C__FIVectorView_1_IInspectable: WindowsFoundation.IID {
     .init(Data1: 0xa6487363, Data2: 0xb074, Data3: 0x5c60, Data4: ( 0xab,0x16,0x86,0x6d,0xce,0x4e,0xe5,0x4d ))// a6487363-b074-5c60-ab16-866dce4ee54d
 }
 
-internal var __x_ABI_C__FIVectorView_1_IInspectableVTable: __x_ABI_C__FIVectorView_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1_IInspectableVTable: __x_ABI_C__FIVectorView_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1_IInspectableWrapper.release($0) },
@@ -3459,7 +3459,7 @@ internal enum __x_ABI_C__FIVectorView_1_IInspectableBridge : AbiInterfaceBridge 
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1_IInspectableImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1_IInspectableImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Any?
     typealias Bridge = __x_ABI_C__FIVectorView_1_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -3522,7 +3522,7 @@ private var IID___x_ABI_C__FIVectorView_1_GUID: WindowsFoundation.IID {
     .init(Data1: 0x9520e64b, Data2: 0x15b2, Data3: 0x52a6, Data4: ( 0x98,0xed,0x31,0x91,0xfa,0x6c,0xf6,0x8a ))// 9520e64b-15b2-52a6-98ed-3191fa6cf68a
 }
 
-internal var __x_ABI_C__FIVectorView_1_GUIDVTable: __x_ABI_C__FIVectorView_1_GUIDVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1_GUIDVTable: __x_ABI_C__FIVectorView_1_GUIDVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1_GUIDWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1_GUIDWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1_GUIDWrapper.release($0) },
@@ -3646,7 +3646,7 @@ internal enum __x_ABI_C__FIVectorView_1_GUIDBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1_GUIDImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1_GUIDImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Foundation.UUID
     typealias Bridge = __x_ABI_C__FIVectorView_1_GUIDBridge
     let _default: Bridge.SwiftABI
@@ -3709,7 +3709,7 @@ private var IID___x_ABI_C__FIVectorView_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x2f13c006, Data2: 0xa03a, Data3: 0x5f69, Data4: ( 0xb0,0x90,0x75,0xa4,0x3e,0x33,0x42,0x3e ))// 2f13c006-a03a-5f69-b090-75a43e33423e
 }
 
-internal var __x_ABI_C__FIVectorView_1_HSTRINGVTable: __x_ABI_C__FIVectorView_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1_HSTRINGVTable: __x_ABI_C__FIVectorView_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1_HSTRINGWrapper.release($0) },
@@ -3844,7 +3844,7 @@ internal enum __x_ABI_C__FIVectorView_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1_HSTRINGImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1_HSTRINGImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIVectorView_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -3907,7 +3907,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBase: Wind
     .init(Data1: 0x92c07225, Data2: 0x1151, Data3: 0x51be, Data4: ( 0x83,0x03,0xf0,0x11,0x9f,0x4a,0xac,0xe6 ))// 92c07225-1151-51be-8303-f0119f4aace6
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -4037,7 +4037,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseBridge :
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Base?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -4100,7 +4100,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasic: Wi
     .init(Data1: 0x90050e25, Data2: 0xb754, Data3: 0x51a3, Data4: ( 0x83,0x44,0x87,0xdf,0x43,0xe9,0x03,0xb7 ))// 90050e25-b754-51a3-8344-87df43e903b7
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.release($0) },
@@ -4233,7 +4233,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicBridge
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = AnyIBasic?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_Ctest__zcomponent__CIBasicBridge
     let _default: Bridge.SwiftABI
@@ -4296,7 +4296,7 @@ private var IID___x_ABI_C__FIVector_1_IInspectable: WindowsFoundation.IID {
     .init(Data1: 0xb32bdca4, Data2: 0x5e52, Data3: 0x5b27, Data4: ( 0xbc,0x5d,0xd6,0x6a,0x1a,0x26,0x8c,0x2a ))// b32bdca4-5e52-5b27-bc5d-d66a1a268c2a
 }
 
-internal var __x_ABI_C__FIVector_1_IInspectableVTable: __x_ABI_C__FIVector_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1_IInspectableVTable: __x_ABI_C__FIVector_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1_IInspectableWrapper.release($0) },
@@ -4545,7 +4545,7 @@ internal enum __x_ABI_C__FIVector_1_IInspectableBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1_IInspectableImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1_IInspectableImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Any?
     typealias Bridge = __x_ABI_C__FIVector_1_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -4657,7 +4657,7 @@ private var IID___x_ABI_C__FIVector_1_GUID: WindowsFoundation.IID {
     .init(Data1: 0x482e676d, Data2: 0xb913, Data3: 0x5ec1, Data4: ( 0xaf,0xa8,0x5f,0x96,0x92,0x2e,0x94,0xae ))// 482e676d-b913-5ec1-afa8-5f96922e94ae
 }
 
-internal var __x_ABI_C__FIVector_1_GUIDVTable: __x_ABI_C__FIVector_1_GUIDVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1_GUIDVTable: __x_ABI_C__FIVector_1_GUIDVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1_GUIDWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1_GUIDWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1_GUIDWrapper.release($0) },
@@ -4891,7 +4891,7 @@ internal enum __x_ABI_C__FIVector_1_GUIDBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1_GUIDImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1_GUIDImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Foundation.UUID
     typealias Bridge = __x_ABI_C__FIVector_1_GUIDBridge
     let _default: Bridge.SwiftABI
@@ -5003,7 +5003,7 @@ private var IID___x_ABI_C__FIVector_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x98b9acc1, Data2: 0x4b56, Data3: 0x532e, Data4: ( 0xac,0x73,0x03,0xd5,0x29,0x1c,0xca,0x90 ))// 98b9acc1-4b56-532e-ac73-03d5291cca90
 }
 
-internal var __x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1_HSTRINGWrapper.release($0) },
@@ -5251,7 +5251,7 @@ internal enum __x_ABI_C__FIVector_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1_HSTRINGImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1_HSTRINGImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIVector_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -5363,7 +5363,7 @@ private var IID___x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBase: WindowsF
     .init(Data1: 0xcb559561, Data2: 0x6732, Data3: 0x54ba, Data4: ( 0xa0,0x75,0xb5,0x03,0x46,0x27,0x5b,0x9e ))// cb559561-6732-54ba-a075-b50346275b9e
 }
 
-internal var __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -5603,7 +5603,7 @@ internal enum __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseBridge : Abi
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = Base?
     typealias Bridge = __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CBaseBridge
     let _default: Bridge.SwiftABI
@@ -5715,7 +5715,7 @@ private var IID___x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasic: Window
     .init(Data1: 0x966413d6, Data2: 0x6520, Data3: 0x5148, Data4: ( 0x9f,0xf1,0xf7,0x35,0x9c,0xb4,0x1c,0x6a ))// 966413d6-6520-5148-9ff1-f7359cb41c6a
 }
 
-internal var __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.release($0) },
@@ -5964,7 +5964,7 @@ internal enum __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicBridge : A
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = AnyIBasic?
     typealias Bridge = __x_ABI_C__FIVector_1___x_ABI_Ctest__zcomponent__CIBasicBridge
     let _default: Bridge.SwiftABI
@@ -6083,7 +6083,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FVectorChangedEv
     }
 }
 
-internal var __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseVTable: __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseVtbl = .init(
     QueryInterface: { __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseWrapper.addRef($0) },
     Release: { __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CBaseWrapper.release($0) },
@@ -6138,7 +6138,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FVectorChangedEv
     }
 }
 
-internal var __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicVTable: __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicVtbl = .init(
     QueryInterface: { __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.addRef($0) },
     Release: { __x_ABI_C__FVectorChangedEventHandler_1___x_ABI_Ctest__zcomponent__CIBasicWrapper.release($0) },
@@ -6193,7 +6193,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIEventHandler_1
     }
 }
 
-internal var __x_ABI_C__FIEventHandler_1_IInspectableVTable: __x_ABI_C__FIEventHandler_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIEventHandler_1_IInspectableVTable: __x_ABI_C__FIEventHandler_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.release($0) },
@@ -6241,7 +6241,7 @@ private var IID___x_ABI_C__FIAsyncOperationWithProgress_2_int_double: WindowsFou
     .init(Data1: 0x17c0e85a, Data2: 0x64cb, Data3: 0x593a, Data4: ( 0x8e,0x4d,0x90,0x1c,0xa8,0x38,0xaa,0x92 ))// 17c0e85a-64cb-593a-8e4d-901ca838aa92
 }
 
-internal var __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleVTable: __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleVTable: __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleWrapper.release($0) },
@@ -6372,7 +6372,7 @@ internal enum __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleBridge : AbiIn
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleImpl : IAsyncOperationWithProgress, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleImpl : IAsyncOperationWithProgress, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = Int32
     typealias TProgress = Double
     typealias Bridge = __x_ABI_C__FIAsyncOperationWithProgress_2_int_doubleBridge
@@ -6432,7 +6432,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1_int: WindowsFoundation.IID {
     .init(Data1: 0x968b9665, Data2: 0x06ed, Data3: 0x5774, Data4: ( 0x8f,0x53,0x8e,0xde,0xab,0xd5,0xf7,0xb5 ))// 968b9665-06ed-5774-8f53-8edeabd5f7b5
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1_intVTable: __x_ABI_C__FIAsyncOperation_1_intVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_intVTable: __x_ABI_C__FIAsyncOperation_1_intVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1_intWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1_intWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1_intWrapper.release($0) },
@@ -6531,7 +6531,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1_intBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1_intImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1_intImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = Int32
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1_intBridge
     let _default: Bridge.SwiftABI
@@ -6601,7 +6601,7 @@ internal enum __x_ABI_C__FIReference_1_GUIDBridge: ReferenceBridge {
         return .init(lpVtbl: vtblPtr)
     }
 }
-internal var __x_ABI_C__FIReference_1_GUIDVTable: __x_ABI_C__FIReference_1_GUIDVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIReference_1_GUIDVTable: __x_ABI_C__FIReference_1_GUIDVtbl = .init(
     QueryInterface: { __x_ABI_C__FIReference_1_GUIDWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIReference_1_GUIDWrapper.addRef($0) },
     Release: { __x_ABI_C__FIReference_1_GUIDWrapper.release($0) },
@@ -6659,7 +6659,7 @@ internal enum __x_ABI_C__FIReference_1_intBridge: ReferenceBridge {
         return .init(lpVtbl: vtblPtr)
     }
 }
-internal var __x_ABI_C__FIReference_1_intVTable: __x_ABI_C__FIReference_1_intVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIReference_1_intVTable: __x_ABI_C__FIReference_1_intVtbl = .init(
     QueryInterface: { __x_ABI_C__FIReference_1_intWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIReference_1_intWrapper.addRef($0) },
     Release: { __x_ABI_C__FIReference_1_intWrapper.release($0) },
@@ -6720,7 +6720,7 @@ internal enum __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlit
         return .init(lpVtbl: vtblPtr)
     }
 }
-internal var __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructVTable: __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructVTable: __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructVtbl = .init(
     QueryInterface: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructWrapper.addRef($0) },
     Release: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNestedNonBlittableStructWrapper.release($0) },
@@ -6782,7 +6782,7 @@ internal enum __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableS
         return .init(lpVtbl: vtblPtr)
     }
 }
-internal var __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructVTable: __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructVTable: __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructVtbl = .init(
     QueryInterface: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructWrapper.addRef($0) },
     Release: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CNonBlittableStructWrapper.release($0) },
@@ -6841,7 +6841,7 @@ internal enum __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedBridge:
         return .init(lpVtbl: vtblPtr)
     }
 }
-internal var __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedVTable: __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedVTable: __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedVtbl = .init(
     QueryInterface: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedWrapper.addRef($0) },
     Release: { __x_ABI_C__FIReference_1___x_ABI_Ctest__zcomponent__CSignedWrapper.release($0) },
@@ -6889,7 +6889,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHand
     }
 }
 
-internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsVtbl = .init(
     QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsWrapper.addRef($0) },
     Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CClass___x_ABI_Ctest__zcomponent__CDeferrableEventArgsWrapper.release($0) },
@@ -6940,7 +6940,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHand
     }
 }
 
-internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsVtbl = .init(
     QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsWrapper.addRef($0) },
     Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_Ctest__zcomponent__CSimple___x_ABI_Ctest__zcomponent__CSimpleEventArgsWrapper.release($0) },

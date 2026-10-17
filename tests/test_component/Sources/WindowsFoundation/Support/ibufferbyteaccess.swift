@@ -14,7 +14,7 @@ public typealias AnyIBufferByteAccess = any IBufferByteAccess
 fileprivate let IID_IBufferByteAccess = IID(Data1: 0x905A0FEF, Data2: 0xBC53, Data3: 0x11DF, Data4: ( 0x8C, 0x49, 0x00, 0x1E, 0x4F, 0xC6, 0x86, 0xDA )) // 905a0fef-bc53-11df-8c49-001e4fc686da
 
 extension __ABI_ {
-    public class IBufferByteAccess: IUnknown {
+    public class IBufferByteAccess: IUnknown, @unchecked Sendable {
         override public class var IID: IID { IID_IBufferByteAccess}
 
         public func Buffer() throws -> UnsafeMutablePointer<UInt8>? {
@@ -47,7 +47,7 @@ public enum IBufferByteAccessBridge: AbiInterfaceBridge {
     public typealias SwiftProjection = AnyIBufferByteAccess
 }
 
-private var IBufferByteAccessVTable: CWinRT.C_IBufferByteAccessVtbl = .init(
+private nonisolated(unsafe) var IBufferByteAccessVTable: CWinRT.C_IBufferByteAccessVtbl = .init(
     QueryInterface: { __ABI_.IBufferByteAccessWrapper.queryInterface($0, $1, $2) },
     AddRef: {  __ABI_.IBufferByteAccessWrapper.addRef($0) },
     Release: {  __ABI_.IBufferByteAccessWrapper.release($0) },

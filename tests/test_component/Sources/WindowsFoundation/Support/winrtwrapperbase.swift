@@ -57,7 +57,7 @@ internal protocol CustomAddRef {
 
 // The WinRTWrapperBase class wraps an AbiBridge and is used for wrapping and unwrapping swift
 // objects at the ABI layer. The contract for how to do this is defined by the AbiBridge protocol
-open class WinRTWrapperBase<CInterface, Prototype> {
+open class WinRTWrapperBase<CInterface, Prototype> : @unchecked Sendable {
     public struct ComObjectABI {
         public var comInterface: CInterface
         public var wrapper: Unmanaged<WinRTWrapperBase>?
@@ -175,7 +175,7 @@ open class WinRTWrapperBase<CInterface, Prototype> {
     }
 }
 
-open class WinRTAbiBridgeWrapper<I: AbiBridge> : WinRTWrapperBase<I.CABI, I.SwiftProjection> {
+open class WinRTAbiBridgeWrapper<I: AbiBridge> : WinRTWrapperBase<I.CABI, I.SwiftProjection>, @unchecked Sendable {
 
     public static func unwrapFrom(abi pointer: consuming ComPtr<I.CABI>?) -> I.SwiftProjection? {
         guard let pointer = pointer else { return nil }
@@ -197,7 +197,7 @@ open class WinRTAbiBridgeWrapper<I: AbiBridge> : WinRTWrapperBase<I.CABI, I.Swif
     }
 }
 
-open class InterfaceWrapperBase<I: AbiInterfaceBridge> : WinRTAbiBridgeWrapper<I> {
+open class InterfaceWrapperBase<I: AbiInterfaceBridge> : WinRTAbiBridgeWrapper<I>, @unchecked Sendable {
     override public class var IID: WindowsFoundation.IID { I.SwiftABI.IID }
     public init?(_ impl: I.SwiftProjection?) {
         guard let impl = impl else { return nil }

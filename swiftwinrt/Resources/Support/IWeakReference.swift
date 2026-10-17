@@ -23,7 +23,7 @@ fileprivate class WeakReference {
     }
 }
 
-fileprivate class WeakReferenceWrapper: WinRTAbiBridgeWrapper<IWeakReferenceBridge> {
+fileprivate class WeakReferenceWrapper: WinRTAbiBridgeWrapper<IWeakReferenceBridge>, @unchecked Sendable {
     init(_ weakReference: WeakReference){
         super.init(IWeakReferenceBridge.makeAbi(), weakReference)
     }
@@ -55,7 +55,7 @@ fileprivate enum IWeakReferenceBridge: AbiBridge {
     }
 }
 
-fileprivate var IWeakReferenceVTable: C_IWeakReferenceVtbl = .init(
+fileprivate nonisolated(unsafe) var IWeakReferenceVTable: C_IWeakReferenceVtbl = .init(
     QueryInterface: { WeakReferenceWrapper.queryInterface($0, $1, $2) },
     AddRef: { WeakReferenceWrapper.addRef($0) },
     Release: { WeakReferenceWrapper.release($0) },

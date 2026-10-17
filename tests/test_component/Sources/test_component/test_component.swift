@@ -517,7 +517,7 @@ extension __ABI_test_component {
 }
 // MARK: - ArrayMethodCallback
 
-public typealias ArrayMethodCallback = ([Int32]) throws -> ()
+public typealias ArrayMethodCallback = @Sendable ([Int32]) throws -> ()
 
 // MARK: - ArrayMethodCallback Internals
 
@@ -559,7 +559,7 @@ extension __ABI_test_component {
 
 
     typealias ArrayMethodCallbackWrapper = InterfaceWrapperBase<__IMPL_test_component.ArrayMethodCallbackBridge>
-    internal static var ArrayMethodCallbackVTable: __x_ABI_Ctest__component_CIArrayMethodCallbackVtbl = .init(
+    internal static nonisolated(unsafe) var ArrayMethodCallbackVTable: __x_ABI_Ctest__component_CIArrayMethodCallbackVtbl = .init(
         QueryInterface: { ArrayMethodCallbackWrapper.queryInterface($0, $1, $2) },
         AddRef: { ArrayMethodCallbackWrapper.addRef($0) },
         Release: { ArrayMethodCallbackWrapper.release($0) },
@@ -582,7 +582,7 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_Ctest__component_CIAr
 
 // MARK: - ObjectHandler
 
-public typealias ObjectHandler = (Any?) throws -> ()
+public typealias ObjectHandler = @Sendable (Any?) throws -> ()
 
 // MARK: - ObjectHandler Internals
 
@@ -624,7 +624,7 @@ extension __ABI_test_component {
 
 
     typealias ObjectHandlerWrapper = InterfaceWrapperBase<__IMPL_test_component.ObjectHandlerBridge>
-    internal static var ObjectHandlerVTable: __x_ABI_Ctest__component_CIObjectHandlerVtbl = .init(
+    internal static nonisolated(unsafe) var ObjectHandlerVTable: __x_ABI_Ctest__component_CIObjectHandlerVtbl = .init(
         QueryInterface: { ObjectHandlerWrapper.queryInterface($0, $1, $2) },
         AddRef: { ObjectHandlerWrapper.addRef($0) },
         Release: { ObjectHandlerWrapper.release($0) },
@@ -647,7 +647,7 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_Ctest__component_CIOb
 
 // MARK: - VoidToVoidDelegate
 
-public typealias VoidToVoidDelegate = () throws -> ()
+public typealias VoidToVoidDelegate = @Sendable () throws -> ()
 
 // MARK: - VoidToVoidDelegate Internals
 
@@ -687,7 +687,7 @@ extension __ABI_test_component {
 
 
     typealias VoidToVoidDelegateWrapper = InterfaceWrapperBase<__IMPL_test_component.VoidToVoidDelegateBridge>
-    internal static var VoidToVoidDelegateVTable: __x_ABI_Ctest__component_CIVoidToVoidDelegateVtbl = .init(
+    internal static nonisolated(unsafe) var VoidToVoidDelegateVTable: __x_ABI_Ctest__component_CIVoidToVoidDelegateVtbl = .init(
         QueryInterface: { VoidToVoidDelegateWrapper.queryInterface($0, $1, $2) },
         AddRef: { VoidToVoidDelegateWrapper.addRef($0) },
         Release: { VoidToVoidDelegateWrapper.release($0) },
@@ -753,7 +753,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IArrayScenariosImpl: IArrayScenarios, WinRTAbiImpl {
+    fileprivate class IArrayScenariosImpl: IArrayScenarios, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IArrayScenariosBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -935,7 +935,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IArrayScenariosVTable: __x_ABI_Ctest__component_CIArrayScenariosVtbl = .init(
+    internal static nonisolated(unsafe) var IArrayScenariosVTable: __x_ABI_Ctest__component_CIArrayScenariosVtbl = .init(
         QueryInterface: { IArrayScenariosWrapper.queryInterface($0, $1, $2) },
         AddRef: { IArrayScenariosWrapper.addRef($0) },
         Release: { IArrayScenariosWrapper.release($0) },
@@ -1123,7 +1123,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IArrayShouldBuildImpl: IArrayShouldBuild, WinRTAbiImpl {
+    fileprivate class IArrayShouldBuildImpl: IArrayShouldBuild, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IArrayShouldBuildBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1166,7 +1166,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IArrayShouldBuildVTable: __x_ABI_Ctest__component_CIArrayShouldBuildVtbl = .init(
+    internal static nonisolated(unsafe) var IArrayShouldBuildVTable: __x_ABI_Ctest__component_CIArrayShouldBuildVtbl = .init(
         QueryInterface: { IArrayShouldBuildWrapper.queryInterface($0, $1, $2) },
         AddRef: { IArrayShouldBuildWrapper.addRef($0) },
         Release: { IArrayShouldBuildWrapper.release($0) },
@@ -1250,7 +1250,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IAsyncMethodsWithProgressImpl: IAsyncMethodsWithProgress, WinRTAbiImpl {
+    fileprivate class IAsyncMethodsWithProgressImpl: IAsyncMethodsWithProgress, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IAsyncMethodsWithProgressBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1285,7 +1285,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IAsyncMethodsWithProgressVTable: __x_ABI_Ctest__component_CIAsyncMethodsWithProgressVtbl = .init(
+    internal static nonisolated(unsafe) var IAsyncMethodsWithProgressVTable: __x_ABI_Ctest__component_CIAsyncMethodsWithProgressVtbl = .init(
         QueryInterface: { IAsyncMethodsWithProgressWrapper.queryInterface($0, $1, $2) },
         AddRef: { IAsyncMethodsWithProgressWrapper.addRef($0) },
         Release: { IAsyncMethodsWithProgressWrapper.release($0) },
@@ -1373,7 +1373,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IAsyncOperationIntImpl: IAsyncOperationInt, WinRTAbiImpl {
+    fileprivate class IAsyncOperationIntImpl: IAsyncOperationInt, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IAsyncOperationIntBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1415,7 +1415,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IAsyncOperationIntVTable: __x_ABI_Ctest__component_CIAsyncOperationIntVtbl = .init(
+    internal static nonisolated(unsafe) var IAsyncOperationIntVTable: __x_ABI_Ctest__component_CIAsyncOperationIntVtbl = .init(
         QueryInterface: { IAsyncOperationIntWrapper.queryInterface($0, $1, $2) },
         AddRef: { IAsyncOperationIntWrapper.addRef($0) },
         Release: { IAsyncOperationIntWrapper.release($0) },
@@ -1509,7 +1509,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IBasicImpl: IBasic, WinRTAbiImpl {
+    fileprivate class IBasicImpl: IBasic, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IBasicBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1541,7 +1541,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IBasicVTable: __x_ABI_Ctest__component_CIBasicVtbl = .init(
+    internal static nonisolated(unsafe) var IBasicVTable: __x_ABI_Ctest__component_CIBasicVtbl = .init(
         QueryInterface: { IBasicWrapper.queryInterface($0, $1, $2) },
         AddRef: { IBasicWrapper.addRef($0) },
         Release: { IBasicWrapper.release($0) },
@@ -1648,7 +1648,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IIAmImplementableImpl: IIAmImplementable, WinRTAbiImpl {
+    fileprivate class IIAmImplementableImpl: IIAmImplementable, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IIAmImplementableBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1944,7 +1944,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IIAmImplementableVTable: __x_ABI_Ctest__component_CIIAmImplementableVtbl = .init(
+    internal static nonisolated(unsafe) var IIAmImplementableVTable: __x_ABI_Ctest__component_CIIAmImplementableVtbl = .init(
         QueryInterface: { IIAmImplementableWrapper.queryInterface($0, $1, $2) },
         AddRef: { IIAmImplementableWrapper.addRef($0) },
         Release: { IIAmImplementableWrapper.release($0) },
@@ -2214,7 +2214,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IInterfaceWithObservableVectorImpl: IInterfaceWithObservableVector, WinRTAbiImpl {
+    fileprivate class IInterfaceWithObservableVectorImpl: IInterfaceWithObservableVector, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IInterfaceWithObservableVectorBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2248,7 +2248,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IInterfaceWithObservableVectorVTable: __x_ABI_Ctest__component_CIInterfaceWithObservableVectorVtbl = .init(
+    internal static nonisolated(unsafe) var IInterfaceWithObservableVectorVTable: __x_ABI_Ctest__component_CIInterfaceWithObservableVectorVtbl = .init(
         QueryInterface: { IInterfaceWithObservableVectorWrapper.queryInterface($0, $1, $2) },
         AddRef: { IInterfaceWithObservableVectorWrapper.addRef($0) },
         Release: { IInterfaceWithObservableVectorWrapper.release($0) },
@@ -2333,7 +2333,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class IReferenceTargetImpl: IReferenceTarget, WinRTAbiImpl {
+    fileprivate class IReferenceTargetImpl: IReferenceTarget, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IReferenceTargetBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2365,7 +2365,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var IReferenceTargetVTable: __x_ABI_Ctest__component_CIReferenceTargetVtbl = .init(
+    internal static nonisolated(unsafe) var IReferenceTargetVTable: __x_ABI_Ctest__component_CIReferenceTargetVtbl = .init(
         QueryInterface: { IReferenceTargetWrapper.queryInterface($0, $1, $2) },
         AddRef: { IReferenceTargetWrapper.addRef($0) },
         Release: { IReferenceTargetWrapper.release($0) },
@@ -2450,7 +2450,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class ISimpleDelegateImpl: ISimpleDelegate, WinRTAbiImpl {
+    fileprivate class ISimpleDelegateImpl: ISimpleDelegate, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = ISimpleDelegateBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2492,7 +2492,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var ISimpleDelegateVTable: __x_ABI_Ctest__component_CISimpleDelegateVtbl = .init(
+    internal static nonisolated(unsafe) var ISimpleDelegateVTable: __x_ABI_Ctest__component_CISimpleDelegateVtbl = .init(
         QueryInterface: { ISimpleDelegateWrapper.queryInterface($0, $1, $2) },
         AddRef: { ISimpleDelegateWrapper.addRef($0) },
         Release: { ISimpleDelegateWrapper.release($0) },
@@ -2585,7 +2585,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class WithIterableGuidsImpl: WithIterableGuids, WinRTAbiImpl {
+    fileprivate class WithIterableGuidsImpl: WithIterableGuids, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = WithIterableGuidsBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2620,7 +2620,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var WithIterableGuidsVTable: __x_ABI_Ctest__component_CWithIterableGuidsVtbl = .init(
+    internal static nonisolated(unsafe) var WithIterableGuidsVTable: __x_ABI_Ctest__component_CWithIterableGuidsVtbl = .init(
         QueryInterface: { WithIterableGuidsWrapper.queryInterface($0, $1, $2) },
         AddRef: { WithIterableGuidsWrapper.addRef($0) },
         Release: { WithIterableGuidsWrapper.release($0) },
@@ -2709,7 +2709,7 @@ extension __IMPL_test_component {
         }
     }
 
-    fileprivate class WithKeywordImpl: WithKeyword, WinRTAbiImpl {
+    fileprivate class WithKeywordImpl: WithKeyword, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = WithKeywordBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2803,7 +2803,7 @@ extension __ABI_test_component {
 
     }
 
-    internal static var WithKeywordVTable: __x_ABI_Ctest__component_CWithKeywordVtbl = .init(
+    internal static nonisolated(unsafe) var WithKeywordVTable: __x_ABI_Ctest__component_CWithKeywordVtbl = .init(
         QueryInterface: { WithKeywordWrapper.queryInterface($0, $1, $2) },
         AddRef: { WithKeywordWrapper.addRef($0) },
         Release: { WithKeywordWrapper.release($0) },
@@ -3656,7 +3656,7 @@ open class Base : WinRTClass {
             default: return super.queryInterface(iid)
         }
     }
-    private static var _IBaseProtectedFactory : __ABI_test_component.IBaseProtectedFactory =  try! RoGetActivationFactory("test_component.Base")
+    private static nonisolated(unsafe) var _IBaseProtectedFactory : __ABI_test_component.IBaseProtectedFactory =  try! RoGetActivationFactory("test_component.Base")
 
     override public init() {
         super.init()
@@ -3721,7 +3721,7 @@ public class BaseMaker: MakeFromAbi {
 @_spi(WinRTInternal)
 extension __ABI_test_component {
     internal typealias IBaseOverridesWrapper = UnsealedWinRTClassWrapper<__IMPL_test_component.BaseBridge.IBaseOverrides>
-    internal static var IBaseOverridesVTable: __x_ABI_Ctest__component_CIBaseOverridesVtbl = .init(
+    internal static nonisolated(unsafe) var IBaseOverridesVTable: __x_ABI_Ctest__component_CIBaseOverridesVtbl = .init(
         QueryInterface: { IBaseOverridesWrapper.queryInterface($0, $1, $2) },
         AddRef: { IBaseOverridesWrapper.addRef($0) },
         Release: { IBaseOverridesWrapper.release($0) },
@@ -3866,7 +3866,7 @@ open class BaseCollection : WinRTClass, IVector, IIterable {
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IBaseCollectionProtectedFactory : __ABI_test_component.IBaseCollectionProtectedFactory =  try! RoGetActivationFactory("test_component.BaseCollection")
+    private static nonisolated(unsafe) var _IBaseCollectionProtectedFactory : __ABI_test_component.IBaseCollectionProtectedFactory =  try! RoGetActivationFactory("test_component.BaseCollection")
 
     override public init() {
         super.init()
@@ -4141,7 +4141,7 @@ open class BaseNoOverrides : WinRTClass {
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IBaseNoOverridesProtectedFactory : __ABI_test_component.IBaseNoOverridesProtectedFactory =  try! RoGetActivationFactory("test_component.BaseNoOverrides")
+    private static nonisolated(unsafe) var _IBaseNoOverridesProtectedFactory : __ABI_test_component.IBaseNoOverridesProtectedFactory =  try! RoGetActivationFactory("test_component.BaseNoOverrides")
 
     override public init() {
         super.init()
@@ -6122,7 +6122,7 @@ public final class Simple : WinRTClass {
         try _ISimpleStatics.FireStaticEvent()
     }
 
-    public static var staticEvent : Event<EventHandler<Any?>> = {
+    public static nonisolated(unsafe) var staticEvent : Event<EventHandler<Any?>> = {
       .init(
         add: { try! _ISimpleStatics.add_StaticEvent($0) },
         remove: { try? _ISimpleStatics.remove_StaticEvent($0) }
@@ -6835,7 +6835,7 @@ open class UnsealedDerived : test_component.Base {
             default: return super.queryInterface(iid)
         }
     }
-    private static var _IUnsealedDerivedFactory : __ABI_test_component.IUnsealedDerivedFactory =  try! RoGetActivationFactory("test_component.UnsealedDerived")
+    private static nonisolated(unsafe) var _IUnsealedDerivedFactory : __ABI_test_component.IUnsealedDerivedFactory =  try! RoGetActivationFactory("test_component.UnsealedDerived")
 
     override public init() {
         super.init(composing: __IMPL_test_component.UnsealedDerivedBridge.Composable.self) { baseInterface, innerInterface in 
@@ -6923,7 +6923,7 @@ public class UnsealedDerivedMaker: MakeFromAbi {
 @_spi(WinRTInternal)
 extension __ABI_test_component {
     internal typealias IUnsealedDerivedOverridesWrapper = UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerivedBridge.IUnsealedDerivedOverrides>
-    internal static var IUnsealedDerivedOverridesVTable: __x_ABI_Ctest__component_CIUnsealedDerivedOverridesVtbl = .init(
+    internal static nonisolated(unsafe) var IUnsealedDerivedOverridesVTable: __x_ABI_Ctest__component_CIUnsealedDerivedOverridesVtbl = .init(
         QueryInterface: { IUnsealedDerivedOverridesWrapper.queryInterface($0, $1, $2) },
         AddRef: { IUnsealedDerivedOverridesWrapper.addRef($0) },
         Release: { IUnsealedDerivedOverridesWrapper.release($0) },
@@ -6961,7 +6961,7 @@ extension __ABI_test_component {
         }
     )
     internal typealias IUnsealedDerivedOverloads2Wrapper = UnsealedWinRTClassWrapper<__IMPL_test_component.UnsealedDerivedBridge.IUnsealedDerivedOverloads2>
-    internal static var IUnsealedDerivedOverloads2VTable: __x_ABI_Ctest__component_CIUnsealedDerivedOverloads2Vtbl = .init(
+    internal static nonisolated(unsafe) var IUnsealedDerivedOverloads2VTable: __x_ABI_Ctest__component_CIUnsealedDerivedOverloads2Vtbl = .init(
         QueryInterface: { IUnsealedDerivedOverloads2Wrapper.queryInterface($0, $1, $2) },
         AddRef: { IUnsealedDerivedOverloads2Wrapper.addRef($0) },
         Release: { IUnsealedDerivedOverloads2Wrapper.release($0) },
@@ -7143,7 +7143,7 @@ open class UnsealedDerived2 : test_component.UnsealedDerived {
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IUnsealedDerived2Factory : __ABI_test_component.IUnsealedDerived2Factory =  try! RoGetActivationFactory("test_component.UnsealedDerived2")
+    private static nonisolated(unsafe) var _IUnsealedDerived2Factory : __ABI_test_component.IUnsealedDerived2Factory =  try! RoGetActivationFactory("test_component.UnsealedDerived2")
 
     override public init(_ prop: Int32) {
         super.init(composing: __IMPL_test_component.UnsealedDerived2Bridge.Composable.self) { baseInterface, innerInterface in 
@@ -7151,7 +7151,7 @@ open class UnsealedDerived2 : test_component.UnsealedDerived {
         }
     }
 
-    private static var _IUnsealedDerived2ProtectedFactory : __ABI_test_component.IUnsealedDerived2ProtectedFactory =  try! RoGetActivationFactory("test_component.UnsealedDerived2")
+    private static nonisolated(unsafe) var _IUnsealedDerived2ProtectedFactory : __ABI_test_component.IUnsealedDerived2ProtectedFactory =  try! RoGetActivationFactory("test_component.UnsealedDerived2")
 
     override public init() {
         super.init(composing: __IMPL_test_component.UnsealedDerived2Bridge.Composable.self) { baseInterface, innerInterface in 
@@ -7292,7 +7292,7 @@ open class UnsealedDerivedFromNoConstructor : test_component.UnsealedDerivedNoCo
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IUnsealedDerivedFromNoConstructorFactory : __ABI_test_component.IUnsealedDerivedFromNoConstructorFactory =  try! RoGetActivationFactory("test_component.UnsealedDerivedFromNoConstructor")
+    private static nonisolated(unsafe) var _IUnsealedDerivedFromNoConstructorFactory : __ABI_test_component.IUnsealedDerivedFromNoConstructorFactory =  try! RoGetActivationFactory("test_component.UnsealedDerivedFromNoConstructor")
 
     public init() {
         super.init(composing: __IMPL_test_component.UnsealedDerivedFromNoConstructorBridge.Composable.self) { baseInterface, innerInterface in 
@@ -7401,7 +7401,7 @@ open class UnsealedDerivedNoConstructor : test_component.Base {
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IUnsealedDerivedNoConstructorFactory : __ABI_test_component.IUnsealedDerivedNoConstructorFactory =  try! RoGetActivationFactory("test_component.UnsealedDerivedNoConstructor")
+    private static nonisolated(unsafe) var _IUnsealedDerivedNoConstructorFactory : __ABI_test_component.IUnsealedDerivedNoConstructorFactory =  try! RoGetActivationFactory("test_component.UnsealedDerivedNoConstructor")
 
     deinit {
         _default = nil
@@ -7491,7 +7491,7 @@ open class UnsealedDerivedNoOverrides : test_component.BaseNoOverrides {
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IUnsealedDerivedNoOverridesProtectedFactory : __ABI_test_component.IUnsealedDerivedNoOverridesProtectedFactory =  try! RoGetActivationFactory("test_component.UnsealedDerivedNoOverrides")
+    private static nonisolated(unsafe) var _IUnsealedDerivedNoOverridesProtectedFactory : __ABI_test_component.IUnsealedDerivedNoOverridesProtectedFactory =  try! RoGetActivationFactory("test_component.UnsealedDerivedNoOverrides")
 
     override public init() {
         super.init(composing: __IMPL_test_component.UnsealedDerivedNoOverridesBridge.Composable.self) { baseInterface, innerInterface in 

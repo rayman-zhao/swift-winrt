@@ -40,7 +40,7 @@ namespace swiftwinrt
     void write_generic_declaration(writer& w, generic_inst const& type)
     {
         auto push_param_guard = w.push_generic_params(type);
-        w.write("internal var %VTable: %Vtbl = .init(\n",
+        w.write("internal nonisolated(unsafe) var %VTable: %Vtbl = .init(\n",
             type.mangled_name(),
             type.mangled_name());
 
@@ -154,7 +154,7 @@ namespace swiftwinrt
     {
         write_interface_bridge(w, type);
 
-        w.write("fileprivate class % : %, AbiInterfaceImpl {\n",
+        w.write("fileprivate class % : %, AbiInterfaceImpl, ^@unchecked Sendable {\n",
             bind_impl_name(type), type.generic_type_abi_name());
 
         auto indent_guard = w.push_indent();

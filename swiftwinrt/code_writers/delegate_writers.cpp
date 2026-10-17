@@ -13,7 +13,7 @@ namespace swiftwinrt
         // parameters for the delegate signature to create the bridge. The swift compiler
         // complains if the typealias isn't placed in a tuple
         function_def delegate_method = type.functions[0];
-        w.write("public typealias % = (%) throws -> %\n",
+        w.write("public typealias % = ^@Sendable (%) throws -> %\n",
             type,
             bind<write_comma_param_types>(delegate_method.params),
             bind<write_delegate_return_type>(delegate_method));

@@ -6,7 +6,7 @@ import CWinRT
 
 fileprivate let IID_IUnknown = IID(Data1: 0x00000000, Data2: 0x0000, Data3: 0x0000, Data4: ( 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46 )) // 00000000-0000-0000-C000-000000000046
 
-open class IUnknown : HasIID {
+open class IUnknown : HasIID, @unchecked Sendable {
   public let pUnk: IUnknownRef
 
   open class var IID: WindowsFoundation.IID { IID_IUnknown }

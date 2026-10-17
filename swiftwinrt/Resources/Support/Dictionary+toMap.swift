@@ -7,7 +7,7 @@ extension Dictionary {
     }
 }
 
-internal class DictionaryMap<K, V> : IMap where K : Hashable {
+internal class DictionaryMap<K, V> : IMap, @unchecked Sendable where K : Hashable {
     typealias T = AnyIKeyValuePair<Key, Value>?
     private var storage: Dictionary<K, V>
     internal init(_ storage: Dictionary<K, V>){
@@ -33,7 +33,7 @@ extension DictionaryMap {
     public func queryInterface(_ iid: SUPPORT_MODULE.IID) -> IUnknownRef? { nil }
 }
 
-internal class DictionaryMapView<K, V> : IMapView where K : Hashable {
+internal class DictionaryMapView<K, V> : IMapView, @unchecked Sendable where K : Hashable {
     typealias T = AnyIKeyValuePair<Key, Value>?
 
     private var storage: Dictionary<K, V>

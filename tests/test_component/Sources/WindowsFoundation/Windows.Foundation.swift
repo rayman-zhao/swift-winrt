@@ -323,7 +323,7 @@ extension __x_ABI_CWindows_CFoundation_CTimeSpan {
 }
 // MARK: - AsyncActionCompletedHandler
 
-public typealias AsyncActionCompletedHandler = (AnyIAsyncAction?, AsyncStatus) throws -> ()
+public typealias AsyncActionCompletedHandler = @Sendable (AnyIAsyncAction?, AsyncStatus) throws -> ()
 
 // MARK: - AsyncActionCompletedHandler Internals
 
@@ -365,7 +365,7 @@ extension __ABI_Windows_Foundation {
 
 
     typealias AsyncActionCompletedHandlerWrapper = InterfaceWrapperBase<__IMPL_Windows_Foundation.AsyncActionCompletedHandlerBridge>
-    internal static var AsyncActionCompletedHandlerVTable: __x_ABI_CWindows_CFoundation_CIAsyncActionCompletedHandlerVtbl = .init(
+    internal static nonisolated(unsafe) var AsyncActionCompletedHandlerVTable: __x_ABI_CWindows_CFoundation_CIAsyncActionCompletedHandlerVtbl = .init(
         QueryInterface: { AsyncActionCompletedHandlerWrapper.queryInterface($0, $1, $2) },
         AddRef: { AsyncActionCompletedHandlerWrapper.addRef($0) },
         Release: { AsyncActionCompletedHandlerWrapper.release($0) },
@@ -389,25 +389,25 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_CWindows_CFoundation_
 
 // MARK: - AsyncOperationCompletedHandler`1
 
-public typealias AsyncOperationCompletedHandler<TResult> = (AnyIAsyncOperation<TResult>?, AsyncStatus) throws -> ()
+public typealias AsyncOperationCompletedHandler<TResult> = @Sendable (AnyIAsyncOperation<TResult>?, AsyncStatus) throws -> ()
 
 // MARK: - AsyncOperationCompletedHandler`1 Internals
 
 // MARK: - AsyncOperationProgressHandler`2
 
-public typealias AsyncOperationProgressHandler<TResult,TProgress> = (AnyIAsyncOperationWithProgress<TResult, TProgress>?, TProgress) throws -> ()
+public typealias AsyncOperationProgressHandler<TResult,TProgress> = @Sendable (AnyIAsyncOperationWithProgress<TResult, TProgress>?, TProgress) throws -> ()
 
 // MARK: - AsyncOperationProgressHandler`2 Internals
 
 // MARK: - AsyncOperationWithProgressCompletedHandler`2
 
-public typealias AsyncOperationWithProgressCompletedHandler<TResult,TProgress> = (AnyIAsyncOperationWithProgress<TResult, TProgress>?, AsyncStatus) throws -> ()
+public typealias AsyncOperationWithProgressCompletedHandler<TResult,TProgress> = @Sendable (AnyIAsyncOperationWithProgress<TResult, TProgress>?, AsyncStatus) throws -> ()
 
 // MARK: - AsyncOperationWithProgressCompletedHandler`2 Internals
 
 // MARK: - DeferralCompletedHandler
 
-public typealias DeferralCompletedHandler = () throws -> ()
+public typealias DeferralCompletedHandler = @Sendable () throws -> ()
 
 // MARK: - DeferralCompletedHandler Internals
 
@@ -447,7 +447,7 @@ extension __ABI_Windows_Foundation {
 
 
     typealias DeferralCompletedHandlerWrapper = InterfaceWrapperBase<__IMPL_Windows_Foundation.DeferralCompletedHandlerBridge>
-    internal static var DeferralCompletedHandlerVTable: __x_ABI_CWindows_CFoundation_CIDeferralCompletedHandlerVtbl = .init(
+    internal static nonisolated(unsafe) var DeferralCompletedHandlerVTable: __x_ABI_CWindows_CFoundation_CIDeferralCompletedHandlerVtbl = .init(
         QueryInterface: { DeferralCompletedHandlerWrapper.queryInterface($0, $1, $2) },
         AddRef: { DeferralCompletedHandlerWrapper.addRef($0) },
         Release: { DeferralCompletedHandlerWrapper.release($0) },
@@ -469,13 +469,13 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_CWindows_CFoundation_
 
 // MARK: - EventHandler`1
 
-public typealias EventHandler<T> = (Any?, T) throws -> ()
+public typealias EventHandler<T> = @Sendable (Any?, T) throws -> ()
 
 // MARK: - EventHandler`1 Internals
 
 // MARK: - TypedEventHandler`2
 
-public typealias TypedEventHandler<TSender,TResult> = (TSender, TResult) throws -> ()
+public typealias TypedEventHandler<TSender,TResult> = @Sendable (TSender, TResult) throws -> ()
 
 // MARK: - TypedEventHandler`2 Internals
 
@@ -536,7 +536,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IAsyncActionImpl: IAsyncAction, WinRTAbiImpl {
+    fileprivate class IAsyncActionImpl: IAsyncAction, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IAsyncActionBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -618,7 +618,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IAsyncActionVTable: __x_ABI_CWindows_CFoundation_CIAsyncActionVtbl = .init(
+    internal static nonisolated(unsafe) var IAsyncActionVTable: __x_ABI_CWindows_CFoundation_CIAsyncActionVtbl = .init(
         QueryInterface: { IAsyncActionWrapper.queryInterface($0, $1, $2) },
         AddRef: { IAsyncActionWrapper.addRef($0) },
         Release: { IAsyncActionWrapper.release($0) },
@@ -728,7 +728,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IAsyncInfoImpl: IAsyncInfo, WinRTAbiImpl {
+    fileprivate class IAsyncInfoImpl: IAsyncInfo, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IAsyncInfoBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -811,7 +811,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IAsyncInfoVTable: __x_ABI_CWindows_CFoundation_CIAsyncInfoVtbl = .init(
+    internal static nonisolated(unsafe) var IAsyncInfoVTable: __x_ABI_CWindows_CFoundation_CIAsyncInfoVtbl = .init(
         QueryInterface: { IAsyncInfoWrapper.queryInterface($0, $1, $2) },
         AddRef: { IAsyncInfoWrapper.addRef($0) },
         Release: { IAsyncInfoWrapper.release($0) },
@@ -1005,7 +1005,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IClosableImpl: IClosable, WinRTAbiImpl {
+    fileprivate class IClosableImpl: IClosable, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IClosableBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1038,7 +1038,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IClosableVTable: __x_ABI_CWindows_CFoundation_CIClosableVtbl = .init(
+    internal static nonisolated(unsafe) var IClosableVTable: __x_ABI_CWindows_CFoundation_CIClosableVtbl = .init(
         QueryInterface: { IClosableWrapper.queryInterface($0, $1, $2) },
         AddRef: { IClosableWrapper.addRef($0) },
         Release: { IClosableWrapper.release($0) },
@@ -1127,7 +1127,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IMemoryBufferImpl: IMemoryBuffer, WinRTAbiImpl {
+    fileprivate class IMemoryBufferImpl: IMemoryBuffer, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IMemoryBufferBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1169,7 +1169,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IMemoryBufferVTable: __x_ABI_CWindows_CFoundation_CIMemoryBufferVtbl = .init(
+    internal static nonisolated(unsafe) var IMemoryBufferVTable: __x_ABI_CWindows_CFoundation_CIMemoryBufferVtbl = .init(
         QueryInterface: { IMemoryBufferWrapper.queryInterface($0, $1, $2) },
         AddRef: { IMemoryBufferWrapper.addRef($0) },
         Release: { IMemoryBufferWrapper.release($0) },
@@ -1272,7 +1272,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IMemoryBufferReferenceImpl: IMemoryBufferReference, WinRTAbiImpl {
+    fileprivate class IMemoryBufferReferenceImpl: IMemoryBufferReference, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IMemoryBufferReferenceBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1349,7 +1349,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IMemoryBufferReferenceVTable: __x_ABI_CWindows_CFoundation_CIMemoryBufferReferenceVtbl = .init(
+    internal static nonisolated(unsafe) var IMemoryBufferReferenceVTable: __x_ABI_CWindows_CFoundation_CIMemoryBufferReferenceVtbl = .init(
         QueryInterface: { IMemoryBufferReferenceWrapper.queryInterface($0, $1, $2) },
         AddRef: { IMemoryBufferReferenceWrapper.addRef($0) },
         Release: { IMemoryBufferReferenceWrapper.release($0) },
@@ -1517,7 +1517,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    public class IPropertyValueImpl : IPropertyValue, IReference {
+    public class IPropertyValueImpl : IPropertyValue, IReference, @unchecked Sendable {
         public typealias T = Any
         var _value: Any
         var propertyType : PropertyType
@@ -2019,7 +2019,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IPropertyValueVTable: __x_ABI_CWindows_CFoundation_CIPropertyValueVtbl = .init(
+    internal static nonisolated(unsafe) var IPropertyValueVTable: __x_ABI_CWindows_CFoundation_CIPropertyValueVtbl = .init(
         QueryInterface: { IPropertyValueWrapper.queryInterface($0, $1, $2) },
         AddRef: { IPropertyValueWrapper.addRef($0) },
         Release: { IPropertyValueWrapper.release($0) },
@@ -2515,7 +2515,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IStringableImpl: IStringable, WinRTAbiImpl {
+    fileprivate class IStringableImpl: IStringable, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStringableBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2553,7 +2553,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IStringableVTable: __x_ABI_CWindows_CFoundation_CIStringableVtbl = .init(
+    internal static nonisolated(unsafe) var IStringableVTable: __x_ABI_CWindows_CFoundation_CIStringableVtbl = .init(
         QueryInterface: { IStringableWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStringableWrapper.addRef($0) },
         Release: { IStringableWrapper.release($0) },
@@ -2642,7 +2642,7 @@ extension __IMPL_Windows_Foundation {
         }
     }
 
-    fileprivate class IWwwFormUrlDecoderEntryImpl: IWwwFormUrlDecoderEntry, WinRTAbiImpl {
+    fileprivate class IWwwFormUrlDecoderEntryImpl: IWwwFormUrlDecoderEntry, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IWwwFormUrlDecoderEntryBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2696,7 +2696,7 @@ extension __ABI_Windows_Foundation {
 
     }
 
-    internal static var IWwwFormUrlDecoderEntryVTable: __x_ABI_CWindows_CFoundation_CIWwwFormUrlDecoderEntryVtbl = .init(
+    internal static nonisolated(unsafe) var IWwwFormUrlDecoderEntryVTable: __x_ABI_CWindows_CFoundation_CIWwwFormUrlDecoderEntryVtbl = .init(
         QueryInterface: { IWwwFormUrlDecoderEntryWrapper.queryInterface($0, $1, $2) },
         AddRef: { IWwwFormUrlDecoderEntryWrapper.addRef($0) },
         Release: { IWwwFormUrlDecoderEntryWrapper.release($0) },

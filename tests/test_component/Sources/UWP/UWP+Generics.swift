@@ -15,7 +15,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_IInspectableWrapper.release($0) },
@@ -68,7 +68,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_booleanWrapper.release($0) },
@@ -121,7 +121,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_HSTRINGWrapper.release($0) },
@@ -174,7 +174,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32VTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32VTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1_UINT32Wrapper.release($0) },
@@ -227,7 +227,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.release($0) },
@@ -280,7 +280,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__F__CIPropertySetWrapper.release($0) },
@@ -333,7 +333,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -386,7 +386,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -439,7 +439,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -492,7 +492,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.release($0) },
@@ -545,7 +545,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.release($0) },
@@ -598,7 +598,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_C__FIVector_1_HSTRINGWrapper.release($0) },
@@ -651,7 +651,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper.release($0) },
@@ -704,7 +704,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper.release($0) },
@@ -757,7 +757,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper.release($0) },
@@ -810,7 +810,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper.release($0) },
@@ -863,7 +863,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper.release($0) },
@@ -916,7 +916,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper.release($0) },
@@ -969,7 +969,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -1022,7 +1022,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper.release($0) },
@@ -1075,7 +1075,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -1128,7 +1128,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -1181,7 +1181,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper.release($0) },
@@ -1234,7 +1234,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper.release($0) },
@@ -1287,7 +1287,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper.release($0) },
@@ -1340,7 +1340,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper.release($0) },
@@ -1393,7 +1393,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper.release($0) },
@@ -1446,7 +1446,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper.release($0) },
@@ -1499,7 +1499,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper.release($0) },
@@ -1552,7 +1552,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32VTable: __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32VTable: __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationProgressHandler_2_UINT32_UINT32Wrapper.release($0) },
@@ -1605,7 +1605,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32VTable: __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32VTable: __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationProgressHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.release($0) },
@@ -1658,7 +1658,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2_UINT32_UINT32Wrapper.release($0) },
@@ -1711,7 +1711,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperation
     }
 }
 
-internal var __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationWithProgressCompletedHandler_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.release($0) },
@@ -1757,7 +1757,7 @@ private var IID___x_ABI_C__FIIterable_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0xe2fcc7c1, Data2: 0x3bfc, Data3: 0x5a0b, Data4: ( 0xb2,0xb0,0x72,0xe7,0x69,0xd1,0xcb,0x7e ))// e2fcc7c1-3bfc-5a0b-b2b0-72e769d1cb7e
 }
 
-internal var __x_ABI_C__FIIterable_1_HSTRINGVTable: __x_ABI_C__FIIterable_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1_HSTRINGVTable: __x_ABI_C__FIIterable_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1_HSTRINGWrapper.release($0) },
@@ -1823,7 +1823,7 @@ internal enum __x_ABI_C__FIIterable_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1_HSTRINGImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1_HSTRINGImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIIterable_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -1844,7 +1844,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSeg
     .init(Data1: 0x5498f4f3, Data2: 0xcee4, Data3: 0x5b72, Data4: ( 0x97,0x29,0x81,0x5c,0x4a,0xd7,0xb9,0xdc ))// 5498f4f3-cee4-5b72-9729-815c4ad7b9dc
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -1910,7 +1910,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegme
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.TextSegment
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge
     let _default: Bridge.SwiftABI
@@ -1931,7 +1931,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IIns
     .init(Data1: 0xfe2f3d47, Data2: 0x5d47, Data3: 0x5499, Data4: ( 0x83,0x74,0x43,0x0c,0x7c,0xda,0x02,0x04 ))// fe2f3d47-5d47-5499-8374-430c7cda0204
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.release($0) },
@@ -1997,7 +1997,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspe
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Any?>?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -2018,7 +2018,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_
     .init(Data1: 0xf819a276, Data2: 0xb3f5, Data3: 0x54d4, Data4: ( 0xb8,0xfd,0xc9,0xad,0xb7,0xf7,0x00,0xe3 ))// f819a276-b3f5-54d4-b8fd-c9adb7f700e3
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -2084,7 +2084,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_AB
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, WindowsFoundation.AnyIVectorView<UWP.TextSegment>?>?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge
     let _default: Bridge.SwiftABI
@@ -2105,7 +2105,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageIte
     .init(Data1: 0xbb8b8418, Data2: 0x65d1, Data3: 0x544b, Data4: ( 0xb0,0x83,0x6d,0x17,0x2f,0x56,0x8c,0x73 ))// bb8b8418-65d1-544b-b083-6d172f568c73
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -2171,7 +2171,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemB
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.AnyIStorageItem?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CIStorageItemBridge
     let _default: Bridge.SwiftABI
@@ -2192,7 +2192,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSo
     .init(Data1: 0x35aff6f9, Data2: 0xef75, Data3: 0x5280, Data4: ( 0xbb,0x84,0xa2,0xbf,0x83,0x17,0xcf,0x35 ))// 35aff6f9-ef75-5280-bb84-a2bf8317cf35
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.release($0) },
@@ -2258,7 +2258,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSort
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.SortEntry
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge
     let _default: Bridge.SwiftABI
@@ -2279,7 +2279,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFile
     .init(Data1: 0x9ac00304, Data2: 0x83ea, Data3: 0x5688, Data4: ( 0x87,0xb6,0xae,0x38,0xaa,0xb6,0x5d,0x0b ))// 9ac00304-83ea-5688-87b6-ae38aab65d0b
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -2345,7 +2345,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileBr
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageFile?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFileBridge
     let _default: Bridge.SwiftABI
@@ -2366,7 +2366,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFold
     .init(Data1: 0x4669befc, Data2: 0xae5c, Data3: 0x52b1, Data4: ( 0x8a,0x97,0x54,0x66,0xce,0x61,0xe9,0x4e ))// 4669befc-ae5c-52b1-8a97-5466ce61e94e
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -2432,7 +2432,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolder
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageFolder?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageFolderBridge
     let _default: Bridge.SwiftABI
@@ -2453,7 +2453,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibr
     .init(Data1: 0x87c15dfc, Data2: 0x0c5e, Data3: 0x518b, Data4: ( 0x92,0x06,0x97,0xd3,0xd9,0x82,0x3c,0x61 ))// 87c15dfc-0c5e-518b-9206-97d3d9823c61
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.release($0) },
@@ -2519,7 +2519,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibrar
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageLibraryChange?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge
     let _default: Bridge.SwiftABI
@@ -2540,7 +2540,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUser: Window
     .init(Data1: 0xd1bacd1f, Data2: 0x0376, Data3: 0x5823, Data4: ( 0x8c,0x29,0x1d,0x45,0xb9,0xf4,0xc1,0x91 ))// d1bacd1f-0376-5823-8c29-1d45b9f4c191
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWrapper.release($0) },
@@ -2606,7 +2606,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserBridge : A
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.User?
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserBridge
     let _default: Bridge.SwiftABI
@@ -2627,7 +2627,7 @@ private var IID___x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherU
     .init(Data1: 0x89342b56, Data2: 0xeb84, Data3: 0x54e7, Data4: ( 0x98,0xc1,0xba,0xee,0x44,0x8b,0xdc,0xed ))// 89342b56-eb84-54e7-98c1-baee448bdced
 }
 
-internal var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVTable: __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.release($0) },
@@ -2693,7 +2693,7 @@ internal enum __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpd
     }
 }
 
-fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindImpl : IIterable, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindImpl : IIterable, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.UserWatcherUpdateKind
     typealias Bridge = __x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindBridge
     let _default: Bridge.SwiftABI
@@ -2714,7 +2714,7 @@ private var IID___x_ABI_C__FIIterator_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x8c304ebb, Data2: 0x6615, Data3: 0x50a4, Data4: ( 0x88,0x29,0x87,0x9e,0xcd,0x44,0x32,0x36 ))// 8c304ebb-6615-50a4-8829-879ecd443236
 }
 
-internal var __x_ABI_C__FIIterator_1_HSTRINGVTable: __x_ABI_C__FIIterator_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1_HSTRINGVTable: __x_ABI_C__FIIterator_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1_HSTRINGWrapper.release($0) },
@@ -2842,7 +2842,7 @@ internal enum __x_ABI_C__FIIterator_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1_HSTRINGImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1_HSTRINGImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIIterator_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -2878,7 +2878,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSeg
     .init(Data1: 0x645a39b4, Data2: 0xf001, Data3: 0x5272, Data4: ( 0x90,0x15,0xfb,0x4a,0x32,0x71,0x79,0xae ))// 645a39b4-f001-5272-9015-fb4a327179ae
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -2996,7 +2996,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegme
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.TextSegment
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge
     let _default: Bridge.SwiftABI
@@ -3032,7 +3032,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IIns
     .init(Data1: 0x5db5fa32, Data2: 0x707c, Data3: 0x5849, Data4: ( 0xa0,0x6b,0x91,0xc8,0xeb,0x9d,0x10,0xe8 ))// 5db5fa32-707c-5849-a06b-91c8eb9d10e8
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.release($0) },
@@ -3157,7 +3157,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspe
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Any?>?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -3193,7 +3193,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_
     .init(Data1: 0x00078aa3, Data2: 0x8676, Data3: 0x5f06, Data4: ( 0xad,0xf5,0xff,0xe5,0xd6,0x61,0xd6,0x70 ))// 00078aa3-8676-5f06-adf5-ffe5d661d670
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -3318,7 +3318,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_AB
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, WindowsFoundation.AnyIVectorView<UWP.TextSegment>?>?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge
     let _default: Bridge.SwiftABI
@@ -3354,7 +3354,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageIte
     .init(Data1: 0x05b487c2, Data2: 0x3830, Data3: 0x5d3c, Data4: ( 0x98,0xda,0x25,0xfa,0x11,0x54,0x2d,0xbd ))// 05b487c2-3830-5d3c-98da-25fa11542dbd
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -3479,7 +3479,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemB
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.AnyIStorageItem?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CIStorageItemBridge
     let _default: Bridge.SwiftABI
@@ -3515,7 +3515,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSo
     .init(Data1: 0x520434a2, Data2: 0xacf7, Data3: 0x58c9, Data4: ( 0xb4,0x7a,0x27,0x41,0xf2,0xfa,0xc2,0xc2 ))// 520434a2-acf7-58c9-b47a-2741f2fac2c2
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.release($0) },
@@ -3644,7 +3644,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSort
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.SortEntry
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge
     let _default: Bridge.SwiftABI
@@ -3680,7 +3680,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFile
     .init(Data1: 0x43e29f53, Data2: 0x0298, Data3: 0x55aa, Data4: ( 0xa6,0xc8,0x4e,0xdd,0x32,0x3d,0x95,0x98 ))// 43e29f53-0298-55aa-a6c8-4edd323d9598
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -3804,7 +3804,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileBr
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageFile?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFileBridge
     let _default: Bridge.SwiftABI
@@ -3840,7 +3840,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFold
     .init(Data1: 0x5aac96fb, Data2: 0xb3b9, Data3: 0x5a7f, Data4: ( 0xa9,0x20,0x4b,0x5a,0x8d,0xf8,0x11,0x68 ))// 5aac96fb-b3b9-5a7f-a920-4b5a8df81168
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -3964,7 +3964,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolder
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageFolder?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageFolderBridge
     let _default: Bridge.SwiftABI
@@ -4000,7 +4000,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibr
     .init(Data1: 0xc48a1103, Data2: 0x56e6, Data3: 0x5398, Data4: ( 0x84,0xfe,0x92,0xed,0xad,0x7f,0xc1,0x11 ))// c48a1103-56e6-5398-84fe-92edad7fc111
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.release($0) },
@@ -4124,7 +4124,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibrar
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageLibraryChange?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge
     let _default: Bridge.SwiftABI
@@ -4160,7 +4160,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUser: Window
     .init(Data1: 0x326fe162, Data2: 0x582b, Data3: 0x5659, Data4: ( 0xb8,0xa4,0x68,0xff,0x0f,0x52,0x57,0x45 ))// 326fe162-582b-5659-b8a4-68ff0f525745
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWrapper.release($0) },
@@ -4284,7 +4284,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserBridge : A
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.User?
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserBridge
     let _default: Bridge.SwiftABI
@@ -4320,7 +4320,7 @@ private var IID___x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherU
     .init(Data1: 0x99011e6c, Data2: 0x3047, Data3: 0x5bca, Data4: ( 0xb9,0x32,0xe1,0xd1,0xeb,0x8a,0x93,0x7f ))// 99011e6c-3047-5bca-b932-e1d1eb8a937f
 }
 
-internal var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVTable: __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVtbl = .init(
     QueryInterface: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.addRef($0) },
     Release: { __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.release($0) },
@@ -4433,7 +4433,7 @@ internal enum __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpd
     }
 }
 
-fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindImpl : IIterator, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindImpl : IIterator, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.UserWatcherUpdateKind
     typealias Bridge = __x_ABI_C__FIIterator_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindBridge
     let _default: Bridge.SwiftABI
@@ -4469,7 +4469,7 @@ private var IID___x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectable: WindowsFoundat
     .init(Data1: 0x09335560, Data2: 0x6c6b, Data3: 0x5a26, Data4: ( 0x93,0x48,0x97,0xb7,0x81,0x13,0x2b,0x20 ))// 09335560-6c6b-5a26-9348-97b781132b20
 }
 
-internal var __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableWrapper.release($0) },
@@ -4553,7 +4553,7 @@ internal enum __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge : AbiInterf
     }
 }
 
-fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableImpl : IKeyValuePair, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableImpl : IKeyValuePair, AbiInterfaceImpl, @unchecked Sendable {
     typealias K = String
     typealias V = Any?
     typealias Bridge = __x_ABI_C__FIKeyValuePair_2_HSTRING_IInspectableBridge
@@ -4580,7 +4580,7 @@ private var IID___x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___
     .init(Data1: 0x77b4daf4, Data2: 0x4f4f, Data3: 0x5568, Data4: ( 0x90,0xee,0x1a,0x32,0xcf,0x0c,0xaa,0xea ))// 77b4daf4-4f4f-5568-90ee-1a32cf0caaea
 }
 
-internal var __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -4664,7 +4664,7 @@ internal enum __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_
     }
 }
 
-fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IKeyValuePair, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IKeyValuePair, AbiInterfaceImpl, @unchecked Sendable {
     typealias K = String
     typealias V = WindowsFoundation.AnyIVectorView<UWP.TextSegment>?
     typealias Bridge = __x_ABI_C__FIKeyValuePair_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge
@@ -4691,7 +4691,7 @@ private var IID___x_ABI_C__FIMapChangedEventArgs_1_HSTRING: WindowsFoundation.II
     .init(Data1: 0x60141efb, Data2: 0xf2f9, Data3: 0x5377, Data4: ( 0x96,0xfd,0xf8,0xc6,0x0d,0x95,0x58,0xb5 ))// 60141efb-f2f9-5377-96fd-f8c60d9558b5
 }
 
-internal var __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGVTable: __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGVTable: __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGWrapper.release($0) },
@@ -4773,7 +4773,7 @@ internal enum __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGBridge : AbiInterfaceBri
     }
 }
 
-fileprivate class __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGImpl : IMapChangedEventArgs, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGImpl : IMapChangedEventArgs, AbiInterfaceImpl, @unchecked Sendable {
     typealias K = String
     typealias Bridge = __x_ABI_C__FIMapChangedEventArgs_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -4799,7 +4799,7 @@ private var IID___x_ABI_C__FIMapView_2_HSTRING_IInspectable: WindowsFoundation.I
     .init(Data1: 0xbb78502a, Data2: 0xf79d, Data3: 0x54fa, Data4: ( 0x92,0xc9,0x90,0xc5,0x03,0x9f,0xdf,0x7e ))// bb78502a-f79d-54fa-92c9-90c5039fdf7e
 }
 
-internal var __x_ABI_C__FIMapView_2_HSTRING_IInspectableVTable: __x_ABI_C__FIMapView_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING_IInspectableVTable: __x_ABI_C__FIMapView_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMapView_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMapView_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMapView_2_HSTRING_IInspectableWrapper.release($0) },
@@ -4928,7 +4928,7 @@ internal enum __x_ABI_C__FIMapView_2_HSTRING_IInspectableBridge : AbiInterfaceBr
     }
 }
 
-fileprivate class __x_ABI_C__FIMapView_2_HSTRING_IInspectableImpl : IMapView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMapView_2_HSTRING_IInspectableImpl : IMapView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Any?>?
     typealias K = String
     typealias V = Any?
@@ -4972,7 +4972,7 @@ private var IID___x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI
     .init(Data1: 0x91d443d6, Data2: 0x3777, Data3: 0x5102, Data4: ( 0xb0,0xbc,0x3d,0x41,0x83,0xa2,0x6f,0xf9 ))// 91d443d6-3777-5102-b0bc-3d4183a26ff9
 }
 
-internal var __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -5101,7 +5101,7 @@ internal enum __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_C
     }
 }
 
-fileprivate class __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IMapView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMapView_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IMapView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, WindowsFoundation.AnyIVectorView<UWP.TextSegment>?>?
     typealias K = String
     typealias V = WindowsFoundation.AnyIVectorView<UWP.TextSegment>?
@@ -5145,7 +5145,7 @@ private var IID___x_ABI_C__FIMap_2_HSTRING_IInspectable: WindowsFoundation.IID {
     .init(Data1: 0x1b0d3570, Data2: 0x0877, Data3: 0x5ec2, Data4: ( 0x8a,0x2c,0x3b,0x95,0x39,0x50,0x6a,0xca ))// 1b0d3570-0877-5ec2-8a2c-3b9539506aca
 }
 
-internal var __x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIMap_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIMap_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.release($0) },
@@ -5309,7 +5309,7 @@ internal enum __x_ABI_C__FIMap_2_HSTRING_IInspectableBridge : AbiInterfaceBridge
     }
 }
 
-fileprivate class __x_ABI_C__FIMap_2_HSTRING_IInspectableImpl : IMap, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMap_2_HSTRING_IInspectableImpl : IMap, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Any?>?
     typealias K = String
     typealias V = Any?
@@ -5368,7 +5368,7 @@ private var IID___x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWi
     .init(Data1: 0xa31b6540, Data2: 0xb2b1, Data3: 0x536d, Data4: ( 0x81,0x8f,0x8a,0xde,0x70,0x51,0xc3,0xb3 ))// a31b6540-b2b1-536d-818f-8ade7051c3b3
 }
 
-internal var __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -5532,7 +5532,7 @@ internal enum __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWind
     }
 }
 
-fileprivate class __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IMap, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIMap_2_HSTRING___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IMap, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, WindowsFoundation.AnyIVectorView<UWP.TextSegment>?>?
     typealias K = String
     typealias V = WindowsFoundation.AnyIVectorView<UWP.TextSegment>?
@@ -5591,7 +5591,7 @@ private var IID___x_ABI_C__FIObservableMap_2_HSTRING_IInspectable: WindowsFounda
     .init(Data1: 0x236aac9d, Data2: 0xfb12, Data3: 0x5c4d, Data4: ( 0xa4,0x1c,0x9e,0x44,0x5f,0xb4,0xd7,0xec ))// 236aac9d-fb12-5c4d-a41c-9e445fb4d7ec
 }
 
-internal var __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableWrapper.release($0) },
@@ -5673,7 +5673,7 @@ internal enum __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableBridge : AbiInter
     }
 }
 
-fileprivate class __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableImpl : IObservableMap, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIObservableMap_2_HSTRING_IInspectableImpl : IObservableMap, AbiInterfaceImpl, @unchecked Sendable {
     typealias K = String
     typealias V = Any?
     typealias T = WindowsFoundation.AnyIKeyValuePair<String, Any?>?
@@ -5746,7 +5746,7 @@ private var IID___x_ABI_C__FIVectorView_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x2f13c006, Data2: 0xa03a, Data3: 0x5f69, Data4: ( 0xb0,0x90,0x75,0xa4,0x3e,0x33,0x42,0x3e ))// 2f13c006-a03a-5f69-b090-75a43e33423e
 }
 
-internal var __x_ABI_C__FIVectorView_1_HSTRINGVTable: __x_ABI_C__FIVectorView_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1_HSTRINGVTable: __x_ABI_C__FIVectorView_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1_HSTRINGWrapper.release($0) },
@@ -5881,7 +5881,7 @@ internal enum __x_ABI_C__FIVectorView_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1_HSTRINGImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1_HSTRINGImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIVectorView_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -5944,7 +5944,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextS
     .init(Data1: 0x2f245f9d, Data2: 0xeb5f, Data3: 0x5641, Data4: ( 0x9d,0xcc,0x6a,0xb1,0x94,0x6c,0xc7,0xe6 ))// 2f245f9d-eb5f-5641-9dcc-6ab1946cc7e6
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentWrapper.release($0) },
@@ -6068,7 +6068,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSeg
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.TextSegment
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CData__CText__CTextSegmentBridge
     let _default: Bridge.SwiftABI
@@ -6131,7 +6131,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageI
     .init(Data1: 0x85575a41, Data2: 0x06cb, Data3: 0x58d0, Data4: ( 0xb9,0x8a,0x7c,0x8f,0x06,0xe6,0xe9,0xd7 ))// 85575a41-06cb-58d0-b98a-7c8f06e6e9d7
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -6264,7 +6264,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageIte
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.AnyIStorageItem?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemBridge
     let _default: Bridge.SwiftABI
@@ -6327,7 +6327,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__C
     .init(Data1: 0x823c7604, Data2: 0xb37b, Data3: 0x5465, Data4: ( 0xa1,0x69,0x29,0x49,0x78,0x93,0xcd,0xb9 ))// 823c7604-b37b-5465-a169-29497893cdb9
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.release($0) },
@@ -6463,7 +6463,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSo
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.SortEntry
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge
     let _default: Bridge.SwiftABI
@@ -6526,7 +6526,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFi
     .init(Data1: 0x80646519, Data2: 0x5e2a, Data3: 0x595d, Data4: ( 0xa8,0xcd,0x2a,0x24,0xb4,0x06,0x7f,0x1b ))// 80646519-5e2a-595d-a8cd-2a24b4067f1b
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -6656,7 +6656,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFile
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageFile?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileBridge
     let _default: Bridge.SwiftABI
@@ -6719,7 +6719,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFo
     .init(Data1: 0xe20debc6, Data2: 0xdc4e, Data3: 0x542e, Data4: ( 0xa2,0xe7,0xa2,0x4d,0x19,0xc8,0xdd,0x62 ))// e20debc6-dc4e-542e-a2e7-a24d19c8dd62
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -6849,7 +6849,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFold
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageFolder?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderBridge
     let _default: Bridge.SwiftABI
@@ -6912,7 +6912,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLi
     .init(Data1: 0x0d3879e2, Data2: 0x5c7e, Data3: 0x5b6c, Data4: ( 0x95,0x4d,0x10,0xc6,0xda,0x95,0xfb,0xff ))// 0d3879e2-5c7e-5b6c-954d-10c6da95fbff
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.release($0) },
@@ -7042,7 +7042,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibr
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.StorageLibraryChange?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge
     let _default: Bridge.SwiftABI
@@ -7105,7 +7105,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUser: Wind
     .init(Data1: 0x8cbd762a, Data2: 0x1222, Data3: 0x5ee5, Data4: ( 0xb7,0x45,0x48,0x9e,0x7a,0x42,0xc6,0xec ))// 8cbd762a-1222-5ee5-b745-489e7a42c6ec
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.release($0) },
@@ -7235,7 +7235,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserBridge :
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.User?
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserBridge
     let _default: Bridge.SwiftABI
@@ -7298,7 +7298,7 @@ private var IID___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatche
     .init(Data1: 0x92b358cd, Data2: 0xc1ca, Data3: 0x5552, Data4: ( 0x9e,0x2e,0x67,0xe2,0xd6,0xea,0xd4,0xd1 ))// 92b358cd-c1ca-5552-9e2e-67e2d6ead4d1
 }
 
-internal var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVTable: __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindWrapper.release($0) },
@@ -7417,7 +7417,7 @@ internal enum __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherU
     }
 }
 
-fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindImpl : IVectorView, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindImpl : IVectorView, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.UserWatcherUpdateKind
     typealias Bridge = __x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWatcherUpdateKindBridge
     let _default: Bridge.SwiftABI
@@ -7480,7 +7480,7 @@ private var IID___x_ABI_C__FIVector_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x98b9acc1, Data2: 0x4b56, Data3: 0x532e, Data4: ( 0xac,0x73,0x03,0xd5,0x29,0x1c,0xca,0x90 ))// 98b9acc1-4b56-532e-ac73-03d5291cca90
 }
 
-internal var __x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1_HSTRINGWrapper.release($0) },
@@ -7728,7 +7728,7 @@ internal enum __x_ABI_C__FIVector_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1_HSTRINGImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1_HSTRINGImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = String
     typealias Bridge = __x_ABI_C__FIVector_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -7840,7 +7840,7 @@ private var IID___x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSort
     .init(Data1: 0xd8ea401b, Data2: 0x47b3, Data3: 0x5254, Data4: ( 0x84,0xf4,0xee,0xa1,0x0c,0x4c,0xf0,0x68 ))// d8ea401b-47b3-5254-84f4-eea10c4cf068
 }
 
-internal var __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVTable: __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryVtbl = .init(
     QueryInterface: { __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.addRef($0) },
     Release: { __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryWrapper.release($0) },
@@ -8089,7 +8089,7 @@ internal enum __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEn
     }
 }
 
-fileprivate class __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IVector, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryImpl : IVector, AbiInterfaceImpl, @unchecked Sendable {
     typealias T = UWP.SortEntry
     typealias Bridge = __x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CSearch__CSortEntryBridge
     let _default: Bridge.SwiftABI
@@ -8208,7 +8208,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FMapChangedEvent
     }
 }
 
-internal var __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableVTable: __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableVTable: __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FMapChangedEventHandler_2_HSTRING_IInspectableWrapper.release($0) },
@@ -8263,7 +8263,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIEventHandler_1
     }
 }
 
-internal var __x_ABI_C__FIEventHandler_1_IInspectableVTable: __x_ABI_C__FIEventHandler_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIEventHandler_1_IInspectableVTable: __x_ABI_C__FIEventHandler_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.release($0) },
@@ -8311,7 +8311,7 @@ private var IID___x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32: Windows
     .init(Data1: 0xeccb574a, Data2: 0xc684, Data3: 0x5572, Data4: ( 0xa6,0x79,0x6b,0x08,0x42,0xcf,0xb5,0x7f ))// eccb574a-c684-5572-a679-6b0842cfb57f
 }
 
-internal var __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Wrapper.release($0) },
@@ -8442,7 +8442,7 @@ internal enum __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Bridge : Ab
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Impl : IAsyncOperationWithProgress, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Impl : IAsyncOperationWithProgress, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UInt32
     typealias TProgress = UInt32
     typealias Bridge = __x_ABI_C__FIAsyncOperationWithProgress_2_UINT32_UINT32Bridge
@@ -8502,7 +8502,7 @@ private var IID___x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CSto
     .init(Data1: 0xd26b2819, Data2: 0x897f, Data3: 0x5c7d, Data4: ( 0x84,0xd6,0x56,0xd7,0x96,0x56,0x14,0x31 ))// d26b2819-897f-5c7d-84d6-56d796561431
 }
 
-internal var __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32VTable: __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Wrapper.release($0) },
@@ -8635,7 +8635,7 @@ internal enum __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStora
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Impl : IAsyncOperationWithProgress, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Impl : IAsyncOperationWithProgress, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIBuffer?
     typealias TProgress = UInt32
     typealias Bridge = __x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CStorage__CStreams__CIBuffer_UINT32Bridge
@@ -8695,7 +8695,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1_IInspectable: WindowsFoundation.II
     .init(Data1: 0xabf53c57, Data2: 0xee50, Data3: 0x5342, Data4: ( 0xb5,0x2a,0x26,0xe3,0xb8,0xcc,0x02,0x4f ))// abf53c57-ee50-5342-b52a-26e3b8cc024f
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1_IInspectableVTable: __x_ABI_C__FIAsyncOperation_1_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_IInspectableVTable: __x_ABI_C__FIAsyncOperation_1_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1_IInspectableWrapper.release($0) },
@@ -8796,7 +8796,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1_IInspectableBridge : AbiInterfaceBri
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1_IInspectableImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1_IInspectableImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = Any?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -8849,7 +8849,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1_boolean: WindowsFoundation.IID {
     .init(Data1: 0xcdb5efb3, Data2: 0x5788, Data3: 0x509d, Data4: ( 0x9b,0xe1,0x71,0xcc,0xb8,0xa3,0x36,0x2a ))// cdb5efb3-5788-509d-9be1-71ccb8a3362a
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1_booleanVTable: __x_ABI_C__FIAsyncOperation_1_booleanVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_booleanVTable: __x_ABI_C__FIAsyncOperation_1_booleanVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1_booleanWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1_booleanWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1_booleanWrapper.release($0) },
@@ -8948,7 +8948,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1_booleanBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1_booleanImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1_booleanImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = Bool
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1_booleanBridge
     let _default: Bridge.SwiftABI
@@ -9001,7 +9001,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1_HSTRING: WindowsFoundation.IID {
     .init(Data1: 0x3e1fe603, Data2: 0xf897, Data3: 0x5263, Data4: ( 0xb3,0x28,0x08,0x06,0x42,0x6b,0x8a,0x79 ))// 3e1fe603-f897-5263-b328-0806426b8a79
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperation_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperation_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1_HSTRINGWrapper.release($0) },
@@ -9103,7 +9103,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1_HSTRINGBridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1_HSTRINGImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1_HSTRINGImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = String
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -9156,7 +9156,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1_UINT32: WindowsFoundation.IID {
     .init(Data1: 0xef60385f, Data2: 0xbe78, Data3: 0x584b, Data4: ( 0xaa,0xef,0x78,0x29,0xad,0xa2,0xb0,0xde ))// ef60385f-be78-584b-aaef-7829ada2b0de
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1_UINT32VTable: __x_ABI_C__FIAsyncOperation_1_UINT32Vtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1_UINT32VTable: __x_ABI_C__FIAsyncOperation_1_UINT32Vtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1_UINT32Wrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1_UINT32Wrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1_UINT32Wrapper.release($0) },
@@ -9255,7 +9255,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1_UINT32Bridge : AbiInterfaceBridge {
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1_UINT32Impl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1_UINT32Impl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UInt32
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1_UINT32Bridge
     let _default: Bridge.SwiftABI
@@ -9308,7 +9308,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspec
     .init(Data1: 0x127e39c7, Data2: 0x07c1, Data3: 0x58e5, Data4: ( 0xb4,0x8e,0x3a,0x47,0x29,0x83,0x9f,0xec ))// 127e39c7-07c1-58e5-b48e-3a4729839fec
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableWrapper.release($0) },
@@ -9409,7 +9409,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspecta
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIMap<String, Any?>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIMap_2_HSTRING_IInspectableBridge
     let _default: Bridge.SwiftABI
@@ -9462,7 +9462,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySet: Windo
     .init(Data1: 0x490b0686, Data2: 0xafd7, Data3: 0x5037, Data4: ( 0x96,0x47,0xd8,0xfe,0x24,0x8f,0x18,0x2c ))// 490b0686-afd7-5037-9647-d8fe248f182c
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetWrapper.release($0) },
@@ -9563,7 +9563,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetBridge : 
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIPropertySet?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__F__CIPropertySetBridge
     let _default: Bridge.SwiftABI
@@ -9616,7 +9616,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_
     .init(Data1: 0x4b1c0fd7, Data2: 0x7a01, Data3: 0x5e7a, Data4: ( 0xa6,0xfe,0xbe,0x45,0x00,0x28,0x3f,0x23 ))// 4b1c0fd7-7a01-5e7a-a6fe-be4500283f23
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -9717,7 +9717,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CW
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIVectorView<UWP.AnyIStorageItem?>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemBridge
     let _default: Bridge.SwiftABI
@@ -9770,7 +9770,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_
     .init(Data1: 0x03362e33, Data2: 0xe413, Data3: 0x5f29, Data4: ( 0x97,0xd0,0x48,0xa4,0x78,0x09,0x35,0xf9 ))// 03362e33-e413-5f29-97d0-48a4780935f9
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -9871,7 +9871,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CW
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIVectorView<UWP.StorageFile?>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileBridge
     let _default: Bridge.SwiftABI
@@ -9924,7 +9924,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_
     .init(Data1: 0xca40b21b, Data2: 0xaeb1, Data3: 0x5a61, Data4: ( 0x9e,0x08,0x3b,0xd5,0xd9,0x59,0x40,0x23 ))// ca40b21b-aeb1-5a61-9e08-3bd5d9594023
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -10025,7 +10025,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CW
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIVectorView<UWP.StorageFolder?>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFolderBridge
     let _default: Bridge.SwiftABI
@@ -10078,7 +10078,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_
     .init(Data1: 0x66e11b8a, Data2: 0x9003, Data3: 0x52c9, Data4: ( 0x84,0xa8,0xae,0x5c,0xce,0xbe,0x8c,0xf9 ))// 66e11b8a-9003-52c9-84a8-ae5ccebe8cf9
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeWrapper.release($0) },
@@ -10179,7 +10179,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CW
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIVectorView<UWP.StorageLibraryChange?>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageLibraryChangeBridge
     let _default: Bridge.SwiftABI
@@ -10232,7 +10232,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_
     .init(Data1: 0xe44ea1df, Data2: 0xbb85, Data3: 0x5a8c, Data4: ( 0xbd,0xdc,0xc8,0xe9,0x60,0xc3,0x55,0xc9 ))// e44ea1df-bb85-5a8c-bddc-c8e960c355c9
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserWrapper.release($0) },
@@ -10333,7 +10333,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CW
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIVectorView<UWP.User?>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CUserBridge
     let _default: Bridge.SwiftABI
@@ -10386,7 +10386,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRING: Win
     .init(Data1: 0x92b02cd3, Data2: 0xaa6e, Data3: 0x573d, Data4: ( 0xbc,0x03,0x8d,0x23,0x09,0xcb,0xa3,0xeb ))// 92b02cd3-aa6e-573d-bc03-8d2309cba3eb
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGWrapper.release($0) },
@@ -10487,7 +10487,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGBridge 
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = WindowsFoundation.AnyIVector<String>?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1_HSTRINGBridge
     let _default: Bridge.SwiftABI
@@ -10540,7 +10540,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileP
     .init(Data1: 0x5186131a, Data2: 0x4467, Data3: 0x504b, Data4: ( 0x97,0x7a,0x07,0x85,0xa8,0x23,0x04,0x85 ))// 5186131a-4467-504b-977a-0785a8230485
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesWrapper.release($0) },
@@ -10640,7 +10640,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFilePro
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.BasicProperties?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CBasicPropertiesBridge
     let _default: Bridge.SwiftABI
@@ -10693,7 +10693,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileP
     .init(Data1: 0x6c86e97c, Data2: 0x5699, Data3: 0x5700, Data4: ( 0x8d,0x35,0xd3,0x50,0xad,0x3e,0x4d,0xf2 ))// 6c86e97c-5699-5700-8d35-d350ad3e4df2
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesWrapper.release($0) },
@@ -10793,7 +10793,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFilePro
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.DocumentProperties?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CDocumentPropertiesBridge
     let _default: Bridge.SwiftABI
@@ -10846,7 +10846,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileP
     .init(Data1: 0xfcd07511, Data2: 0xe7f8, Data3: 0x5bda, Data4: ( 0x8c,0x04,0x79,0x5a,0x63,0x9d,0xae,0x8f ))// fcd07511-e7f8-5bda-8c04-795a639dae8f
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesWrapper.release($0) },
@@ -10946,7 +10946,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFilePro
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.ImageProperties?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CImagePropertiesBridge
     let _default: Bridge.SwiftABI
@@ -10999,7 +10999,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileP
     .init(Data1: 0x0d023b76, Data2: 0x20a7, Data3: 0x56f3, Data4: ( 0x84,0xab,0xce,0x31,0xe6,0x54,0x4b,0x71 ))// 0d023b76-20a7-56f3-84ab-ce31e6544b71
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesWrapper.release($0) },
@@ -11099,7 +11099,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFilePro
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.MusicProperties?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CMusicPropertiesBridge
     let _default: Bridge.SwiftABI
@@ -11152,7 +11152,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileP
     .init(Data1: 0x11c7cc5e, Data2: 0xc04e, Data3: 0x50e7, Data4: ( 0xa6,0x5e,0x6f,0x69,0x03,0x69,0x0c,0x16 ))// 11c7cc5e-c04e-50e7-a65e-6f6903690c16
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailWrapper.release($0) },
@@ -11252,7 +11252,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFilePro
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.StorageItemThumbnail?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CStorageItemThumbnailBridge
     let _default: Bridge.SwiftABI
@@ -11305,7 +11305,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileP
     .init(Data1: 0x447d4590, Data2: 0xd3f9, Data3: 0x58bf, Data4: ( 0xac,0x58,0x6f,0x9a,0x50,0x83,0x9e,0xfe ))// 447d4590-d3f9-58bf-ac58-6f9a50839efe
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesWrapper.release($0) },
@@ -11405,7 +11405,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFilePro
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.VideoProperties?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CFileProperties__CVideoPropertiesBridge
     let _default: Bridge.SwiftABI
@@ -11458,7 +11458,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStor
     .init(Data1: 0x5fc9c137, Data2: 0xebb7, Data3: 0x5e6c, Data4: ( 0x9c,0xba,0x68,0x6f,0x2e,0xc2,0xb0,0xbb ))// 5fc9c137-ebb7-5e6c-9cba-686f2ec2b0bb
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.release($0) },
@@ -11559,7 +11559,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorag
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIStorageItem?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CIStorageItemBridge
     let _default: Bridge.SwiftABI
@@ -11612,7 +11612,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearc
     .init(Data1: 0x88694b1f, Data2: 0xf380, Data3: 0x574d, Data4: ( 0x8a,0x05,0x4f,0x67,0xbd,0x52,0xcd,0x11 ))// 88694b1f-f380-574d-8a05-4f67bd52cd11
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateWrapper.release($0) },
@@ -11711,7 +11711,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch_
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.IndexedState
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CSearch__CIndexedStateBridge
     let _default: Bridge.SwiftABI
@@ -11764,7 +11764,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStora
     .init(Data1: 0x5e52f8ce, Data2: 0xaced, Data3: 0x5a42, Data4: ( 0x95,0xb4,0xf6,0x74,0xdd,0x84,0x88,0x5e ))// 5e52f8ce-aced-5a42-95b4-f674dd84885e
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.release($0) },
@@ -11864,7 +11864,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorage
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.StorageFile?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFileBridge
     let _default: Bridge.SwiftABI
@@ -11917,7 +11917,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStora
     .init(Data1: 0x6be9e7d7, Data2: 0xe83a, Data3: 0x5cbc, Data4: ( 0x80,0x2c,0x17,0x68,0x96,0x0b,0x52,0xc3 ))// 6be9e7d7-e83a-5cbc-802c-1768960b52c3
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderWrapper.release($0) },
@@ -12017,7 +12017,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorage
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.StorageFolder?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageFolderBridge
     let _default: Bridge.SwiftABI
@@ -12070,7 +12070,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStora
     .init(Data1: 0x0d81405a, Data2: 0x9bd3, Data3: 0x5e87, Data4: ( 0x82,0xf4,0x9b,0x41,0x28,0xa8,0x87,0xeb ))// 0d81405a-9bd3-5e87-82f4-9b4128a887eb
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionWrapper.release($0) },
@@ -12170,7 +12170,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorage
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.StorageStreamTransaction?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStorageStreamTransactionBridge
     let _default: Bridge.SwiftABI
@@ -12223,7 +12223,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStrea
     .init(Data1: 0x3bee8834, Data2: 0xb9a7, Data3: 0x5a80, Data4: ( 0xa7,0x46,0x5e,0xf0,0x97,0x22,0x78,0x78 ))// 3bee8834-b9a7-5a80-a746-5ef097227878
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferWrapper.release($0) },
@@ -12324,7 +12324,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIBuffer?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIBufferBridge
     let _default: Bridge.SwiftABI
@@ -12377,7 +12377,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStrea
     .init(Data1: 0xa8fe0732, Data2: 0x556d, Data3: 0x5841, Data4: ( 0xb7,0xee,0xb3,0x45,0x0f,0xb5,0x26,0x66 ))// a8fe0732-556d-5841-b7ee-b3450fb52666
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamWrapper.release($0) },
@@ -12478,7 +12478,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIInputStream?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIInputStreamBridge
     let _default: Bridge.SwiftABI
@@ -12531,7 +12531,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStrea
     .init(Data1: 0x430ecece, Data2: 0x1418, Data3: 0x5d19, Data4: ( 0x81,0xb2,0x5d,0xdb,0x38,0x16,0x03,0xcc ))// 430ecece-1418-5d19-81b2-5ddb381603cc
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWrapper.release($0) },
@@ -12632,7 +12632,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIRandomAccessStream?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamBridge
     let _default: Bridge.SwiftABI
@@ -12685,7 +12685,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStrea
     .init(Data1: 0x65178d50, Data2: 0xe6a2, Data3: 0x5d16, Data4: ( 0xb2,0x44,0x65,0xe9,0x72,0x5e,0x5a,0x0c ))// 65178d50-e6a2-5d16-b244-65e9725e5a0c
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceWrapper.release($0) },
@@ -12786,7 +12786,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIRandomAccessStreamReference?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamReferenceBridge
     let _default: Bridge.SwiftABI
@@ -12839,7 +12839,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStrea
     .init(Data1: 0xc4a57c5e, Data2: 0x32b0, Data3: 0x55b3, Data4: ( 0xad,0x13,0xce,0x1c,0x23,0x04,0x1e,0xd6 ))// c4a57c5e-32b0-55b3-ad13-ce1c23041ed6
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeWrapper.release($0) },
@@ -12940,7 +12940,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.AnyIRandomAccessStreamWithContentType?
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeBridge
     let _default: Bridge.SwiftABI
@@ -12993,7 +12993,7 @@ private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAg
     .init(Data1: 0xd4df0010, Data2: 0x0172, Data3: 0x5efa, Data4: ( 0xbd,0x5c,0x64,0x44,0xde,0x94,0xaf,0x74 ))// d4df0010-0172-5efa-bd5c-6444de94af74
 }
 
-internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultVtbl = .init(
     QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper.addRef($0) },
     Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultWrapper.release($0) },
@@ -13092,7 +13092,7 @@ internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeC
     }
 }
 
-fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultImpl : IAsyncOperation, AbiInterfaceImpl {
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultImpl : IAsyncOperation, AbiInterfaceImpl, @unchecked Sendable {
     typealias TResult = UWP.UserAgeConsentResult
     typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserAgeConsentResultBridge
     let _default: Bridge.SwiftABI
@@ -13162,7 +13162,7 @@ internal enum __x_ABI_C__FIReference_1_doubleBridge: ReferenceBridge {
         return .init(lpVtbl: vtblPtr)
     }
 }
-internal var __x_ABI_C__FIReference_1_doubleVTable: __x_ABI_C__FIReference_1_doubleVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FIReference_1_doubleVTable: __x_ABI_C__FIReference_1_doubleVtbl = .init(
     QueryInterface: { __x_ABI_C__FIReference_1_doubleWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FIReference_1_doubleWrapper.addRef($0) },
     Release: { __x_ABI_C__FIReference_1_doubleWrapper.release($0) },
@@ -13210,7 +13210,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHand
     }
 }
 
-internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CStorage__CSearch__CIStorageQueryResultBase_IInspectableWrapper.release($0) },
@@ -13265,7 +13265,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHand
     }
 }
 
-internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableVtbl = .init(
     QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableWrapper.addRef($0) },
     Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher_IInspectableWrapper.release($0) },
@@ -13318,7 +13318,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHand
     }
 }
 
-internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsVtbl = .init(
     QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsWrapper.addRef($0) },
     Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserAuthenticationStatusChangingEventArgsWrapper.release($0) },
@@ -13369,7 +13369,7 @@ internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHand
     }
 }
 
-internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsVtbl = .init(
+internal nonisolated(unsafe) var __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsVtbl = .init(
     QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsWrapper.queryInterface($0, $1, $2) },
     AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsWrapper.addRef($0) },
     Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CUserWatcher___x_ABI_CWindows__CSystem__CUserChangedEventArgsWrapper.release($0) },

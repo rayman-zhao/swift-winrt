@@ -194,7 +194,7 @@ extension __IMPL_Windows_Storage_FileProperties {
         }
     }
 
-    fileprivate class IStorageItemExtraPropertiesImpl: IStorageItemExtraProperties, WinRTAbiImpl {
+    fileprivate class IStorageItemExtraPropertiesImpl: IStorageItemExtraProperties, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageItemExtraPropertiesBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -262,7 +262,7 @@ extension __ABI_Windows_Storage_FileProperties {
 
     }
 
-    internal static var IStorageItemExtraPropertiesVTable: __x_ABI_CWindows_CStorage_CFileProperties_CIStorageItemExtraPropertiesVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageItemExtraPropertiesVTable: __x_ABI_CWindows_CStorage_CFileProperties_CIStorageItemExtraPropertiesVtbl = .init(
         QueryInterface: { IStorageItemExtraPropertiesWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageItemExtraPropertiesWrapper.addRef($0) },
         Release: { IStorageItemExtraPropertiesWrapper.release($0) },

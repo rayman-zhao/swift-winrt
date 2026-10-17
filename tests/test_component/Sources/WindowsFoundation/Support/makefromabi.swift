@@ -80,8 +80,8 @@ private enum FactoryCacheEntry {
     case noFactory
 }
 
-private var factoryCache: [FactoryCacheKey: FactoryCacheEntry] = [:]
-private var factoryCacheLock = SRWLock()
+private nonisolated(unsafe) var factoryCache: [FactoryCacheKey: FactoryCacheEntry] = [:]
+private nonisolated(unsafe) var factoryCacheLock = SRWLock()
 
 func makeFrom(abi: WindowsFoundation.IInspectable) -> Any? {
     // When creating a swift class which represents this type, we want to get the class name that we're trying to create

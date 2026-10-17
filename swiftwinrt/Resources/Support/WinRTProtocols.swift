@@ -10,10 +10,13 @@ public protocol IWinRTObject: AnyObject {
   var thisPtr: SUPPORT_MODULE.IInspectable { get }
 }
 
-public protocol WinRTInterface: AnyObject, CustomQueryInterface {
+// Projected types are usable across concurrency domains: COM references are atomically
+// reference-counted and apartment rules are enforced at the ABI layer, so cross-thread
+// *call* safety remains the app's responsibility, as in every other WinRT projection.
+public protocol WinRTInterface: AnyObject, CustomQueryInterface, Sendable {
 }
 
-open class WinRTClass : CustomQueryInterface, Equatable {
+open class WinRTClass : CustomQueryInterface, Equatable, @unchecked Sendable {
     public init() {}
 
     @_spi(WinRTInternal)

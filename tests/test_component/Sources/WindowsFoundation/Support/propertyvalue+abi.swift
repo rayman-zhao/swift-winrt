@@ -6,7 +6,7 @@ fileprivate var IID___x_ABI_CWindows_CFoundation_CIPropertyValueStatics: Windows
     .init(Data1: 0x629BDBC8, Data2: 0xD932, Data3: 0x4FF4, Data4: ( 0x96,0xB9,0x8D,0x96,0xC5,0xC1,0xE8,0x58 ))// 629BDBC8-D932-4FF4-96B9-8D96C5C1E858
 }
 
-internal class IPropertyValueStatics: WindowsFoundation.IInspectable {
+internal class IPropertyValueStatics: WindowsFoundation.IInspectable, @unchecked Sendable {
       override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CFoundation_CIPropertyValueStatics }
 
       internal func CreateUInt8Impl(_ value: UINT8) throws -> ComPtr<C_IInspectable>? {

@@ -466,7 +466,7 @@ namespace swiftwinrt
     }
 )", w.support);
 
-        w.write(R"(public class IPropertyValueImpl : IPropertyValue, IReference {
+        w.write(R"(public class IPropertyValueImpl : IPropertyValue, IReference, ^@unchecked Sendable {
     public typealias T = Any
     var _value: Any
     var propertyType : PropertyType
@@ -1352,7 +1352,7 @@ namespace swiftwinrt
         constexpr bool isDelegate = std::is_same_v<T, delegate_type>;
         constexpr bool isGeneric = std::is_same_v<T, generic_inst>;
         static_assert(isInterface || isDelegate | isGeneric);
-        w.write("internal %var %VTable: %Vtbl = .init(\n",
+        w.write("internal %nonisolated(unsafe) var %VTable: %Vtbl = .init(\n",
             isGeneric ? "" : "static ", // generics aren't namespaced since implementations are always internal
             type,
             bind_type_mangled(type));

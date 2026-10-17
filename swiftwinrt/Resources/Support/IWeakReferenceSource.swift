@@ -16,7 +16,7 @@ func makeWeakReferenceSource(_ object: AnyObject, _ result: UnsafeMutablePointer
     }
 }
 
-fileprivate class WeakReferenceSourceWrapper: WinRTAbiBridgeWrapper<IWeakReferenceSourceBridge> {
+fileprivate class WeakReferenceSourceWrapper: WinRTAbiBridgeWrapper<IWeakReferenceSourceBridge>, @unchecked Sendable {
     init(_ object: AnyObject){
         super.init(IWeakReferenceSourceBridge.makeAbi(), object)
     }
@@ -48,7 +48,7 @@ fileprivate enum IWeakReferenceSourceBridge: AbiBridge {
     }
 }
 
-fileprivate var IWeakReferenceSourceVTable: C_IWeakReferenceSourceVtbl = .init(
+fileprivate nonisolated(unsafe) var IWeakReferenceSourceVTable: C_IWeakReferenceSourceVtbl = .init(
     QueryInterface: { WeakReferenceSourceWrapper.queryInterface($0, $1, $2) },
     AddRef: { WeakReferenceSourceWrapper.addRef($0) },
     Release: { WeakReferenceSourceWrapper.release($0) },

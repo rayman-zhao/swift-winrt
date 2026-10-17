@@ -34,7 +34,7 @@ open class ExternalBase : WinRTClass {
     override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
         return super.queryInterface(iid)
     }
-    private static var _IExternalBaseProtectedFactory : __ABI_external_base.IExternalBaseProtectedFactory =  try! RoGetActivationFactory("external_base.ExternalBase")
+    private static nonisolated(unsafe) var _IExternalBaseProtectedFactory : __ABI_external_base.IExternalBaseProtectedFactory =  try! RoGetActivationFactory("external_base.ExternalBase")
 
     override public init() {
         super.init()

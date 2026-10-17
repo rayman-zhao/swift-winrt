@@ -26,13 +26,13 @@ extension WindowsFoundation.CollectionChange: @retroactive Hashable, @retroactiv
 
 // MARK: - MapChangedEventHandler`2
 
-public typealias MapChangedEventHandler<K,V> = (AnyIObservableMap<K, V>?, AnyIMapChangedEventArgs<K>?) throws -> ()
+public typealias MapChangedEventHandler<K,V> = @Sendable (AnyIObservableMap<K, V>?, AnyIMapChangedEventArgs<K>?) throws -> ()
 
 // MARK: - MapChangedEventHandler`2 Internals
 
 // MARK: - VectorChangedEventHandler`1
 
-public typealias VectorChangedEventHandler<T> = (AnyIObservableVector<T>?, AnyIVectorChangedEventArgs?) throws -> ()
+public typealias VectorChangedEventHandler<T> = @Sendable (AnyIObservableVector<T>?, AnyIVectorChangedEventArgs?) throws -> ()
 
 // MARK: - VectorChangedEventHandler`1 Internals
 
@@ -298,7 +298,7 @@ extension __IMPL_Windows_Foundation_Collections {
         }
     }
 
-    fileprivate class IPropertySetImpl: IPropertySet, WinRTAbiImpl {
+    fileprivate class IPropertySetImpl: IPropertySet, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IPropertySetBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -379,7 +379,7 @@ extension __ABI_Windows_Foundation_Collections {
 
     }
 
-    internal static var IPropertySetVTable: __x_ABI_CWindows_CFoundation_CCollections_CIPropertySetVtbl = .init(
+    internal static nonisolated(unsafe) var IPropertySetVTable: __x_ABI_CWindows_CFoundation_CCollections_CIPropertySetVtbl = .init(
         QueryInterface: { IPropertySetWrapper.queryInterface($0, $1, $2) },
         AddRef: { IPropertySetWrapper.addRef($0) },
         Release: { IPropertySetWrapper.release($0) },
@@ -462,7 +462,7 @@ extension __IMPL_Windows_Foundation_Collections {
         }
     }
 
-    fileprivate class IVectorChangedEventArgsImpl: IVectorChangedEventArgs, WinRTAbiImpl {
+    fileprivate class IVectorChangedEventArgsImpl: IVectorChangedEventArgs, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IVectorChangedEventArgsBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -510,7 +510,7 @@ extension __ABI_Windows_Foundation_Collections {
 
     }
 
-    internal static var IVectorChangedEventArgsVTable: __x_ABI_CWindows_CFoundation_CCollections_CIVectorChangedEventArgsVtbl = .init(
+    internal static nonisolated(unsafe) var IVectorChangedEventArgsVTable: __x_ABI_CWindows_CFoundation_CCollections_CIVectorChangedEventArgsVtbl = .init(
         QueryInterface: { IVectorChangedEventArgsWrapper.queryInterface($0, $1, $2) },
         AddRef: { IVectorChangedEventArgsWrapper.addRef($0) },
         Release: { IVectorChangedEventArgsWrapper.release($0) },

@@ -6,7 +6,7 @@ import Foundation
 
 fileprivate let IID_IInspectable = IID(Data1: 0xAF86E2E0, Data2: 0xB12D, Data3: 0x4C6A, Data4: ( 0x9C, 0x5A, 0xD7, 0xAA, 0x65, 0x10, 0x1E, 0x90 )) // AF86E2E0-B12D-4c6a-9C5A-D7AA65101E90
 
-open class IInspectable: IUnknown {
+open class IInspectable: IUnknown, @unchecked Sendable {
   override open class var IID: WindowsFoundation.IID { IID_IInspectable }
 
   public func GetIids(_ iidCount: UnsafeMutablePointer<ULONG>, _ iids: UnsafeMutablePointer<UnsafeMutablePointer<WindowsFoundation.IID>?>?) throws {
@@ -44,7 +44,7 @@ protocol AnyObjectWrapper {
 }
 
 public enum __ABI_ {
-    public class AnyWrapper : WinRTWrapperBase<C_IInspectable, AnyObject> {
+    public class AnyWrapper : WinRTWrapperBase<C_IInspectable, AnyObject>, @unchecked Sendable {
       public init?(_ swift: Any?) {
         guard let swift else { return nil }
          if let propertyValue = PropertyValue.createFrom(swift) {
@@ -102,7 +102,7 @@ public enum __ABI_ {
       }
     }
 
-    internal static var IInspectableVTable: C_IInspectableVtbl = .init(
+    internal static nonisolated(unsafe) var IInspectableVTable: C_IInspectableVtbl = .init(
         QueryInterface: { AnyWrapper.queryInterface($0, $1, $2) },
         AddRef: { AnyWrapper.addRef($0) },
         Release: { AnyWrapper.release($0) },

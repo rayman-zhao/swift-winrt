@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: BSD-3
 
 @_fixed_layout
-public final class IUnknownRef {
+public final class IUnknownRef: @unchecked Sendable {
   private var pUnk: ComPtr<C_IUnknown>
 
   init<C_Interface>(_ pUnk: consuming ComPtr<C_Interface>) {

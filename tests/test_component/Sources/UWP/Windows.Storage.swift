@@ -195,7 +195,7 @@ extension UWP.StreamedFileFailureMode: @retroactive Hashable, @retroactive Codab
 
 // MARK: - StreamedFileDataRequestedHandler
 
-public typealias StreamedFileDataRequestedHandler = (StreamedFileDataRequest?) throws -> ()
+public typealias StreamedFileDataRequestedHandler = @Sendable (StreamedFileDataRequest?) throws -> ()
 
 // MARK: - StreamedFileDataRequestedHandler Internals
 
@@ -235,7 +235,7 @@ extension __ABI_Windows_Storage {
 
 
     typealias StreamedFileDataRequestedHandlerWrapper = InterfaceWrapperBase<__IMPL_Windows_Storage.StreamedFileDataRequestedHandlerBridge>
-    internal static var StreamedFileDataRequestedHandlerVTable: __x_ABI_CWindows_CStorage_CIStreamedFileDataRequestedHandlerVtbl = .init(
+    internal static nonisolated(unsafe) var StreamedFileDataRequestedHandlerVTable: __x_ABI_CWindows_CStorage_CIStreamedFileDataRequestedHandlerVtbl = .init(
         QueryInterface: { StreamedFileDataRequestedHandlerWrapper.queryInterface($0, $1, $2) },
         AddRef: { StreamedFileDataRequestedHandlerWrapper.addRef($0) },
         Release: { StreamedFileDataRequestedHandlerWrapper.release($0) },
@@ -326,7 +326,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageFileImpl: IStorageFile, WinRTAbiImpl {
+    fileprivate class IStorageFileImpl: IStorageFile, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageFileBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -603,7 +603,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageFileVTable: __x_ABI_CWindows_CStorage_CIStorageFileVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageFileVTable: __x_ABI_CWindows_CStorage_CIStorageFileVtbl = .init(
         QueryInterface: { IStorageFileWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageFileWrapper.addRef($0) },
         Release: { IStorageFileWrapper.release($0) },
@@ -815,7 +815,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageFile2Impl: IStorageFile2, WinRTAbiImpl {
+    fileprivate class IStorageFile2Impl: IStorageFile2, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageFile2Bridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -865,7 +865,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageFile2VTable: __x_ABI_CWindows_CStorage_CIStorageFile2Vtbl = .init(
+    internal static nonisolated(unsafe) var IStorageFile2VTable: __x_ABI_CWindows_CStorage_CIStorageFile2Vtbl = .init(
         QueryInterface: { IStorageFile2Wrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageFile2Wrapper.addRef($0) },
         Release: { IStorageFile2Wrapper.release($0) },
@@ -966,7 +966,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageFilePropertiesWithAvailabilityImpl: IStorageFilePropertiesWithAvailability, WinRTAbiImpl {
+    fileprivate class IStorageFilePropertiesWithAvailabilityImpl: IStorageFilePropertiesWithAvailability, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageFilePropertiesWithAvailabilityBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1001,7 +1001,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageFilePropertiesWithAvailabilityVTable: __x_ABI_CWindows_CStorage_CIStorageFilePropertiesWithAvailabilityVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageFilePropertiesWithAvailabilityVTable: __x_ABI_CWindows_CStorage_CIStorageFilePropertiesWithAvailabilityVtbl = .init(
         QueryInterface: { IStorageFilePropertiesWithAvailabilityWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageFilePropertiesWithAvailabilityWrapper.addRef($0) },
         Release: { IStorageFilePropertiesWithAvailabilityWrapper.release($0) },
@@ -1107,7 +1107,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageFolderImpl: IStorageFolder, WinRTAbiImpl {
+    fileprivate class IStorageFolderImpl: IStorageFolder, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageFolderBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1327,7 +1327,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageFolderVTable: __x_ABI_CWindows_CStorage_CIStorageFolderVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageFolderVTable: __x_ABI_CWindows_CStorage_CIStorageFolderVtbl = .init(
         QueryInterface: { IStorageFolderWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageFolderWrapper.addRef($0) },
         Release: { IStorageFolderWrapper.release($0) },
@@ -1515,7 +1515,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageFolder2Impl: IStorageFolder2, WinRTAbiImpl {
+    fileprivate class IStorageFolder2Impl: IStorageFolder2, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageFolder2Bridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1552,7 +1552,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageFolder2VTable: __x_ABI_CWindows_CStorage_CIStorageFolder2Vtbl = .init(
+    internal static nonisolated(unsafe) var IStorageFolder2VTable: __x_ABI_CWindows_CStorage_CIStorageFolder2Vtbl = .init(
         QueryInterface: { IStorageFolder2Wrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageFolder2Wrapper.addRef($0) },
         Release: { IStorageFolder2Wrapper.release($0) },
@@ -1659,7 +1659,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageItemImpl: IStorageItem, WinRTAbiImpl {
+    fileprivate class IStorageItemImpl: IStorageItem, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageItemBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -1824,7 +1824,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageItemVTable: __x_ABI_CWindows_CStorage_CIStorageItemVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageItemVTable: __x_ABI_CWindows_CStorage_CIStorageItemVtbl = .init(
         QueryInterface: { IStorageItemWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageItemWrapper.addRef($0) },
         Release: { IStorageItemWrapper.release($0) },
@@ -1999,7 +1999,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageItem2Impl: IStorageItem2, WinRTAbiImpl {
+    fileprivate class IStorageItem2Impl: IStorageItem2, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageItem2Bridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2101,7 +2101,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageItem2VTable: __x_ABI_CWindows_CStorage_CIStorageItem2Vtbl = .init(
+    internal static nonisolated(unsafe) var IStorageItem2VTable: __x_ABI_CWindows_CStorage_CIStorageItem2Vtbl = .init(
         QueryInterface: { IStorageItem2Wrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageItem2Wrapper.addRef($0) },
         Release: { IStorageItem2Wrapper.release($0) },
@@ -2212,7 +2212,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageItemPropertiesImpl: IStorageItemProperties, WinRTAbiImpl {
+    fileprivate class IStorageItemPropertiesImpl: IStorageItemProperties, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageItemPropertiesBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2338,7 +2338,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageItemPropertiesVTable: __x_ABI_CWindows_CStorage_CIStorageItemPropertiesVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageItemPropertiesVTable: __x_ABI_CWindows_CStorage_CIStorageItemPropertiesVtbl = .init(
         QueryInterface: { IStorageItemPropertiesWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageItemPropertiesWrapper.addRef($0) },
         Release: { IStorageItemPropertiesWrapper.release($0) },
@@ -2487,7 +2487,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageItemProperties2Impl: IStorageItemProperties2, WinRTAbiImpl {
+    fileprivate class IStorageItemProperties2Impl: IStorageItemProperties2, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageItemProperties2Bridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2587,7 +2587,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageItemProperties2VTable: __x_ABI_CWindows_CStorage_CIStorageItemProperties2Vtbl = .init(
+    internal static nonisolated(unsafe) var IStorageItemProperties2VTable: __x_ABI_CWindows_CStorage_CIStorageItemProperties2Vtbl = .init(
         QueryInterface: { IStorageItemProperties2Wrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageItemProperties2Wrapper.addRef($0) },
         Release: { IStorageItemProperties2Wrapper.release($0) },
@@ -2705,7 +2705,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStorageItemPropertiesWithProviderImpl: IStorageItemPropertiesWithProvider, WinRTAbiImpl {
+    fileprivate class IStorageItemPropertiesWithProviderImpl: IStorageItemPropertiesWithProvider, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageItemPropertiesWithProviderBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2777,7 +2777,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStorageItemPropertiesWithProviderVTable: __x_ABI_CWindows_CStorage_CIStorageItemPropertiesWithProviderVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageItemPropertiesWithProviderVTable: __x_ABI_CWindows_CStorage_CIStorageItemPropertiesWithProviderVtbl = .init(
         QueryInterface: { IStorageItemPropertiesWithProviderWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageItemPropertiesWithProviderWrapper.addRef($0) },
         Release: { IStorageItemPropertiesWithProviderWrapper.release($0) },
@@ -2863,7 +2863,7 @@ extension __IMPL_Windows_Storage {
         }
     }
 
-    fileprivate class IStreamedFileDataRequestImpl: IStreamedFileDataRequest, WinRTAbiImpl {
+    fileprivate class IStreamedFileDataRequestImpl: IStreamedFileDataRequest, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStreamedFileDataRequestBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -2896,7 +2896,7 @@ extension __ABI_Windows_Storage {
 
     }
 
-    internal static var IStreamedFileDataRequestVTable: __x_ABI_CWindows_CStorage_CIStreamedFileDataRequestVtbl = .init(
+    internal static nonisolated(unsafe) var IStreamedFileDataRequestVTable: __x_ABI_CWindows_CStorage_CIStreamedFileDataRequestVtbl = .init(
         QueryInterface: { IStreamedFileDataRequestWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStreamedFileDataRequestWrapper.addRef($0) },
         Release: { IStreamedFileDataRequestWrapper.release($0) },

@@ -7,7 +7,7 @@ extension Array {
     }
 }
 
-internal class ArrayVector<T> : IVector {
+internal class ArrayVector<T> : IVector, @unchecked Sendable {
     typealias Element = T
     private var storage: Array<T>
     internal init(_ storage: Array<T>){
@@ -53,7 +53,7 @@ extension ArrayVector {
     public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? { nil }
 }
 
-internal class ArrayVectorView<T> : IVectorView {
+internal class ArrayVectorView<T> : IVectorView, @unchecked Sendable {
     typealias Element = T
     private var storage: Array<T>
     internal init(_ storage: Array<T>){
@@ -86,7 +86,7 @@ extension ArrayVectorView {
     public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? { nil }
 }
 
-class ArrayIterator<T>: IIterator {
+class ArrayIterator<T>: IIterator, @unchecked Sendable {
     typealias Element = T
     private let storage: Array<T>
     private var index: Int = 0

@@ -17,7 +17,7 @@ func makeMarshaler(_ outer: IUnknownRef, _ result: UnsafeMutablePointer<UnsafeMu
     }
 }
 
-fileprivate class MarshalWrapper: WinRTAbiBridgeWrapper<IMarshalBridge> {
+fileprivate class MarshalWrapper: WinRTAbiBridgeWrapper<IMarshalBridge>, @unchecked Sendable {
     init(_ marshaler: Marshaler){
         super.init(IMarshalBridge.makeAbi(), marshaler)
     }
@@ -37,7 +37,7 @@ fileprivate enum IMarshalBridge: AbiBridge {
     typealias SwiftProjection = Marshaler
 }
 
-private var IMarshalVTable: C_IMarshalVtbl = .init(
+private nonisolated(unsafe) var IMarshalVTable: C_IMarshalVtbl = .init(
     QueryInterface: { pUnk, riid, ppvObject in
         guard let pUnk, let riid, let ppvObject else { return E_INVALIDARG }
         switch riid.pointee {

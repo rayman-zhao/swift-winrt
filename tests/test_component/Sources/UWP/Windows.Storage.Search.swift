@@ -277,7 +277,7 @@ extension __IMPL_Windows_Storage_Search {
         }
     }
 
-    fileprivate class IStorageFolderQueryOperationsImpl: IStorageFolderQueryOperations, WinRTAbiImpl {
+    fileprivate class IStorageFolderQueryOperationsImpl: IStorageFolderQueryOperations, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageFolderQueryOperationsBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -534,7 +534,7 @@ extension __ABI_Windows_Storage_Search {
 
     }
 
-    internal static var IStorageFolderQueryOperationsVTable: __x_ABI_CWindows_CStorage_CSearch_CIStorageFolderQueryOperationsVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageFolderQueryOperationsVTable: __x_ABI_CWindows_CStorage_CSearch_CIStorageFolderQueryOperationsVtbl = .init(
         QueryInterface: { IStorageFolderQueryOperationsWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageFolderQueryOperationsWrapper.addRef($0) },
         Release: { IStorageFolderQueryOperationsWrapper.release($0) },
@@ -801,7 +801,7 @@ extension __IMPL_Windows_Storage_Search {
         }
     }
 
-    fileprivate class IStorageQueryResultBaseImpl: IStorageQueryResultBase, WinRTAbiImpl {
+    fileprivate class IStorageQueryResultBaseImpl: IStorageQueryResultBase, WinRTAbiImpl, @unchecked Sendable {
         fileprivate typealias Bridge = IStorageQueryResultBaseBridge
         fileprivate let _default: Bridge.SwiftABI
         fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
@@ -950,7 +950,7 @@ extension __ABI_Windows_Storage_Search {
 
     }
 
-    internal static var IStorageQueryResultBaseVTable: __x_ABI_CWindows_CStorage_CSearch_CIStorageQueryResultBaseVtbl = .init(
+    internal static nonisolated(unsafe) var IStorageQueryResultBaseVTable: __x_ABI_CWindows_CStorage_CSearch_CIStorageQueryResultBaseVtbl = .init(
         QueryInterface: { IStorageQueryResultBaseWrapper.queryInterface($0, $1, $2) },
         AddRef: { IStorageQueryResultBaseWrapper.addRef($0) },
         Release: { IStorageQueryResultBaseWrapper.release($0) },

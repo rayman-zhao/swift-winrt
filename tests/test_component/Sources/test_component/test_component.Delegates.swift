@@ -6,7 +6,7 @@ import CWinRT
 
 // MARK: - InDelegate
 
-public typealias InDelegate = (String) throws -> ()
+public typealias InDelegate = @Sendable (String) throws -> ()
 
 // MARK: - InDelegate Internals
 
@@ -47,7 +47,7 @@ extension __ABI_test_component_Delegates {
 
 
     typealias InDelegateWrapper = InterfaceWrapperBase<__IMPL_test_component_Delegates.InDelegateBridge>
-    internal static var InDelegateVTable: __x_ABI_Ctest__component_CDelegates_CIInDelegateVtbl = .init(
+    internal static nonisolated(unsafe) var InDelegateVTable: __x_ABI_Ctest__component_CDelegates_CIInDelegateVtbl = .init(
         QueryInterface: { InDelegateWrapper.queryInterface($0, $1, $2) },
         AddRef: { InDelegateWrapper.addRef($0) },
         Release: { InDelegateWrapper.release($0) },
@@ -70,7 +70,7 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_Ctest__component_CDel
 
 // MARK: - InObjectDelegate
 
-public typealias InObjectDelegate = (Any?) throws -> ()
+public typealias InObjectDelegate = @Sendable (Any?) throws -> ()
 
 // MARK: - InObjectDelegate Internals
 
@@ -112,7 +112,7 @@ extension __ABI_test_component_Delegates {
 
 
     typealias InObjectDelegateWrapper = InterfaceWrapperBase<__IMPL_test_component_Delegates.InObjectDelegateBridge>
-    internal static var InObjectDelegateVTable: __x_ABI_Ctest__component_CDelegates_CIInObjectDelegateVtbl = .init(
+    internal static nonisolated(unsafe) var InObjectDelegateVTable: __x_ABI_Ctest__component_CDelegates_CIInObjectDelegateVtbl = .init(
         QueryInterface: { InObjectDelegateWrapper.queryInterface($0, $1, $2) },
         AddRef: { InObjectDelegateWrapper.addRef($0) },
         Release: { InObjectDelegateWrapper.release($0) },
@@ -135,7 +135,7 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_Ctest__component_CDel
 
 // MARK: - SignalDelegate
 
-public typealias SignalDelegate = () throws -> ()
+public typealias SignalDelegate = @Sendable () throws -> ()
 
 // MARK: - SignalDelegate Internals
 
@@ -175,7 +175,7 @@ extension __ABI_test_component_Delegates {
 
 
     typealias SignalDelegateWrapper = InterfaceWrapperBase<__IMPL_test_component_Delegates.SignalDelegateBridge>
-    internal static var SignalDelegateVTable: __x_ABI_Ctest__component_CDelegates_CISignalDelegateVtbl = .init(
+    internal static nonisolated(unsafe) var SignalDelegateVTable: __x_ABI_Ctest__component_CDelegates_CISignalDelegateVtbl = .init(
         QueryInterface: { SignalDelegateWrapper.queryInterface($0, $1, $2) },
         AddRef: { SignalDelegateWrapper.addRef($0) },
         Release: { SignalDelegateWrapper.release($0) },
